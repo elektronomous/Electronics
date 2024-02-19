@@ -1,0 +1,63 @@
+To get a mental image of how a battery generates an EMF through a circuit, we envision that chemical
+reactions inside yield free electrons that quickly build in number within the negative terminal 
+region (anode material), causing an electron concentration. This concentration is full of repulsive 
+force (electrons repel) that can be viewed as a kind of “electrical pressure.” With a load (e.g., our
+flashlight lamp, conductors, switch) placed between the battery’s terminals, electrons from the 
+battery’s negative terminal attempt to alleviate this pressure by dispersing into the circuit. These 
+electrons increase the concentration of free electrons within the end of the conductor attached to the
+negative terminal. Even a small percentage difference in free electron concentration in one region 
+gives rise to great repulsive forces between free electrons. The repulsive force is expressed as a 
+seemingly instantaneous (close to the speed of  light) pulse that travels throughout the circuit. 
+Those free electrons nearest to the pumped- in electrons are quickly repulsed in the opposite direction;
+the next neighboring electrons get shoved, and so on down the line, causing a chain reaction, or pulse.
+This pulse travels down the conductor near the speed of light. See Image3.png.
+
+The actual physical movement of electrons is, on average, much slower. In fact, the drift velocity 
+(average net velocity of electrons toward the positive terminal) is usually fractions of a millimeter per
+second—say, 0.002 mm/s for a 0.1- A current through a 12- gauge wire. We associate this drift movement of
+free electrons with current flow or, more precisely, conventional current flow I moving in the opposite 
+direction. (As it turns out, the actual motion of electrons is quite complex, involving thermal effects,
+too—we’ll go over this in the next section.)
+
+drift velocity is a the average velocity attained by charged particles, such as electrons in a material
+due to an EMF force.
+
+It is likely that those electrons farther “down in” the circuit will not feel the same level of repulsive
+force, since there may be quite a bit of material in the way which absorbs some of the repulsive energy flow
+emanating from the negative terminal (absorbing via electron- electron collisions, free electron–bond 
+electron interactions, etc.). And, as you probably know, circuits can contain large numbers of components,
+some of which are buried deep within a complex network of pathways. It is possible to imagine that through
+some of these pathways the repulsive effects are reduced to a weak nudge(dorongan). We associate these regions
+of  “weak nudge” with regions of low "electrical pressure", or voltage. Electrons in these regions have little
+potential to do work—they have low potential energy relative to those closer to the source of pumped-in
+electrons.
+
+Voltage represents the difference in potential energy. A unit charge has been at one location relative to 
+another within a region of “electrical pressure”—the pressure attributed to new free electrons being pumped
+into the system. The relationship between the voltage and the difference in potential energy is expressed as:
+
+    Va   = Uab / q
+    Vb - Va = (Ub - Ua) / q
+    ΔV = ΔU / q
+
+        Point A      Point B 
+               \     /
+               -    +
+    .------------∣|∣|-------------.
+    |                             | 
+    |                              (◍)
+    |.____________________________|
+
+Implicit in the definition of voltage is the notion that voltage is always a measurement between two points, say
+point A and point B. That is the reason forthe subscript “AB” in Vab. The symbol ∆V means the same. In many dc 
+circuits, people choose the negative terminal of the battery as the 0- V reference, and let everyone know by 
+inserting a ground symbol  __|__ (more on this later).
+                            ---
+                             -
+
+In practice, you rarely see voltages expressed using subscripts (VAB) or deltas (∆V), but instead you simply see 
+the symbol V, or you may see a symbol like Vᵣ. The “blank symbol” V, however, is always modified with a phrase 
+stating the two points across which the voltage is present. In the second case, Vᵣ, the subscript means that the
+voltage is measured across the component ᵣ—in this case, a resistor. (This r is R in, but the math symbol cannot
+interpreted it so I used the r instead).
+                            

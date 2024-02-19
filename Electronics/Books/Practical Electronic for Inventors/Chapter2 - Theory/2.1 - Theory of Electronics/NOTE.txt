@@ -1,0 +1,3 @@
+We recommend using a circuit simulator program if you’re just starting out in
+electronics. The web-based simulator CircuitLab (www.circuitlab.com) is extremely
+easy to use and has a nice graphical interface.

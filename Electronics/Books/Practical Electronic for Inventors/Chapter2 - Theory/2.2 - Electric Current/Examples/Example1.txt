@@ -1,0 +1,19 @@
+How many electrons pass a given point in 3 s if a conductor is carrying a
+2-A current? (Example1.png)
+
+(answer):
+
+Δt = 3s
+I = 2-A
+
+I = ΔQ / Δt
+2 = ΔQ / 3
+
+The charge that passes a given point in 3s is:
+
+  ΔQ = 6 C 
+
+or in electrons:
+
+  # electrons = 6/ 1.602 x 10⁻¹⁹ C = 3.74 x 10¹⁹ electrons
+

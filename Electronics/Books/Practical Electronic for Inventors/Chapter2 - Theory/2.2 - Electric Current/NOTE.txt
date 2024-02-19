@@ -1,0 +1,79 @@
+Electric current is the total charge that passes through some cross- sectional area A per
+unit time. This cross- sectional area could represent a disk placed in a gas, plasma, or
+liquid, but in electronics, this cross- sectional area is most frequently a slice through a
+solid material, such as a conductor.
+
+If ∆Q is the amount of charge passing through an area in a time interval ∆t, then
+the average current Iₐᵥₑ is defined as (Image1.jpg):
+
+        Iₐᵥₑ = ΔQ / Δt
+
+The unit of current is coulumbs per second, but this unit is called the ampere(A), named after
+Andre-Marie Ampere:
+
+        1 A = 1 C/s
+
+Because the ampere is a rather large unit, current is also expressed in
+    • milliamps (1 mA = 1 x 10⁻³ A),
+    • microamps (1 μA = 1 x 10⁻⁶ A), and
+    • nanoamps (1 nA = 1 x 10⁻⁹ A)
+
+Within conductors such as copper, electrical current is made up of free electrons moving through a
+lattice of copper ions. Copper has one free electron per copper atom. The charge on a single 
+electron is given by:
+
+    Qₑₗₑcₜᵣₒₙ   =             (-e) = -1.602 x 10⁻¹⁹ C
+    Qₑₗₑcₜᵣₒₙₑ  =   -6.24 x 10¹⁸ e = 1 C
+
+The loss of the electron means there is one more proton per atom than electrons. The charge of a
+proton is:
+
+    Qₑₗₑcₜᵣₒₙ   =               (-e) = +1.602 x 10⁻¹⁹ C
+    Qₑₗₑcₜᵣₒₙ   =   +6.24 x 10¹⁸ e   = 1 C
+
+so there's +/-6.24 x 10¹⁸ C in 1 A in 1s.
+
+How do we get a negative number of electrons flowing per second, as our result indicates? 
+The only two possibilities for this would be to say that :
+    • either electrons must be flowing in the opposite direction as the defined current, or 
+    • positive charges must be moving in our wire instead of electrons to account for the sign.
+    (
+        The last choice is an incorrect one, since experimental evidence exists to prove electrons
+        are free to move, not positive charges, which are fixed in the lattice network of the 
+        conductor. 
+    )
+
+
+\ /•\ / \ /\ /•\ /
+(+)•(+)•(+)(+)•(+)
+/•\•/•\ / \/ \ /•\
+\ /•\ / \ /\ /•\ /
+(+)•(+)•(+)(+)•(+)
+/•\•/•\ / \/ \ /•\
+\ /•\ / \ /\ /•\ /
+(+)•(+)•(+)(+)•(+) ---> Lattice network of the conductor
+/•\•/•\ / \/ \ /•\
+\ /•\ / \ /\ /•\ /
+(+)•(+)•(+)(+)•(+)
+/•\•/•\ / \/ \ /•\
+\ /•\ / \ /\ /•\ /
+(+)•(+)•(+)(+)•(+)
+/•\•/•\ / \/ \ /•\
+
+What does this (Image2.jpg) mean to us, to those of us not so interested in the detailed physics and
+such? Well, not too much. We could pretend that there were positive charges moving in the wires and
+various  electrical devices, and everything would work out fine: negative electrons going one way are 
+equivalent to positive charges going in the opposite direction. 
+
+In a nutshell, it’s convenient to pretend that positive charges are moving. So when you see the term
+electron flow, make sure you realize that the conventional current flow I is moving in the opposite
+direction.
+
+What’s considered a lot or a little amount of current? It’s a good idea to have a gauge
+of comparison when you start tinkering with electronic devices. Here are some examples: 
+a 100- W lightbulb draws about 1 A; a microwave draws 8 to 13 A; a laptop computer, 2 to 3 A; an 
+electric fan, 1 A; a television, 1 to 3 A; a toaster, 7 to 10 A; a fluorescent light, 1 to 2 A; a
+radio/stereo, 1 to 4 A; a typical LED, 20 mA; a mobile (smart) phone accessing the web uses around
+200 mA; an advanced low- power microchip (individual), a few µA to perhaps even several pA; an 
+automobile starter, around 200 A; a lightning strike, around 1000 A; a sufficient amount of current
+to induce cardiac/respiratory arrest, around 100 mA to 1 A.

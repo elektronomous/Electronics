@@ -1,0 +1,23 @@
+To get electrical current to flow from one point to another, a voltage must exist between the
+two points. A voltage placed across a conductor gives rise to an electromotive force (EMF)
+that is responsible for giving all free electrons within the conductor a push.
+
+voltage is also referred to as a potential difference or just potential—they all mean the same
+thing. We’ll avoid using these terms, however, because it is easy to confuse them with the term
+potential energy, which is not the same thing.
+
+Image1.png => It is important to note that the battery needs the rest of the circuit, just as the
+rest of the circuit needs the battery. Without the linkage between its terminals, the chemical 
+reactions within the battery cannot be carried out. These chemical reactions involve the transfer
+of electrons(Image2.png), which by intended design can only occur through a link between the
+battery’s terminals (e.g., where the circuit goes).
+
+As free electrons within the lamp filament experience an EMF due to the applied voltage, the extra
+energy they gain is transferred to the filament lattice atoms, which result in heat (filament 
+atomic vibrations) and emitted light (when a valence electron of a lattice atom is excited by a 
+free electron and the bound electron returns to a lower energy configuration, thus releasing a 
+photon).
+
+A device that maintains a constant voltage across it terminals is called a direct current voltage
+source (or dc voltage source). A battery is an example of a dc voltage source. The schematic symbol
+for a battery is |∣|∣. 
