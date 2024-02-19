@@ -1,3 +1,45 @@
-Inventors in the field of electronics are individuals who possess the knowledge, intuition (
+= Inventors in the field of electronics are individuals who possess the knowledge, intuition (
 the ability to understand something immediately, without the need for conscious reasoning), creativity, and 
 technical know-how to turn their ideas into real-life electrical gadgets. 
+
+= basic passive components such as resistors, capacitors, inductors, and transformers.
+
+= Discrete passive circuits include current-limiting networks, voltage dividers, filter circuits, attenuators, 
+and so on.
+
+= discrete active devices, which are built from semiconductor materials. These devices consist mainly of diodes
+(one-way current-flow gates) and transistors (electrically controlled switches/amplifiers).
+
+= discrete active/ passive circuits. Some of these circuits include rectifiers (ac-to-dc converters), amplifiers,
+oscillators, modulators, mixers, and voltage regulators.
+
+= Input devices (sensors) convert physical signals, such as sound, light, and pressure, into electrical signals 
+that circuits can use. These devices include microphones, phototransistors, switches, keyboards, thermistors, 
+strain gauges, generators, and antennas.
+
+= Output devices convert electrical signals into physical signals. Output devices include lamps, LED and LCD 
+displays, speakers, buzzers, motors (dc, servo, and stepper), solenoids, and antennas. These I/O devices
+allow humans and circuits to communicate with one another.
+
+= To make things easier on the circuit designer, manufacturers have created integrated circuits (ICs), which 
+contain discrete circuits (like the ones mentioned in the previous paragraph) that are crammed onto a tiny chip 
+of silicon. 
+
+= ICs such as amplifiers and voltage regulators are referred to as analog devices, which means that they respond
+to and produce signals of varying degrees of voltage.
+
+= Digital circuits work with only two voltage states: high (such as 5 V) or low (such as 0 V). The reason for 
+having only two voltage states has to do with the ease of processing data (numbers, symbols, and control information)
+and storage.
+
+= Some of these ICs are designed to perform :
+  (1) logical operations on input information; (logic gate)
+  (2) others are designed to count; (processor, counters)
+  (3) while still others are designed to store information that can be retrieved later on.
+
+= Digital ICs include logic gates, flip-flops, shift registers, counters, memories, processors, and so on. 
+
+= In order for digital circuits to interact with analog circuits, special analog-to-digital (A/D) conversion circuits 
+are needed to convert analog signals into strings of 1s and 0s. Likewise, digital-to-analog conversion circuits are
+used to convert strings of 1s and 0s into analog signals.
+
