@@ -1,0 +1,81 @@
+= Look at the Image1 and Image2
+
+(a) Copper nucleus composed of protons and neutrons held together by nuclear forces that is roughly
+    137 times stronger than the electromagnetic force. 
+
+(b) Copper atoms, as viewed by the classic planetary model, consisting of valance electrons held in
+    orbit by electric forces. Quantum mechanics is required to explain why electrons exist in discrete 
+    energy levels, and why they don’t fall into the nucleus or radiate electromagnetic energy as they orbit. 
+
+(c) Copper lattice has a face- centered cubic packing arrangement. 
+
+(d) Scanning tunneling electron microscope (STM) image of copper 100, courtesy of Institut für Allgemeine
+    Physik, TU Wien. 
+
+(e) Ball packing model of lattice, showing irregularities in lattice geometry, partly caused by impurities
+    (other kinds of atoms). 
+
+(f) Lattice view showing that lattice atoms vibrate due to external thermal interactions as well as 
+    interactions with free electrons. Free electrons move about randomly, at varying speeds and directions, 
+    colliding with other electrons and lattice ions. Under normal conditions, they do not leave the
+    surface of the metal.
+
+For copper, as well as other metals, the bonding mechanism that holds everything together is referred to as
+metallic bonding, where outermost valence electrons from the metal atoms form a “cloud of free electrons” 
+which fill the space between the metal ions (positively charged atoms missing an electron that became “free”
+—see the planetary model in Image1.png point (b)). This cloud of free electrons acts as a glue, holding the
+lattice metal ions together.
+
+Each free electron within the cloud of free electrons moves about in random directions and speeds, colliding
+and rebounding “off” metal ions and other imperfections (impurities in lattice and grain boundary transitions,
+etc.). It is important to realize that this is occurring in a chunk of copper, at room temperature, without
+any applied voltage.
+
+According to what’s called the free- electron model—a classical model that treats free electrons as a gas of
+noninteracting charges—there is approximately one free electron per copper atom, giving a copper conductor a
+free electron concentration of 
+        
+        ρₙ  = 8.5 × 10²⁸   electrons/m³. 
+
+Thermal velocity: When a conductor is not connected to any battery, free electrons are said to move due to 
+their temperature & hence the name. 
+
+This model predicts that, under normal conditions (a piece of copper just sitting there at room temperature),
+the thermal velocity v of electrons (or root- mean- square speed) within copper is about
+        
+        120 km/s (1.2 × 10⁵  m/s), 
+
+but depends on temperature. The average distance an electron travels before it collides with something, called
+the mean free path λ, is about 
+        
+        0.000003 mm (2.9 × 10−⁹ m), 
+
+with the average time between collisions τ of roughly 
+        
+        0.000000000000024 s (2.4 × 10−¹⁴ s). 
+
+The free- electron model is qualitatively correct in many respects, but  isn’t as accurate as models based on 
+quantum mechanics. (The speed, path, and time are related by v = λ/τ.)
+
+NOTE:
+The Fermi velocity is a measure of the speed at which electrons move within a material at the Fermi energy.
+Fermi energy is the energy difference between the highest and lowest occupied single-particle states in a 
+quantum system of non-interacting fermions (Fermions include protons, neutrons, electrons, neutrinos, and 
+quarks) at a temperature of absolute zero.
+
+In quantum mechanics, electrons obey velocity- distribution laws based on quantum physics, and the movement of
+electrons depends on these quantum ideas. It requires that we treat electrons as though they were waves (you
+can imagine sea water) scattering from the lattice structure of the copper. The quantum view shows the thermal
+speed (now called Fermi velocity vF) of a free electron to be faster than that predicted by the free- electron
+model, now around 
+    
+    1.57 × 10⁶ m/s,
+
+and contrarily, it is essentially independent of temperature. In addition, the quantum model predicts a larger 
+mean free path, now around 
+
+    3.9 × 10−⁸ m, 
+
+which is independent of temperature. The quantum view happens to be the  accepted view, since it gives answers
+that match more precisely with experimental data. Image3 shows the Fermi velocities of electrons for various
+metals.

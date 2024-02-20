@@ -1,0 +1,8 @@
+There are other mechanisms besides the chemical reactions within batteries that give rise to an
+electromotive force that pushes electrons through circuits. Some examples include magnetic 
+induction, photovoltaic action, thermoelectric effect, piezoelectric effect, and static
+electric effect. 
+
+Magnetic induction (used in electrical generators) and photovoltaic action (used in photocells),
+along with chemical reactions, are, however, the only mechanisms of those listed that provide 
+enough power to drive most circuits.

@@ -1,0 +1,6 @@
+A 12- V electrical device is specified as consuming 100 W of power. How
+much current does it draw?
+
+(12 V generated 100 W, how much current the 100 Watt can bring ?)
+
+I = P / V = 100 W / 12 V = 8.3 A

@@ -1,0 +1,32 @@
+To get a larger voltage capable of supplying more power, we can place two batteries in 
+series (end to end), as shown in Image1.png.
+In essence, we have placed two charge pumps in series, increasing the effective electrical
+pressure. Chemically speaking, if the batteries are of the same voltage, we double the number
+of chemical reactions, doubling the number of electrons that can be pumped out into the circuit.
+
+In Image1.png, we use the notion of a ground reference, or 0- V reference, symbolized     |.
+                                                                                        -----
+                                                                                         ---
+                                                                                          -
+
+Though this symbol is used to represent an earth ground (which we define a bit later), it can 
+also be used to indicate the point where all voltage measurements are to be referenced within 
+a circuit. 
+
+For most dc circuits, the ground reference point is usually placed at the negative terminal of
+the voltage source. With the notion of ground reference point, we also get the notion of a point
+voltage, which is the voltage measured between the ground reference and a specific point of 
+interest within the circuit. For example, the single battery shown in Image1.png has a voltage 
+of 1.5 V. We place a ground reference at the negative terminal and give this a 0- V point voltage,
+and place a 1.5- V point voltage marker at the positive terminal.
+
+In the center of Image1.png, we have two 1.5- V batteries in series, giving a combined voltage of 
+3.0 V. A ground placed at the negative terminal of the lower battery gives us point voltages of 
+1.5 V between the batteries, and 3.0 V at the positive terminal of the top battery. A load placed
+between ground and 3.0 V will result in a load current that returns to the lower battery’s negative
+terminal. Finally, it is possible to create a split supply by simply repositioning the 0- V ground
+reference, placing it between the batteries. This creates +1.5 V and −1.5 V leads relative to the 
+0- V reference. Many circuits require both positive and negative voltage relative to a 0- V ground 
+reference. In this case, the 0- V ground reference acts as a common return. This is often necessary,
+say, in an audio circuit, where signals are sinusoidal and alternate between positive and negative
+voltage relative to a 0- V reference.

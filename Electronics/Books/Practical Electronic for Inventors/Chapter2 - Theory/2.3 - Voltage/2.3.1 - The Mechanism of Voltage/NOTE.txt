@@ -21,6 +21,8 @@ too—we’ll go over this in the next section.)
 
 drift velocity is a the average velocity attained by charged particles, such as electrons in a material
 due to an EMF force.
+(drift velocity is the average velocity with which electrons 'drift'(hanyut / mengalir) in the presence of
+electrict field)
 
 It is likely that those electrons farther “down in” the circuit will not feel the same level of repulsive
 force, since there may be quite a bit of material in the way which absorbs some of the repulsive energy flow
@@ -36,6 +38,22 @@ Voltage represents the difference in potential energy. A unit charge has been at
 another within a region of “electrical pressure”—the pressure attributed to new free electrons being pumped
 into the system. The relationship between the voltage and the difference in potential energy is expressed as:
 
+
+Conductor 
+________________________________________
+    • • *  • *•*• *•• *••• *• *•
+  •  * • *• *•• *•• *•• *••• *• *•
+__|___________________________|_________
+  |                           |
+  Ua                          Ub
+
+= How many volt that 1 electron need to move from Ua to Ub ?
+  = Now imagine if you place a component (resistor for example) between them? how many volt that 1 electron need
+    to move from one of the leg to other leg component ? you'll get it
+  = Say that an electrone is in off state in a circuit, then you apply 1 volt to the circuit, in some time the electron
+    is move to another point on the circuit, the energy that the electron received after moved from one point to another
+    point is the different energy between that points. (do your insight get brighter now?)
+
     Va   = Uab / q
     Vb - Va = (Ub - Ua) / q
     ΔV = ΔU / q
@@ -49,7 +67,7 @@ into the system. The relationship between the voltage and the difference in pote
     |.____________________________|
 
 Implicit in the definition of voltage is the notion that voltage is always a measurement between two points, say
-point A and point B. That is the reason forthe subscript “AB” in Vab. The symbol ∆V means the same. In many dc 
+point A and point B. That is the reason for the subscript “AB” in Vab. The symbol ∆V means the same. In many dc 
 circuits, people choose the negative terminal of the battery as the 0- V reference, and let everyone know by 
 inserting a ground symbol  __|__ (more on this later).
                             ---
@@ -60,4 +78,37 @@ the symbol V, or you may see a symbol like Vᵣ. The “blank symbol” V, howev
 stating the two points across which the voltage is present. In the second case, Vᵣ, the subscript means that the
 voltage is measured across the component ᵣ—in this case, a resistor. (This r is R in, but the math symbol cannot
 interpreted it so I used the r instead).
+
+In our flashlight example, we can calculate the difference in potential energy between an electron emanating from
+the negative terminal of the 1.5- V battery and one entering the positive terminal:
+
+    ΔU = ΔVq = (1.5 V)(1.602 x 10⁻¹⁹ C) = 2.4 x 10⁻¹⁹ J
+
+Notice that this result gives us the potential energy difference between the two electrons, not the actual potential
+energy of either the electron emanating from the negative terminal (U1) or the electron entering the positive 
+terminal (U0). However, if we make the assumption that the electron entering the positive terminal is at zero 
+potential energy, we can figure that the electron emanating from the negative terminal has a relative potential 
+energy of:
+
+    U₁ = ΔU + U₀ = ΔU + 0 = 2.4 x 10⁻¹⁹ J
+
+In a real circuit, where the number of electrons pumped out by the battery will be quite large—hundreds to thousands
+of trillions of electrons, depending on the resistance to electron flow—we must multiply our previous calculation by
+the total number of entering electrons. For example, if our flashlight draws 0.1 A :
+
+    1 A = 1 C = 6.24 x 10¹⁸ e/p
+    0.1 A = 0.1 C = 6.24 x 10¹⁷ e/p
+
+there will be 6.24 x 10¹⁷ electrons pumped into it by the battery per second, so you calculate the potential energy of
+all the new electrons together to be about:
+    
+    ΔU = ΔVq = (1.5 V) (0.1 C) = 0.15 J/s
+
+we assume all electrons within the same conductor have the same potential energy. This assumes that there is no voltage
+difference between points in the same conductor. For example, if you take a voltmeter and place it between any two 
+points of a single conductor, it will measure 0 V. (See Fig. 2.8.) For practical purposes, we accept this as true. 
+However, in reality it isn’t. There is a slight voltage drop through a conductor, and if we had a voltmeter that was
+extremely accurate we might measure a voltage drop of 0.00001 V or so, depending on the length of the conductor, current
+flow, and conductor material type. This is attributed to internal resistance within conductors—a topic we’ll cover in a
+moment.
                             
