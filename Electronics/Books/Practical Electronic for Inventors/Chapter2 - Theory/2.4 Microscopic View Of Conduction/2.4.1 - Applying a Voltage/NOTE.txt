@@ -1,0 +1,13 @@
+Next, we wish to see what happens when we apply a voltage across the conductor—say, by attaching
+a thick copper wire across a battery. When we do this, our randomly moving  free electrons all
+experience a force pointing toward the positive end of the wire due to the electric field set up
+within the wire. The actual influence this force has on the motion(gerakan) of the random free 
+electrons is small—the thermal velocity is so  large that it is difficult to change the momentum
+of the electrons. What you get is a slightly parabolic deviation in path, as shown in Fig. 2.16
+
+Due to drift velocity of electrons current is flown from a conductor ( consider of. Length 'l' and cross section area 'a' ) then if we take one electron at one side of the conductor then it will move opposite to the electric field i.e from -ve to +ve in a single cell closed circuit with a constant acceleration qe/m where q and e are mass and charge of electron and e is magnitude of electric field
+Now applying laws of motion
+S =1/2 a t^2 since u =0 and a= qe / m and s=v*t Where v is drift velocity
+also I=nqav
+where v - drift velocity/ q - charge /a - area of cross section / v - drift velocity / I - current
+so increase in temperature increase in I so electron collides more with positive lattice inside a conductor so we can also say that resistance of conductor increases with increment in temperature
