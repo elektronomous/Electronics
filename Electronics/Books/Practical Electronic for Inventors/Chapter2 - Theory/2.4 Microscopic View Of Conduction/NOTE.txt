@@ -79,3 +79,6 @@ mean free path, now around
 which is independent of temperature. The quantum view happens to be the  accepted view, since it gives answers
 that match more precisely with experimental data. Image3 shows the Fermi velocities of electrons for various
 metals.
+
+The only way to eject electrons is through special processes, such as thermionic emission, field emission, 
+secondary emission, and photoelectric emission.
