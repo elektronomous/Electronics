@@ -3,11 +3,100 @@ a thick copper wire across a battery. When we do this, our randomly moving  free
 experience a force pointing toward the positive end of the wire due to the electric field set up
 within the wire. The actual influence this force has on the motion(gerakan) of the random free 
 electrons is small—the thermal velocity is so  large that it is difficult to change the momentum
-of the electrons. What you get is a slightly parabolic deviation in path, as shown in Fig. 2.16
+of the electrons. What you get is a slightly parabolic deviation in path, as shown in Image1.png
 
-Due to drift velocity of electrons current is flown from a conductor ( consider of. Length 'l' and cross section area 'a' ) then if we take one electron at one side of the conductor then it will move opposite to the electric field i.e from -ve to +ve in a single cell closed circuit with a constant acceleration qe/m where q and e are mass and charge of electron and e is magnitude of electric field
-Now applying laws of motion
-S =1/2 a t^2 since u =0 and a= qe / m and s=v*t Where v is drift velocity
-also I=nqav
-where v - drift velocity/ q - charge /a - area of cross section / v - drift velocity / I - current
-so increase in temperature increase in I so electron collides more with positive lattice inside a conductor so we can also say that resistance of conductor increases with increment in temperature
+If you wonder, why thermal velocity when it's get larger it can't change the momentum(daya gerak) of
+the electrons?
+
+(answer1):
+Drift velocity is defined as the average velocity with which a free electron reach the positive 
+terminal of the external electric field applied to the conductor.On the way, the electron has to face
+collisions with the positive ions of the conductor. When temperature of the conductor is increased (thermal velocity
+is increased); amplitudes of oscillations of positive ions increase, which in turn makes an electron to
+face more and more collisions with the positive ions of the conductor, resulting decrease in its drift
+velocity.Hence an increase in temperature implies decrease in the drift velocity of free electrons in a
+metallic conductor and vice versa.Obviously, increase in temperature will also increase the resistivity
+of the conductor.
+
+(answer2):
+As Rafael explained in his answer the drift velocity remains constant over temperature for a fixed 
+current because this is the definition of current - that many electrons per second. This means that 
+as the temperature has increased the voltage must have has increased too to maintain the same current.
+That voltage increase has created a stronger electric field that have accelerated the electrons and 
+ended up with compensating(memberikan ganti rugi) for the drift velocity that would have otherwise 
+decreased. You can now realize taht if one maintains the same voltage across the conductor then the
+drift velocity will decrease because the atoms in the conductors vibrate more intensely and the 
+electrons (or holes) have a higher probability to collide with and scatter from these atoms.
+
+(answer3):
+The drift velocity is the average velocity of the ensemble(grup) of electrons travelling in the solid.
+Individual electrons are accelerated by the electric field until they scatter in a collision that 
+randomizes their velocity. They accelerate in the direction of the field between collisions and then
+the collisions, on average, cause them to lose all of their momentum; sometimes they scatter forward,
+sometimes backward… in any direction randomly. This is called a relaxation mechanism and is encountered
+in many other situations.
+
+Image1.PNG:
+(a) Simplistic view of an electron randomly moving through a copper lattice, rebounding off lattice atoms
+    and impurities.
+(b) An electron collides frequently with the ions and impurities in a metal and scatters randomly. In an
+    electric field, the electron picks up a small component of velocity opposite the field. The differences 
+    in the paths are exaggerated(berlebihan). The electron’s path in an electric field is slightly parabolic.
+(c) Model illustrating current density, drift velocity, charge density, thermal velocity, and current.
+
+Normally, the field present in the wire would create a net acceleration component in the direction of the 
+force; however, the constant collisions electrons experience create a drag force, similar to the drag 
+experienced by a parachute. 
+
+            
+            Conductor
+           __________________________________________________
+            • • • • • • • • • • • • • • • • • • • • • • • • 
+            • • • • • • • • • • • • • • • • • • • • • • • • 
+            • • • • • • • • • • • • • • • • • • • • • • • • 
+            • • • • • • • • • • • • • • • • • • • • • • • • 
+            • • • • • • • • • • • • • • • • • • • • • • • • 
+           --------------------------------------------------
+
+(initially in room temperature and not applied voltage, the electrons are moving. when we applied the voltage all
+of those electron are move in direction to higher potential (positive terminal). When moving, electron collide with
+positive ions or the electron itself. in collide with another electron, the electron that get collided also get accelerated.
+the one that colliding to another electron will get dragged like the experience when you open a parachute)
+
+The net effect is an average group velocity referred to as the drift velocity vⅆ. Remarkably, this velocity is surprisingly
+small. For example, the voltage applied to a 12- gauge copper wire to yield a 0.100- A current will result in a drift velocity
+of about 0.002 mm per second! The drift velocity is related, determined by
+
+    vⅆ  = J/(ρₑe)
+
+
+where J is the current density—the current flowing through an area (J = I/A), 
+      ρₑ is the free- electron density in the material, and 
+      e is the charge of an electron. 
+
+Image3.PNG in 2.4 shows free- electron densities for various materials. As you can see, the drift velocity varies with current
+and diameter of the conductor.
+
+pondering = mempertimbangkan dengan hati hati
+
+The drift velocity is so slow, only fractions of a millimeter per second, that it is worth pondering how a measurable current
+can even flow. For example, what happens when you flip the switch on a flashlight? Of course, we don’t have to wait hours for
+electrons to move down the conductors from the battery. When we throw the switch, the electric field of the incoming electron has
+a repulsive effect on its neighbor within the wire. This neighbor then moves away toward another neighbor, creating a chain of 
+interactions that propagates through the material at near the speed of light. (See Image2.PNG.) This reaction, however, really isn’t
+the speed of light, but a fraction less, depending on the medium. The free electrons spreading throughout the conductor all start
+moving at once in response—those nearest the switch, as well as those nearest the light filament or LED. A similar effect occurs in
+fluid flow, as when you turn on a garden hose. Because if the hose is already full of water, the outflow starts immediately. The 
+force of the water at the faucet end is quickly transmitted all along the hose, and the water at the open end of the hose flows 
+almost at the moment the faucet is opened.
+
+In the case of alternating current, the field reverses directions in a sinusoidal fashion, causing the drift velocity component of
+electrons to swish back and forth. If the alternating current has a frequency of 60 Hz, the velocity component would be vibrating back
+and forth 60 times a second. If our maximum drift velocity during an ac cycle is 0.002 mm/s, we could roughly determine that the 
+distance between maximum swings in the drift distance would be about 0.00045 mm. Of course, this doesn’t mean that electrons are fixed
+in an oscillatory position. It means only that the drift displacement component of electrons is—if there is such a notion. Recall that
+an electron’s overall motion is quite random and its actual displacement quite large, due to the thermal effects.
+
+  
+if you wondering how the author get to 0,00045 mm, that's wrong answer. you can get that answer using formula that you mightn't be
+encounter since the formula is so long and tiredly.

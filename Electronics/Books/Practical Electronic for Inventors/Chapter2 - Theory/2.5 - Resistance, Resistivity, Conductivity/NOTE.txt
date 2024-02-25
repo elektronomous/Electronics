@@ -1,0 +1,41 @@
+In 1826, Georg Simon Ohm published experimental results regarding the resistance of
+different materials, using a qualitative approach that wasn’t concerned with the 
+hidden mechanisms, but rather considered only the net observable effects. He found
+a linear relationship between how much current flowed through a material when a given
+voltage was applied across it. He defined the resistance to be the ratio of the 
+applied voltage divided by the resultant current flow, given by:
+
+        R ≡ V / I
+
+This statement is called Ohm’s law, where R is the resistance, given in volts per
+ampere or ohms (abbreviated with the Greek symbol omega, Ω). One ohm is the resistance
+through which a current of 1 A flows when a voltage of 1 V is applied:
+
+        1Ω = 1 V / 1 A
+
+The symbol of resistor __⋀  /\  /\   /\  ___
+                          ⧹⧸ ⧹⧸  ⧹⧸  ⧹⧸
+
+
+Now, Ohm’s law isn’t really a law, but rather an empirical(berdasarkan pengalaman) 
+statement about the behavior of materials. In fact, there are some materials for which
+Ohm’s law actually doesn’t work. (Image1.png)
+
+Ohm’s law can be applied only to ohmic materials—materials whose resistance remains 
+constant over a range of voltages. Nonohmic materials, on the other hand, do not follow
+this pattern; they do not obey Ohm’s law. For example, a diode is a device that allows 
+current to pass easily when the voltage is positive, but prevents current flow (creates a
+high resistance) when the voltage is negative.
+
+Usually you see Ohm’s law written in the following form:
+        
+        V = I × R
+
+However, in this form it is tempting to define voltage in terms of resistance and current.
+It is important to realize that R is the resistance of an ohmic material and is independent
+of V in Ohm’s law. In fact, Ohm’s law does not say anything about voltage; rather, it defines
+resistance in terms of it and cannot be applied to other areas of physics such as static 
+electricity, because there is no current flow. In other words, you don’t define voltage in terms
+of current and resistance; you define resistance in terms of voltage and current. That’s not to
+say that you can’t apply Ohm’s law to, say, predict what voltage must exist across a known 
+resistance, given a measured current. In fact, this is done all the time in circuit analysis.

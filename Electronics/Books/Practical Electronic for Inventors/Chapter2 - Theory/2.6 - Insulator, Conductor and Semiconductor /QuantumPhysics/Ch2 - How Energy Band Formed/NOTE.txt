@@ -1,0 +1,93 @@
+(sources: khanacademy.org)
+atoms might be connected by strong bonds and organized into molecules or crystals. Or they might
+form temporary, weak bonds with other atoms that they bump into or brush up against. Both the 
+strong bonds that hold molecules together and the weaker bonds that create temporary connections
+are essential to the chemistry of our bodies, and to the existence of life itself. 
+Why form chemical bonds? The basic answer is that atoms are trying to reach the most stable 
+(lowest-energy) state that they can. Many atoms become stable when their valence shell is filled
+with electrons or when they satisfy the octet rule (by having eight valence electrons). If atoms
+don’t have this arrangement, they’ll “want” to reach it by gaining, losing, or sharing electrons via bonds.
+
+*brush up = bersentuhan
+
+how the energy band formed? **IMPORTANT**
+
+we start from what happens when atoms bond each other?
+(answer):
+In short atoms bond to each other because there is an electrostatic attraction between the two atoms. When
+the atoms get close enough, electrons/electron density begins to transfer between the two atoms which 
+creates a region of high electron density between the two atoms. This region of high electron density 
+between the two atoms is known as a chemical bond.
+The essence of the electrostatic force is that particles of the opposite charge attract each other, while 
+particles of the same charge repulse each other. What does this have to do with an atom? Well an atom 
+consists of a negatively charged particle (electron) and a positively charged particle (proton).
+Now what happens when two atoms get close to each other? Well based on the rules of electrostatics shown 
+above we can say that the proton of one atom will repulse the proton of the other atom. Likewise the 
+electrons of one atom will repulse the electrons from the other atom. Finally the electrons from one atom 
+will be attracted to the proton of the other atom. (attractive_repulsive.webp)
+This results in a balancing act, when the atoms are far apart the attractive force between the atoms dominate 
+and the atoms will start to come together. However if the atoms get too close the repulsive force starts to
+become greater than the attractive force and the atoms will start to repulse each other. In between these 
+distances there is a Goldilocks distance where the forces are balanced and the energy of the two atoms are at
+a minimum (see potential_energy_internuclear_distance.webp)
+The balancing act between the forces still occurs so that the atoms will be attracted to each other until they
+reach a Goldilocks distance. The one thing to note though is that when the atoms get close enough depending on
+the balance of forces between the electron cloud and the other nucleus some of the electron cloud will extend
+to the other nucleus (orbital_atom.webp)
+
+Why does a continuous energy band in solids split in two parts, i.e., valence bands and conduction bands?
+
+In solid-state physics, the splitting of the continuous energy band into valence and conduction bands is a 
+result of the formation of the crystal lattice in solids. When atoms come together to form a solid, their 
+electron orbitals overlap and interact, leading to the creation of energy bands. The valence band is formed 
+from the outermost electron orbitals of the atoms, and it is filled with electrons that are tightly bound to 
+the atoms. The conduction band, on the other hand, is formed from the higher energy electron orbitals, and it 
+allows electrons to move freely through the solid, conducting electricity. The split into valence and conduction
+bands occurs due to the energy difference between the outermost (valence) and higher energy (conduction) 
+electron orbitals in the crystal lattice. This split is a fundamental concept in understanding the electrical and
+optical properties of solids.
+
+So, what happens when you try to shove a large number ( >10²³) atoms together to make a solid? When atoms are 
+separated, electrons will tend to occupy the lowest available discrete energy states. When atoms are brought 
+together, the electrons are forbidden by the Pauli exclusion principle of having identical energy and quantum numbers.
+As shown in the figure below, as the atoms are brought closer and closer together individual allowed energy states
+start to spread in energy. (atoms_form_band_energy2.PNG)
+When you bring ~10²³ atoms together to make a solid, the separation between the allowed energy states becomes 
+indistinguishable (too small for us to measure). Since we can no longer distinguish the individual states, the allowable
+energy states form a range of energies that electrons can occupy. The ranges of allowable energies are referred to as
+bands. These bands are shown in the figure below. In this figure allowable energy levels are plotted versus interatomic
+separation. However, since there are too many levels to distinguish the band splitting is represented by a shaded region,
+instead of the individual levels shown in the previous figure.(energy_band.png)
+
+the basic of the curve in energy band lie at the animation on potential_energy_internuclear_distance.webp. when you have 1
+energy level, you can look at the animation of how electron occupy the lowest energy level when it distance is reduced. now
+when you have bunch of electrons, this energy level are so dense that we can form energy bands from them.
+
+why does the length of a bond between two atoms decrease as the number
+of shared electrons increase ?
+
+(answer):
+There are Terri ways of thinking about this that I see:
+• As they share more electrons the amount of energy that is needed to sustain the bond increases.
+  To minimize this energy the atoms move closer together. The energy in this kind of bond is like
+  a rope. Adding more electrons to the bond is like adding loops to the rope, the distance 
+  between the ends of the rope gets shorter the more loops you add.
+• The other thing is charge. The atom carrying the most electrons will have a negative charge, the
+  other positive. The greater the difference the closer the atoms will be pulled together. In an 
+  ionic bond this transfer is relatively permanent. In a covalent bond the electrons are shared but
+  they don't just hang out in the middle, they move. So for periods of time one atom will have a
+  negative charge while the other is positive, even if the average is no charge because as the 
+  electrons move the charges will flip. Maybe a physicist will be able to give a more detailed answer
+  but as a material scientist these have helped and have been fine for what I need.
+
+*sustain = mempertahankan
+*loop = simpulan / ikatan
+
+What happens if the distance between two atoms increases and the number of bonds decreases in a molecule?
+(answer):
+When the distance between two atoms in a molecule increases, the bond between them becomes weaker and the
+energy required to break the bond increases. This is due to a decrease in the attractive forces between
+the nuclei of the atoms and the electrons in the bond. A decrease in the number of bonds between two atoms
+in a molecule also weakens the overall strength of the molecule, making it more reactive and less stable.
+These changes can affect the properties and behavior of the molecule, such as its reactivity, melting point,
+and boiling point.

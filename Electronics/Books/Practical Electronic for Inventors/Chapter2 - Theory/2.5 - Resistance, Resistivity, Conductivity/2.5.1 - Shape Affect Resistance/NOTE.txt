@@ -1,0 +1,22 @@
+
+The resistance of a conducting wire of a given material varies with its shape. Doubling the length
+of a wire doubles the resistance, allowing half the current to flow, assuming similar applied 
+voltages. Conversely, doubling the cross- sectional area A has the opposite effect—the resistance 
+is cut in half, and twice as much current will flow, again assuming similar applied voltages.
+
+Increasing resistance with length can be explained by the fact that down the wire,there are more 
+lattice ions and imperfections present for which an applied field (electric field instigated (dimulai) by 
+added electrons pumped in by the source) must shove against. This field is less effective at moving
+electrons because as you go down the line, there are more electrons pushing back—there are more 
+collisions occurring on average. Decreasing resistance with cross- sectional area can be explained 
+by the fact that a larger- volume conductor (greater cross- sectional area) can support a larger 
+current flow. If you have a thin wire passing 0.100 A and a thick wire passing 0.100 A, the thinner
+wire must concentrate the 0.100 A through a small volume, while the thick wire can distribute this
+current over a greater volume.
+
+Electrons confined(yang dibatasi) to a smaller volume tend to undergo a greater number of collisions with other electrons,
+lattice ions, and imperfections than a wire with a larger volume. The concentration of free- electron flow,
+according to Benjamin Franklin’s convention, represents a concentration of conventional current flow in the
+opposite direction. This concentration of current flow is called the current density J—the rate of current
+flows per unit area. For a wire: J = I/A. Image2.PNG demonstrates how the current density is greater in a
+thin 12- gauge wire than in a thicker 4- gauge wire. It also shows that the drift velocity

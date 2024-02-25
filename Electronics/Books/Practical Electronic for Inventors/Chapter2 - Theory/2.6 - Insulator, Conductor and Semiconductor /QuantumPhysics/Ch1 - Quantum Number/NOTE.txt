@@ -1,0 +1,75 @@
+(SOURCE: Professor Dave Explains - Quantum Numbers, Atomic, Orbitals, and Electron Configuration)
+
+electrons are both particles and waves (if you don't understand go watch the double-slit experiments).
+
+the location and energy of every electron in an atom is determined by a set of 4 quantum numbers that
+describe different atomic orbitals.
+
+an orbital is a region of probability where an electron can be found. there are s, p, d, f orbitals 
+with different shapes and they look like (Orbitals.PNG)
+
+These shapes(Orbitals.PNG) are not electrons, just regions in space where electrons can be and each one
+can hold up to two electrons.
+
+The more electron an atom has, the more of these orbital it will need to accommodate(Menampung) them all.
+
+the first quantum number is the principal number  = 1,2,3, ... (any positive integer value) => Bohr Model
+atom show the atom shell. this principal number is represents the energy level of the electron. each orbital
+will have n value and the larger the value of n the further away from nucleus it is.
+
+the second quantum number is the angular momentum quantum number ℓ (ell) = 0, 1, 2, ... (n-1). For the
+example if the electron has n = 3, so the ℓ = 0, 1, 2. This ℓ value describe the shape of the orbitals:
+    • when ℓ = 0, we're describing the 's' orbital => look at the s_Orbital.PNG
+    • when ℓ = 1, we're describing the 'p' orbital => look at the p_Orbital0.PNG
+    • when ℓ = 2, we're describing the 'd' orbital => look at the d_rbital0.PNG
+    • when ℓ = 3, we're describing the 'f' orbital => look at the f_rbital0.PNG
+
+for the magnetic quantum numbers mₗ (m sub ℓ) = -ℓ..ℓ, for example if ℓ = 2, then mₗ can be mₗ = -2, -1, 0, 1, 2.
+This magnetic quantum numbers determines how many orbitals there are of a type per energy level and therefore
+describes specific orbitals amongst a particular set.
+
+the last quantum number is the spin quantum number mₛ (m sub s). It's either mₛ = +½ [↑] or -½ [↓]. Every electron has unique
+set of quantum numbers, no two electrons in an atom can have precisely the same four  quantum numbers(n, ℓ, mₗ, mₛ) as
+stated by Paulie Exclusion Principle. This is because any orbital can only hold up to two electrons, and even the two
+electrons in the same exact orbital will have opposite values(one would be +½ and the other -½). Let's try to find the
+means of the four quantum numbers
+
+(1) n = 1;  => atom that has only one energy level
+    ℓ = 0;
+    m = 0;
+    => This means we're describing the 1s orbital. It can accomodate two electrons which will have spins of half and
+       one negative half. (1s_Orbital.PNG).
+
+(2) n = 2; => atom that has only two energy levels / two shells 
+    
+    ℓ = 0  => means 2s orbital, mₗ = 0;
+    or ℓ = 1; means 2p orbital, mₗ = -1, 0, 1;
+
+    => This means we're describing the 2s and 2p orbitals. It can accomodate 8 electrons (2 electrons in 2s and 2 electrons
+       in each of the 2p orbital) which will have spins of half and one negative half. 
+
+(3) n = 3; => atom that has three energy levels / three shells 
+    ℓ = 0; => means 3s orbital, mₗ = 0
+    ℓ = 1; => means 3p orbital, mₗ = -1, 0, 1
+    ℓ = 2; => means 3d orbital, mₗ = -2, 1, 0, 1, 2
+    => this means we're describing the 2s, 2p and 3d orbitals. It can accomodate 18 electrons
+
+There's a Aufbau principle where tells us the order on how to put electrons in energy level (Aufbau_principle.PNG).
+For example, chlorine has 17 electrons, the configuration is :
+(1) you put 2 electrons in 1s [↑↓]
+(2) you put 2 electrons in 2s [↑↓] and 6 electrons in 2p [↑↓][↑↓][↑↓]
+(3) you put 2 electrons in 3s and now we left with 5 electrons.
+    = We have rule again here called Hund's rule that says for electrons of the same energy you put one electrone in each 
+      orbital first ([↑][↑][↑])before doubling up([↑↓][↑↓][↑])
+    = you can see the Chlorine.PNG
+(4) we get the configuration of the Chlorine => 1s²2s²2p⁶3s²3p⁵
+    2s²
+    |||
+    |||
+    |||________ how many electrons in that energy level
+    ||_________ the orbital
+    |__________ is energy level / atom shell 
+
+=> we're conclude here that the quantum number 'n' tells you how many shells the atom has, 'ℓ' tells you the type of the orbital
+   it could be (s, p, d, f orbital), and the MOST IMPORTANT the mₗ tells you the probability of the where the electrons are orbiting
+   theirself in mₗ (for example mₗ = 5 (-2, 1, 0, 1, 2), then electrons is orbiting in 5 way) form way. 

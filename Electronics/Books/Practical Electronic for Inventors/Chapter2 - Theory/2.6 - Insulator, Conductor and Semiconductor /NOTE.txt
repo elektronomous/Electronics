@@ -1,0 +1,11 @@
+If you don't get the meaning of the text for this section, go to the QuantumPhysics folder
+first, then read this section again.
+
+What is the microscopic explanation for these (Image1 and Image2 in 2.5.2) differences?
+The answer to this question rests upon the quantum nature of electrons. In classical physics
+the energy of an electron in a metal can take on any value—it is said the energy values form a
+continuum. (Here, electron energy is considered zero at infinite distance from the nucleus and
+becomes more negative in energy closer to the nucleus, relative to the zero reference state. 
+Negative energy infers that there is electric attraction between the positive nucleus and the
+electron—it is electric potential energy.)
+

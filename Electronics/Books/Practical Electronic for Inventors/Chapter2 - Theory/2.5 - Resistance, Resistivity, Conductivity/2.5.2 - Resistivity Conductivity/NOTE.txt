@@ -1,0 +1,42 @@
+How does the “chemistry” of the material affect the resistance? For example, if you have
+a copper wire with the same dimensions as a brass wire, which metal has the greater overall
+resistance? To answer this question, as well as provide a way to categorize materials, we
+adopt the concept of resistivity. Unlike resistance, resistivity is entirely independent of 
+the dimensions of the material. Resistivity is a property unique to the material. The 
+resistivity ρ is defined as follows:
+
+              A
+        ρ ≡ R ⎯
+              L
+
+where A is the cross- sectional area, 
+      L is the length, and 
+      R is the overall resistance of the material, as measured across its length.
+
+The units of resistivity are ohm- meters (Ωm). For some, resistivity is too negative a concept—it
+tells you how “bad” something is at passing current. Optimists prefer the concept of conductivity—
+how “good” something is at passing current. Conductivity, symbolized σ, is simply the mathematical
+inverse of resistivity:
+                
+            1
+        σ ≡ ⎯
+            ρ
+
+The units of conductivity are siemens, S = (Ωm)−¹. (Mathematical note: [Ωm]−1 = 1/[Ωm]). In terms of
+resistivity and conductivity, we can rewrite Ohm’s law as follows:
+
+                   L     I x L
+        V = IR = ρ ⎯ I = ⎯⎯⎯⎯⎯⎯ 
+                   A     σ x A
+
+(Image1 and Image2)
+An important feature of resistivity (or conductivity) is its temperature dependency. Generally, within
+a certain temperature range, the resistivity for a large number of metals obeys the following equation:
+        
+        ρ = ρ₀[1 + α(T − T₀)] (2.8)
+
+where ρ is the calculated resistivity based on a set reference resistivity ρ₀ and temperature T₀. Alpha
+α is called the temperature coefficient of resistivity, given in units of 1/°C or (°C)−¹
+
+The resistivity for most metals increases with temperature because lattice atom vibrations caused by 
+thermal energy (increased temperature) impede the drift velocity of conducting electrons.

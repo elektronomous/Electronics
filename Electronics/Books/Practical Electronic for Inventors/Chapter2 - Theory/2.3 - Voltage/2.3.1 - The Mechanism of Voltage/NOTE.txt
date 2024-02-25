@@ -45,17 +45,17 @@ ________________________________________
   •  * • *• *•• *•• *•• *••• *• *•
 __|___________________________|_________
   |                           |
-  Ua                          Ub
+  U𝐴                          U𝐵
 
-= How many volt that 1 electron need to move from Ua to Ub ?
+= How many volt that 1 electron need to move from U𝐴 to U𝐵 ?
   = Now imagine if you place a component (resistor for example) between them? how many volt that 1 electron need
     to move from one of the leg to other leg component ? you'll get it
   = Say that an electrone is in off state in a circuit, then you apply 1 volt to the circuit, in some time the electron
     is move to another point on the circuit, the energy that the electron received after moved from one point to another
     point is the different energy between that points. (do your insight get brighter now?)
 
-    Va   = Uab / q
-    Vb - Va = (Ub - Ua) / q
+    V𝐴   = U𝐴𝐵 / q
+    V𝐴 - V𝐵 = (U𝐵 - U𝐴) / q
     ΔV = ΔU / q
 
         Point A      Point B 
