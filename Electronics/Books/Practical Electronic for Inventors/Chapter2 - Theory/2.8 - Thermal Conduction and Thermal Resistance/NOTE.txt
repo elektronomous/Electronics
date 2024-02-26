@@ -1,0 +1,48 @@
+In terms of metals, heat transfer is a result of both lattice vibration effects (as seen in nonmetals)
+as well as kinetic energy transfer due to mobile free electrons. Recall that free electrons within a
+metal are moving quite fast (∼10⁶ m/s for most metals) at room temperature. Though quantum mechanics 
+is required, it is possible to treat these electrons like a dense gas, capable of increasing its 
+overall energy as heat is added, and likewise, capable of transporting this energy to regions of the 
+metal that are lower in temperature. Notice, however, that an increase in metal temperature, as a 
+whole, also increases the electrical resistance—the drift velocity component of the free electron goes
+down, due to both increased lattice vibrations and an increase in thermal velocity component. It 
+becomes harder to influence the free electrons with an applied field. Metals are the best thermal 
+conductors, due in part to the additional free electrons.
+
+The energy an object has at temperature T is correlated (berhubungan) to the internal energy—a result 
+of its internal atomic/molecular/electron motions. According to the first law of thermodynamics, which
+is a statement about the conservation of energy, the change in internal energy of a system ∆U is equal
+to the heat Qₕ  added to the system and the work W done by the system: 
+        
+        ∆U = Qₕ − W
+
+If we assume that no work is done (energy transferred to, say, move a piston, in the case of a gas), we
+say ∆U = QH. With this assumption, we can take heat to be not a measure of internal energy of the system,
+but a change in internal energy. The main reason for this concept is that it is very difficult to 
+determine the actual internal energy of a system; changes in internal energy are more meaningful and
+measurable. In practice, what is most useful is the rate of heat transfer—the power loss due to heating.
+With the help of experimental data, the following formula can be used to determine how well certain 
+materials transfer heat:
+
+                dQₕ 
+        Pₕₑₐₜ = ―――――― = -k∇T
+                dt 
+
+Here, k is called the thermal conductivity (measured in W/m °C) of the material in question, and ∇T is 
+the temperature gradient:
+
+            ⎛   ∂       ∂      ∂   ⎞
+        ∇T =⎜i ――― + j ――― + k ―――  ⎜
+            ⎝   ∂t     ∂t      ∂t  ⎠
+
+Now, the gradient is probably scary to a lot of you—it is simply a way to represent temperature distributions
+in 3-D, with time. To keep things simple, we will stick to 2-D, and represent the gradient as acting through
+an area A through a thickness L, and assume steady- state conditions:
+
+                   AΔT
+        Pₕₑₐₜ = -k ――――――
+                    L
+
+where ∆T = Thot − Tcold, measured at points across the length L of the material. The material may be steel, 
+silicon, copper, PC board material, and so on. Thermal_influence.PNG shows a picture of the situation.
+
