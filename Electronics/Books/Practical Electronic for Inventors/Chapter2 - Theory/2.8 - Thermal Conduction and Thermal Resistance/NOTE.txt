@@ -46,3 +46,47 @@ an area A through a thickness L, and assume steady- state conditions:
 where ∆T = Thot − Tcold, measured at points across the length L of the material. The material may be steel, 
 silicon, copper, PC board material, and so on. Thermal_influence.PNG shows a picture of the situation.
 
+Thermal conductivity k, like electrical conductivity, has an inverse—namely, thermal resistivity λ. Again, one
+tells you “how good” a material is at transferring heat, the other tells you “how bad” it is at doing it. The
+two are related by k = 1/λ.
+
+If we consider the geometry of the material, we can create a notion of thermal resistance ℜtherm (analogous to 
+electrical resistance), which depends on the cross- sectional area A, the length of the block of material L, 
+and the thermal conductivity k, or resistivity λ:
+        
+             L
+        k ≡  ⎯⎯
+             ℜA 
+
+             L
+        ℜ ≡ ⎯⎯
+             kA 
+or
+         1     L
+        ――― = ――― 
+         λ     ℜA 
+        
+             λL 
+        ℜ = ――――
+              A 
+
+Thermal resistance has units of °C/W. Thus, putting everything together, the power transfer of heat across a
+block of material, from one point at one temperature to another point at a different temperature, can be 
+expressed as:
+
+                dQₕₑₐₜ       ⎛  A ⎞      1  ⎛ A ⎞         ΔT
+        Pₕₑₐₜ = ―――――――― = k ⎜ ――― ⎜ΔT = ―  ⎜――― ⎜ΔT =  ――――――
+                 dt         ⎝  L ⎠      λ  ⎝ L ⎠        ℜₜₕₑᵣₘ 
+
+(k = thermal conductance) (λ = thermal resistivity) (ℜtherm = thermal resistance)
+
+A very useful property of Eq. 2.14 is that it is exactly analogous to Ohm’s law, and
+therefore the same principles and methods apply to heat flow problems as to circuit
+problems. For example, the following correspondences hold:
+
+Thermal conductivity k [W/(m °C)]       Electrical conductivity σ [S/m or (Ωm)−1]
+Thermal resistivity λ [m°C/W]           Electrical resistivity ρ [Ωm]
+Thermal resistance ℜtherm [°C/W]        Electrical resistance R [Ω]
+Thermal current (heat flow) Pheat [W]   Electrical current I [A]
+Thermal potential difference ∆T [°C]    Electrical potential difference or voltage V [V]
+Heat source                             Current source
