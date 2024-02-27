@@ -1,0 +1,13 @@
+The correct definition of an earth ground is usually a connection terminated at a rod driven into
+the earth to a depth of 8 ft or more. This earth ground rod is wired directly to a mains breaker
+box’s ground bar and sent to the various ac outlets in one’s home via a green- coated or bare 
+copper wire that is housed within the same mains cable as hot and neutral wires. The ground can
+then be accessed at the outlet at the ground socket. Metal piping buried in the earth is often 
+considered an earth ground. See Image1.PNG.
+
+*rod = batang besi
+*piping = pipa selokan / perpipaan
+*8 ft = 2,43 meters
+
+A physical link to the earth is important because the earth provides an electrically neutral body;
+equal numbers of positive and negative charges are distributed through its entirety (keseluruhan). 
