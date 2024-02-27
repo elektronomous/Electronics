@@ -90,3 +90,4 @@ Thermal resistance ℜtherm [°C/W]        Electrical resistance R [Ω]
 Thermal current (heat flow) Pheat [W]   Electrical current I [A]
 Thermal potential difference ∆T [°C]    Electrical potential difference or voltage V [V]
 Heat source                             Current source
+

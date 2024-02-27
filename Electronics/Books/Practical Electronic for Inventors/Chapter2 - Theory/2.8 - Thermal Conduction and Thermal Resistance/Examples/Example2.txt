@@ -1,0 +1,39 @@
+Example: Example2.PNG shows a thin- film resistor in an integrated circuit. How hot
+will it get with 2 W dissipated over its 0.1 × 0.2- in surface (100 W/in²)? Assume the
+ground plane is at 80°C.
+
+
+(answer):
+Pₕₑₐₜ = 2 W
+∆T₄ = 80°C
+L_ceramic = 0,025 inch
+L_grease = 0,002 inch
+L_thick = 0,125 inch
+Aᵣₑₛᵢₛₜₒᵣ = 0,1 x 0,2 = 0,02 in² 
+
+
+
+We search for the ∆T of ceramic, grease and allumunium:
+
+                   ⎛ L  ⎞         (2.13)(0,025)(2)
+    ∆T₁ = λcₑᵣₐₘᵢc ⎜ ――― ⎜ Pₕₑₐₜ = ――――――――――――――――――――― = 5.3 °C 
+                   ⎝ A  ⎠              (0,02)
+
+                   ⎛ L   ⎞         (46)(0,002)(2)
+    ∆T₂ = λgᵣₑₐₛₑ   ⎜ ――― ⎜ Pₕₑₐₜ = ――――――――――――――――――――― = 9.2 °C 
+                   ⎝ A   ⎠              (0,02)
+
+                   ⎛ L   ⎞         (0,23)(0,125)(2)
+    ∆T₁ = λₐₗᵤₘᵢₙᵤₘ  ⎜ ――― ⎜ Pₕₑₐₜ = ――――――――――――――――――――― = 2.9 °C 
+                   ⎝ A   ⎠              (0,02)
+
+
+
+Adding this together:
+
+    ∆T₁₋₄ = 5.3 °C + 9.2 °C + 2.9 °C
+          = 17.4 °C
+
+Adding this to the 80°C for the aluminum ground plane leads to an estimated 100°C
+for maximum resistor temperature. This is a conservative estimate, since it neglects
+transverse heat spreading.

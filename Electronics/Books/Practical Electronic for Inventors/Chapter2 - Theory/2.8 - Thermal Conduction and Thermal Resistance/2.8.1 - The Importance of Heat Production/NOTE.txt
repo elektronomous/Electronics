@@ -1,0 +1,28 @@
+Heat production has its place in electronics (toasters, hair dryers, water heaters, etc.),
+but most of the time heat represents power loss that is to be minimized whenever possible,
+or at least taken into consideration when selecting components.
+
+All real circuit components—not just resistors but things like capacitors, transformers, 
+transistors, and motors—contain inherent internal resistances. Though these internal 
+resistances can often be neglected, in some situations they cannot be ignored.
+
+Major problems arise when unintended heat generation increases the temperature of a circuit
+component to a critical point, causing component failure by explosion, melting, or some 
+other catastrophic(bencana) event. Less severe (parah) problems may surface as a component
+becomes thermally damaged, resulting in a change in characteristic properties, such as a 
+shift in resistance that may cause undesirable effects in circuit behavior.
+
+TO AVOID PROMBLES ASSOCIATED WITH HEAET PRODUCTION, IT'S IMPORTANT TO USE COMPONENT THAT ARE
+RATED TO HANDLE TWO OR THREE OR MORE TIMES THE MAXIMUM POWER THEY ARE EXPECTED TO DISSIPATE.
+IN CASES WHERE HEAT PRESENTS A SHIFT IN COMPONENT PARAMETER PERFORMANCE, SELECTING A COMPONENT
+WITH A LOWER TEMPERATURE COEFFICIENT (TC) WILL HELP.
+
+Heat dissipation (more correctly, the efficient removal of generated heat) becomes very 
+important in medium- to high- power circuits—power supplies, amplifier stages, transmitting
+circuits, and power- hungry circuits with power transistors. There are various techniques to 
+remove heat from a circuit in order to lower the operating temperature of components to below 
+critical levels. Passive methods include heat sinks, careful component layout, and ventilation.
+Heat sinks are special devices that are used to draw heat away from temperature- sensitive 
+devices by increasing the radiating surface in air—which acts like a cooling fluid for conduction.
+Active methods include forced air (fans) or some sort of liquid cooling. We’ll discuss these methods
+throughout the book.

@@ -1,0 +1,41 @@
+Calculate the temperature of a 4- in (0.1 m) piece of #12 copper wire at the
+end that is being heated by a 25- W (input power) soldering iron, and whose other
+end is clamped to a large metal vise (assume an infinite heat sink), if the ambient
+temperature is 25°C (77°F).
+
+*vise = dicatok, diklem
+
+(answer):
+first, calculate the thermal resistance of the copper wire (diameter #12 wire is 2.053 mm, 
+cross-sectional area is 3.31 x 10⁻⁶ m²):
+
+k_copper = 3.937 W/cm °C (look at the Image1.PNG at Section 2.5.2) 
+this means that in 1 cm °C = 3.937 W 
+                   100 cm °C = W?
+
+                   3.937 * 100 = (1 cm) * W 
+                   393.7 = W
+
+
+             L               (0.1 m)
+    ℜₜₕₑᵣₘ = ―――― = ―――――――――――――――――――――――――――――――― = 76 °C/W
+             kA    (393.7 W /(m°C)(3.31 x 10⁻⁶))
+
+             76 C = 1 W
+
+this thermal resistance that own by the copper wire which is 0.1 m. in 1 Watt, the copper could
+only transfer heat 76 °C.
+
+Then, rearranging the heat flow equation and making a realistic assumption that only
+around 10 W of heat actually is transferred to the wire from the 25- watt iron, we get:
+
+    ∆T = Pₕₑₐₜ ℜₜₕₑᵣₘ = (10 W)(76 °C) = 760 °C
+
+So the wire temperature at the hot end is estimated at:
+    25 °C + ∆T = 785 °C
+
+It’s important to realize that in the preceding example, we assume steady- state
+conditions, where the soldering iron has been held in place for a long time. Also, the
+assumption that only 10 W were transferred is an important point, since there is a lot
+of heat being radiated off as heat to the air and the iron handle, and so on. In any case,
+things can get very hot, even when moderate power levels are in question.
