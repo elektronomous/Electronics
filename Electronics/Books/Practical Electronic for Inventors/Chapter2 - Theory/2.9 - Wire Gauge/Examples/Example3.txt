@@ -1,0 +1,47 @@
+Example: Why shouldn’t you connect a wire across a voltage source? For example, if
+you connect a 12- gauge wire directly across a 120- V source (120- V mains outlet), what
+do you think will happen? What will happen when you do this to a 12- V dc supply,
+or to a 1.5- V battery?
+
+(answer):
+
+1 mil = 0,0254 mm
+80 mil = 2,032 mm
+
+then we get the Area of the wire:
+
+    Awᵢᵣₑ = 2,032 * 2,032 = 4,129024
+
+the distance between positive to negative will say 0,5 meters
+    
+    Lwᵢᵣₑ = 500 mm
+
+and now the wire is a copper wire which is has internal resistance: 
+
+    ρ_copper = 1.72 x 10⁻⁸ ΩM
+    ρ_copper = 1.72 x 10⁻⁵ Ωmm
+
+now the internal resistance is
+
+                  L                     (500 mm)
+    R = ρ_copper ―――― = (1.72 x 10⁻⁵) ―――――――――――――― = 0,002 Ω   
+                  A                     4,129024 mm 
+
+now you connect it to the 120-V source:
+
+         V    120
+    I = ――― = ――――― = 60 KA !!!!!!!!
+         R    0,002
+
+12-Gauge wire could handle 9,327 A, this 60 KA will melt down your wire
+
+In the 120- V mains case, you will likely cause a huge spark, possibly melting the wire and
+perhaps in the process receiving a nasty shock (if the wire isn’t insulated). But more likely,
+your circuit breaker in the home will trip, since the wire will draw a huge current due to its
+low resistance—breakers trip when they sense a large level of current flowing into one of their
+runs. Some are rated at 10 A, others at 15 A, depending on setup. In a good dc supply, you will
+probably trip an internal breaker or blow a fuse, or in a bad supply, ruin the inner circuitry.
+In the case of a battery, there is internal resistance in the battery, which will result in 
+heating of the battery. There will be less severe levels of current due to the internal resistance
+of the battery, but the battery will soon drain, possibly even destroying the battery, or in an
+extreme case causing the battery to rupture (pecah / putus).

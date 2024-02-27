@@ -1,0 +1,10 @@
+In Sec. 2.5, we saw that the current density within a copper wire increased as the diameter of
+the wire decreased. As it turns out, a higher current density translates into a hotter wire; 
+there are more collisions occurring between electrons and copper lattice ions. There is a point
+where the current density can become so large that the vibrating effect can overpower the 
+copper- lattice binding energy, resulting in wire meltdown (also referred to as the fusing point).
+TO PREVENT THIS FROM OCCURING, IT IS IMPORTANT TO SELECT THE APPROPRIATE WIRE SIZE FOR ANTICIPATED
+CURRENT LEVELS. Wire size is expressed in gauge number—the common standard being the American Wire
+Gauge (AWG)—whereby a smaller gauge number corresponds to a larger- diameter wire  (high current
+capacity). Table_wire_gauges shows a short list of common AWG wires. Section 3.1, on wires and cables, 
+provides a more in- depth list.

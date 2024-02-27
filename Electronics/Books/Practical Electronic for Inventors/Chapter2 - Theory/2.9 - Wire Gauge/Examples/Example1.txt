@@ -1,0 +1,22 @@
+Example: A load device that is known to vary in output power from 0.1 mW to 5 W
+is to be connected to a 12- V source that is 10 ft away from the load. Determine the
+minimum wire gauge, provided by Table_wire_gauges.PNG, that can safely support any anticipated
+current drawn by the load.
+
+(answer):
+Pₘᵢₙ = 0.1 mW = 0,0001 W 
+Pₘₐₓ = 5 W
+V = 12 V
+L = 10 ft
+
+P = IV
+
+WE ONLY CARE ABOUT THE MAXIMUM POWER LEVEL, SO USING THE GENERIZED POWER LAW:
+
+Iₘₐₓ = Pₘₐₓ / V = 5 / 12 = 0,416 A
+Iₘᵢₙ = Pₘᵢₙ / V = 0,0001 / 12 = 0,0000083 A
+
+Given only the selection of wire gauges provided by Table_wire_gauges.PNG, a 22- gauge wire with a
+0.914- A rating would work, though we could be conservative and select an 18- gauge
+wire with a 2.32- A rating. Since the length is so short, there is no appreciable drop in
+voltage through the wire, so we can ignore the length.

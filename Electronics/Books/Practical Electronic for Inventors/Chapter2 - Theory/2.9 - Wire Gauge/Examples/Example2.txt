@@ -1,0 +1,22 @@
+A 10-Ω heating device is powered by a 120- VAC source. How much current
+does it draw, and what size conductors should be used to connect to the device?
+
+(answer):
+
+120 VAC is an RMS value of a sinusoidal voltage—in this case, household line voltage.
+Though we’ll discuss this later when we cover ac, it can be treated like a dc voltage
+in terms of power dissipated through a resistor. So,
+
+V = 120 Vₐc
+R = 10Ω 
+
+              V²    120²    14400
+    P = VI = ―――― = ――――― = ――――――― = 1440 W
+              R      10       10
+
+         P      1440
+    I = ―――― = ―――――― = 12 A
+         V      120
+        
+A 10- gauge wire would support this kind of current, though a larger 8- gauge wire
+would be safer.
