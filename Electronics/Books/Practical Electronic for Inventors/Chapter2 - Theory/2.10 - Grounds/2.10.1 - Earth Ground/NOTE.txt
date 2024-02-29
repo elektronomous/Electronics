@@ -11,3 +11,58 @@ considered an earth ground. See Image1.PNG.
 
 A physical link to the earth is important because the earth provides an electrically neutral body;
 equal numbers of positive and negative charges are distributed through its entirety (keseluruhan). 
+Due to the earth’s practically infinite charge neutrality, attempts at changing the earth potential,
+via electrical generators, batteries, static electrical mechanisms, or the like, will have 
+essentially no measurable effect.
+
+Any introduction of new charge into the earth is quickly absorbed (the earth’s moist soil is usually
+rather conductive). Such charge interactions occur constantly throughout the planet, and the exchanges
+average out to zero net charge
+
+For practical purposes, then, the earth is defined to be at a zero potential (relative to other things)
+—a potential that is practically immune to wavering(keraguan). By connecting various pieces of electronics
+equipment to the earth ground, they can all share the earth’s ground reference potential, and thus all
+devices share a common reference.
+
+The actual physical connection to earth ground at a particular piece of equipment is usually through the
+power cord’s ground wire (kabel ground pada colokan) that links to the mains ground wire network when the device
+is plugged in (read for the first paragraph of this section to connect what you read). The ground wire from the
+power cord is typically connected internally to the equipment chassis (frame) and, more important for our 
+discussion, to the return portion of a channel that emanates from the interior circuitry. 
+ 
+              Live ___ Neutral
+            ___|__|_______
+           /| (o [])    /|
+          /_|__\()/____/ |
+Ground----|------|     | ------ Chassis or Frame
+          | |__________|_|
+          | / +|I|I-   | /
+          |/_______|___|/
+                   |
+                channel that emanates from the interior circuitry
+
+This is then brought out as a ground lead terminal. For example, in Circuitry_example.PNG, an oscilloscope,
+function  generator, and generic audiovisual device use BNC and UHF connectors for input and output channels. 
+
+The important part, now, is that the return, or outer, connector is also internally wired to the mains ground
+wire through the power cord cable. This sets the return to an earth ground reference. In the case of the dc
+power supply, a separate earth ground terminal is presented at the face in the form of a banana jack terminal.
+In order to ground the dc supply, a jumper wire must be connected between the negative supply terminal and the
+ground terminal. If no jumper is used, the supply is said to be floating.
+
+All the grounded pieces of equipment share a common ground. To prove this to yourself, try measuring the 
+resistance between the ground terminals of any two separate pieces of test equipment in your lab. If the devices
+are properly grounded, you will get a measurement of 0 Ω (but a bit more for internal resistances).
+
+Besides acting simply as a reference point, grounding reduces the possibility of electrical shock if something
+within a piece of equipment should fail and the chassis or cabinet becomes “hot.” If the chassis is connected to
+a properly grounded outlet via a three- wire electrical system(live, neutral, ground) ground, the path of current
+flow from the hot chassis will be toward ground, not through your body (which is a more resistive path). A ground
+system to prevent shock is generally referred to as a dc ground. We’ll discuss shock hazards and grounding later,
+when we cover ac.
+
+Grounding also helps eliminate electrostatic discharge (ESD) when a statically charged body comes in contact with
+sensitive equipment. The charged body could be you, after a stroll(berjalan-jalan) you took across the carpet. Some
+ICs are highly vulnerable to damage from ESD. By providing a grounded work mat or using a grounded wrist strap while
+working with sensitive ICs, you can avoid destroying your chips by ensuring that charge is drained from your body
+before you touch anything. (see Working ground mat or wrist.PNG)
