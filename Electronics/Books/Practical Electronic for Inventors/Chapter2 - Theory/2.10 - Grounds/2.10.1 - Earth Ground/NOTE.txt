@@ -66,3 +66,26 @@ sensitive equipment. The charged body could be you, after a stroll(berjalan-jala
 ICs are highly vulnerable to damage from ESD. By providing a grounded work mat or using a grounded wrist strap while
 working with sensitive ICs, you can avoid destroying your chips by ensuring that charge is drained from your body
 before you touch anything. (see Working ground mat or wrist.PNG)
+
+Another big job the ground system does is provide a low- impedance path to ground for any stray RF current caused by
+stray radiofrequency- producing devices, such as electrical equipment, radio waves, and so on. Stray RF can cause
+equipment to malfunction and contributes to RFI problems. This low- impedance path is usually called RF ground. In 
+most cases, the dc ground and the RF ground are provided by the same system.
+
+You’re probably wondering at this point, “From where do such stray and troublesome RF currents arise?” Any conductor
+attached to your station that is more than about 1/10 of a wavelength for your transmitting frequency may act as an
+antenna and pick up RF radiation, converting it into alternating electrical current of similar frequency. So, your
+antenna feedline, your microphone cable, your equipment power cords, that computer interface cable, even the metal
+chassis or enclosures of your station components can pick up RF and create undesirable stray currents on your gear.
+The safety ground on your electrical cable that connects to the safety ground of your shack’s power outlet will usually
+serve as an excellent undesired antenna for RF rather than a good RF ground. That safety ground will keep your 60 hertz
+power source grounded, but it was never designed to avoid picking up strong RF emissions from your transmitter. A 
+separate and well-designed RF ground is needed in addition to the electrical safety ground to avoid stray currents on
+your gear.
+
+Now you should ask, “What’s so bad about having a few stray currents running around?” Experimenting with this can become
+a self-critiquing exercise. With strong currents you may get a sharp shock from your microphone as some of those currents
+find a path to lower potential through your body. Currents flowing among the various pieces of equipment in your station
+are called ground loops, and they can interfere with your radio electronics causing unpredictable operation of some 
+equipment (like computer interfaces), inject noise into your receiver, potentially cause audio distortion or even result
+in erroneous SWR readings. Ground loops are evil and you should take action to prevent them with a good RF grounding arrangement.

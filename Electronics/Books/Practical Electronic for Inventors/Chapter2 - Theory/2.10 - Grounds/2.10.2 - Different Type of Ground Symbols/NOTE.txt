@@ -1,0 +1,5 @@
+To avoid misinterpretations regarding earth grounding, voltage references, and current
+return paths, less ambiguous symbols have been adopted. (See Image1.PNG shows an earth
+ground (could be Earth or reference), a frame or chassis ground, and a digital and 
+analog reference ground.) See tableground.PNG 
+

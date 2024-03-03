@@ -1,0 +1,125 @@
+There are a few loose ends on grounding that need mentioning. They are discussed here, with reference
+to Image1.PNG
+
+SHOCK HAZARDS
+In instances where high voltages are required and chassis grounds or metal frames are used as return paths,
+shock hazardous conditions can be created if the earth grounds are neglected. In instances where high voltages
+are required and chassis grounds or metal frames are used as return paths, shock hazardous conditions can be 
+created if the earth grounds are neglected. For example, in Image1.PNG(a) when a load circuit uses a metal 
+enclosure as a chassis ground, resistive leakage paths (unwanted resistive paths) can exist, which result in 
+high voltages between the enclosure and earth ground. If, inadvertently, an earth- grounded object, such as a
+grounded metal pipe, and the circuit chassis are simultaneously touched, a serious shock will result. To avoid
+this situation, the chassis is simply wired to an earth ground connection, as shown in Image1.PNG(b). This places
+the metal pipe and the enclosure at the same potential, eliminating the shock hazard. Similar hazardous conditions
+can develop in household appliances. Electrical codes require that appliance frames, such as washers and dryers,
+be connected to earth ground.
+
+GROUNDING AND NOISE
+If several points are used for ground connections, differences in potential between points caused by inherent 
+impedance in the ground line can cause troublesome ground loops, which will cause errors in voltage readings. This
+is illustrated in Image1.PNG(c), where two separated chassis grounds are used. VG represents a voltage existing between
+signal ground and the load ground. If voltage measurements are made between the load ground and the input signal, VS,
+an erroneous voltage, (VS + VG) is measured. A way to circumvent this problem is to use a single- point ground, as
+shown in Image1.PNG(d).
+
+if you wonder the example of chassis gruond put on several points, let say that you have audio device controller and the
+speaker. 
+
+        Audio Receiver         ________ your chassis ground
+                    |  Volume /
+____________________|___|_____|__
+| .____________.    |   |     | |
+| | volume: 10 |  ((-))(o)   -|-|                           YOUR SPEAKER         your chassis ground
+| |____________|    |        |  |                       __________________________|__
+|___________________|________|__|                       |      _______________    | |
+                    |                                   |((-)) |     |        |  -|-|
+                    |                                   |  |   |_____|________|  |  |
+                    |                                   |__|_____________________|__|
+                    |                                      |
+                    |======================================|
+                                        |
+                                        |
+                                    coaxial audio cable
+
+why there's a voltage between two chassis ground in two distinct devices ? imagine that you have two batteries, you have a
+9 volt battery and 3 volt battery. if you connect the minus sign(-) and the plus sign(+), and the other minus and plus is
+connect to your circuit which has bunch of components, your circuit will get 12 volts. if you connect the minus between
+two batteries and between the plus of the two batteries, there's bunch of components then you'll get 12 - 3 = 9 volts.
+
+The internal of both device's circuit using the chassis ground as their return, then if you test the voltage for example
+between a component in one of the devices and the chassis ground in the other devices, then you get the voltage. how so? the
+return path of both device is combined, make the ground of both device as the flow of the current. Now where the noise that make
+the speaker sound like a sssssttttsssttttt come from? because the ground has a voltage, then there's a current in the ground. 
+the coaxial audio doing job to send the wave of the sound, and distorted by the current in the ground. ground in the coaxial audio
+is combined with their conductor to send the wave for you information.  
+
+The single- point ground concept ensures that no ground loops are created. As the name implies, all circuit grounds are returned
+to a common point. While this approach looks good on paper, it is usually not practical to implement. Even the simplest circuits
+can have 10 or more grounds. Connecting all of them to a single point becomes a nightmare. An alternative is to use a ground bus.
+
+A ground bus, or bus bar found in breadboards and prototype boards, or which can be etched in a custom printed circuit board (PCB),
+serves as an adequate substitute for a single- point ground. A bus bar is simply a heavy copper wire or bar of low resistance that
+can carry the sum total of all load currents back to the power supply. This bus can be extended along the length of the circuitry so
+that convenient connections can be made to various components spaced about the board. Image1.PNG(e) shows a bus bar return. Most 
+prototype boards come with two or three lines of connected terminals extending along the length of the board. One of these continuous
+strips should be dedicated as a circuit ground bus. All circuit grounds should be tied directly to this bus. Care must be taken to 
+make sure that all lead and wire connections to the bus are secure. For prototype boards, this means a good solder joint; for wire- wrap
+board, a tight wire wrap; for breadboard, proper gauge wire leads to securely fit within sockets. Bad connections lead to intermittent
+contact that leads to noise.
+
+*adequate = memadai / memenuhi syarat
+
+ANALOG AND DIGITAL GROUNDS 
+Devices that combine analog and digital circuitry should, in general, have their analog and digital grounds kept separate, and eventually
+connected together at one single point. This is to prevent noise from being generated within the circuits due to a ground current. Digital
+circuits are notorious(dikenal) for generating spikes of current when signals change state. Analog circuits can generate current spikes when
+load  currents change or during slewing(berbelok). In either case, the changing currents are impressed(muncul) across the ground-return 
+impedance, causing voltage variations (use Ohm’s law) at the local ground plane with respect to the system reference ground, often located 
+near the power supply. The ground return impedance consists of resistive, capacitive, and inductive elements, though resistance and inductance
+are predominant. If a constant current is impressed across the ground return, resistance is primary, and a dc offset voltage will exist. If 
+the current is alternating, resistance, inductance, and capacitance all play a role, and a resulting high- frequency ac voltage will exist. In
+either case, these voltage variations get injected into the local circuits and are considered noise—capable of screwing up sensitive signal levels
+used within the local circuits. 
+
+if you don't understand what is ground impedance:
+Most facilities have grounded electrical systems, so that in the event of a lightning strike or utility overvoltage, current will find a safe path 
+to earth. A ground electrode provides the contact between the electrical system and the earth. To ensure a reliable connection to earth, electrical
+codes, engineering standards, and local standards often specify a minimum impedance for the ground electrode. The International Electrical Testing
+Association specifies ground electrode testing every three years for a system in good condition with average up-time requirements.
+
+This application note explains earth/ground principles and safety in more depth and then describes the principle testing methods: 3 and 4 pole Fall
+of Potential testing, selective testing, stakeless testing, and 2 pole testing.
+
+Why Ground?
+The US National Electrical Code (NEC) gives two principle reasons for grounding a facility.Stabilize the voltage to earth during normal operation.
+Limit the voltage rise created by lightning, line surges or unintentional contact with higher-voltage lines. Current will always find and travel the
+least-resistance path back to its source, be that a utility transformer, a transformer within the facility, or a generator. Lightning, meanwhile, will
+always find a way to get to the earth.
+
+In the event of a lighting strike on utility lines or anywhere in the vicinity of a building, a low-impedance ground electrode will help carry the
+energy into the earth. The grounding and bonding systems connect the earth near the building with the electrical system and building steel. In a 
+lightning strike, the facility will be at approximately the same potential. By keeping the potential gradient low, damage is minimized.
+
+If a medium voltage utility line (over 1000V) comes in contact with a low voltage line, a drastic overvoltage could occur for nearby facilities. A low
+impedance electrode will help limit the voltage increase at the facility. A low impedance ground can also provide a return path for utility-generated
+transients.
+
+Ground Electrode Impedance
+The impedance from the grounding electrode to the earth varies depending on two factors: the resistivity of the surrounding earth and the structure of the electrode.
+
+Resistivity is a property of any material and it defines the material's ability to conduct current. The resistivity of earth is complicated, because it:
+
+Depends on composition of the soil (eg. clay, gravel and sand)
+Can vary even over small distances due to the mix of different materials
+Depends on mineral (e.g. salt) content
+Varies with compression and can vary with time due to settling
+Changes with temperature, freezing (and thus time of year). Resistivity increases with decreasing temperature.
+Can be effected by buried metal tanks, pipes, re-bar, etc
+Varies with depth, usually getting lower with depth
+Since resistivity tends to decrease with depth, one way to reduce earth impedance is to drive an electrode deeper. Using an array of rods, a conductive ring or a grid are other common ways of increasing the effective area of an electrode. Multiple rods should be outside of each other's "areas of influence" to be most effective. The rule of thumb is to separate the elements by more than their length. For example: 8-foot rods should be spaced more than 8 feet apart to be most effective. The NEC specifies 25 ohms as an acceptable limit for electrode impedance. The IEEE Standard 142 Recommended Practice for Grounding of Industrial and Commercial Power Systems ("Green Book") suggests a resistance between the main grounding electrode and earth of 1 to 5 ohms for large commercial or industrial systems.
+
+Local authorities including the authority having jurisdiction (AHJ) and plant managers are responsible for determining acceptable limits for ground electrode impedance.
+
+Note: Power distribution systems deliver alternating current and ground testers use alternating current for testing. So, you'd think we would talk about impedance, not resistance. However, at power line frequencies, the resistive component of the earth impedance is usually much bigger than the reactive component, so you will see the terms impedance and resistance used almost interchangeably.
+
+For detailed descriptions of: 3 and 4 pole Fall of Potential testing, selective testing, stakeless testing, and 2 pole testing, view How to Use Cable and Pole Earth Ground Testers (.pdf).
