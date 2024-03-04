@@ -1,0 +1,11 @@
+You apply 3 V to a 1- MΩ resistor. Find the current through the resistor and
+the power dissipated in the process.
+
+(answer):
+
+    V = 3 V
+    R = 1- MΩ
+    I = ?
+
+    I = V / R = 3 / 1 MΩ = 3 x 10⁻⁶ A = 3 µA
+    P = I V = 3 x 3 = 9 µW

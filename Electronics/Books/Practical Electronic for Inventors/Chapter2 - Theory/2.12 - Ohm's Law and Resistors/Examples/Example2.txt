@@ -1,0 +1,10 @@
+Using an ammeter, you measure a current of 1.0 mA through a 4.7-kΩ resistor.
+What voltage must exist across the resistor? How much power does the resistor dissipate?
+
+(answer):
+
+    I = 1.0 mA = 1 x 10⁻³ A
+    R = 4.7-kΩ = 4700 Ω 
+
+    V = I x R = 10⁻³ x 470 = 4,7 V
+    P = I² R = (10⁻³)² (4700) = 10⁻⁵ (4700) = 0,00047 W = 4,7 mW 

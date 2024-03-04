@@ -1,0 +1,16 @@
+Determining how much power a resistor dissipates is very important when designing circuits. All real
+resistors have maximum allowable power ratings that must not be exceeded. If you exceed the power 
+rating, you’ll probably end up frying your resistor, destroying the internal structure, and thus 
+altering the resistance. Typical general- purpose resistors come in 1⁄8- , 1⁄4- , 1⁄2- , and 1- W 
+power ratings, while high- power resistors can range from 2 to several hundred watts.
+
+So, in the preceding example(Examples -> Example1.txt), where our resistor was dissipating 1.44 W, 
+we should have made sure that our resistor’s power rating exceeded 1.44 W; otherwise, there could be
+smoke. As a rule of thumb, always select a resistor that has a power rating at least twice the maximum
+value anticipated. Though a 2- W resistor would work in our example, a 3- W resistor would be safer.
+
+To illustrate how important power ratings are, we examine the circuit shown in Image1.PNG. The resistance
+is variable, while the supply voltage is fixed at 5 V. As the resistance increases, the current decreases,
+and according to the power law, the power decreases, as shown in the graphs. As the resistance decreases,
+the current and power increase. The far right graph shows that as you decrease the resistance, the power
+rating of the resistor must increase; otherwise, you’ll burn up the resistor.

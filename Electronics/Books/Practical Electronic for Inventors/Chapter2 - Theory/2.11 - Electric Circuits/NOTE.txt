@@ -1,0 +1,5 @@
+An electric circuit is any arrangement of resistors, wires, or other electrical components (capacitors, 
+inductors, transistors, lamps, motors, etc.) connected together that has some level of current flowing
+through it. Typically, a circuit consists of a voltage source and a number of components connected 
+together by means of wires or other conductive means. Electric circuits can be categorized as series 
+circuits, parallel circuits, or a combination of series and parallel parts. See Image1.PNG and Image2.PNG

@@ -1,3 +1,6 @@
+NOTE: if you wonder how to add ground in your dc circuit ? the negative of your battery is your ground.
+if you , you will create a bus which you can connect to the ground.
+
 There are a few loose ends on grounding that need mentioning. They are discussed here, with reference
 to Image1.PNG
 

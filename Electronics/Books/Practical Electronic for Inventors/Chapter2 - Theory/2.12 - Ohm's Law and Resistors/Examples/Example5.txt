@@ -1,0 +1,33 @@
+You are given 2-Ω, 100-Ω, 3- kΩ, 68- kΩ, and 1- MΩ resistors, all with 1- W
+power ratings. What’s the maximum voltage that can be applied across each of them
+without exceeding their power ratings?
+
+(answer):
+
+    P = 1 W
+    R₁ = 2 Ω
+    R₂ = 100 Ω
+    R₃ = 3000 Ω
+    R₄ = 68000 Ω
+    R₅ = 1000000 MΩ
+
+    P = V² / R 
+    V² = PR
+         ____
+    V = / PR  
+         
+          ____
+    V₁ = / PR  = 1.4 V
+    
+          ____
+    V₂ = / PR = 10.0 V
+
+          ____
+    V₃ = / PR = 54.7 V
+
+          ____
+    V₄ = / PR = 260.7 V
+
+          ____
+    V₅ = / PR = 1000 V
+    

@@ -1,0 +1,21 @@
+If a 1000-Ω resistor is connected in parallel with a 3000-Ω resistor, what is the
+total or equivalent resistance? Also calculate total current and individual currents,
+as well as the total and individual dissipated powers.
+
+(answer):
+
+    R₁ = 1000 Ω
+    R₂ = 3000 Ω
+
+            R₁ x R₂     3
+    Rₜₒₜₐₗ = ―――――――――― = ―――― = 750 Ω 
+            R₁ + R₂     4
+
+to find the total current in each of the resistor, say we have 12 V:
+
+    I₁ = V₁ / R₁ = 12 / 1000 = 12 mA
+    I₂ = V₂ / R₂ = 12 / 3000 = 4 mA 
+    Iₜₒₜₐₗ = I₁ + I₂ = 16 mA 
+    Iᵢₙ = I₁ + ₂ = 16 mA 
+
+using NOTE.txt in 2.12.2 -> 

@@ -1,0 +1,14 @@
+Using a voltmeter, you measure 24 V across an unmarked resistor. With an ammeter,
+you measure a current of 50 mA. Determine the resistance and power dissipated in
+the resistor.
+
+(answer):
+
+    V = 24V
+    I = 50 mA = 50 x 10⁻³ = 0,05 A
+    R = ?
+
+    R = V / I = 24 / 0,05 = 2400 / 5 = 480 Ω
+    P = I²R = (50 x 10⁻³)² (480) 
+      = (2500 x 10⁻⁵) (480) 
+      = (0,0025) (480) = 1,2 W

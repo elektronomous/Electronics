@@ -1,0 +1,11 @@
+Example: In Example1.PNG, a 100-Ω resistor is placed across a 12- V battery. How much current 
+flows through the resistor? How much power does the resistor dissipate?
+
+(answer):
+
+    R = 100-Ω
+    V = 12 V
+    I = ? 
+
+    I = V / R = 12 / 100 = 12 x 10⁻² A = 120 mA 
+    P = I²R = (12 x 10⁻²)²(100) = 144 x 10⁻⁴ * (100) = 1,44 W

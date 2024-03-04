@@ -1,0 +1,54 @@
+When two or more resistors are placed in parallel, the voltage across each resistor
+is the same, but the current through each resistor will vary with resistance. Also, the
+total resistance of the combination will be lower than that of the lowest resistance
+value present. The formula for finding the total resistance of resistors in parallel is:
+
+                            1
+    Rₜₒₜₐₗ = ――――――――――――――――――――――――――――――――――――――
+           1      1      1     1
+          ―――― + ―――― + ―――― + ―――― + . . .   
+           R₁     R₂     R₃    R₄
+    
+
+            R₁ x R₂
+    Rₜₒₜₐₗ = ―――――――――――
+            R₁ + R₂
+
+The dots in the equation indicate that any number of resistors can be combined. You can derive
+the resistor- in- parallel formula by noting that the sum of the individual branch currents is equal
+to the total current: 
+        
+        Iₜₒₜₐₗ = I₁ + I₂ + I₃ + … Iₙ
+
+This is referred to as Kirchhoff’s current law. Then, applying Ohm’s law, we get: 
+        
+        Iₜₒₜₐₗ = V₁/R₁ + V₂/R₂ + V₃/R₃ + … Vₙ/Rₙ
+
+Because all resistor voltages are equal to Vₜₒₜₐₗ since they share the same voltage across them, we get:
+        
+        Iₜₒₜₐₗ = Vₜₒₜₐₗ/R₁ + Vₜₒₜₐₗ/R₂ + Vₜₒₜₐₗ/R₃ + … Vₜₒₜₐₗ/Rₙ 
+
+Factoring out Vₜₒₜₐₗ, we get: 
+        
+        Iₜₒₜₐₗ = Vₜₒₜₐₗ (1/R₁ + 1/R₂ + 1/R₃ … 1/R₄ )
+
+We call the term in brackets Rₜₒₜₐₗ.
+
+
+Note that there is a shorthand for saying that two resistors are in parallel. The shorthand is 
+to use double bars | | to indicate resistors in parallel. So to say R₁ is in parallel with R₂, you
+would write R₁ | | R₂. Thus, you can express two resistors in parallel in the following ways:
+
+                           1            R₁ x R₂
+        R₁ || R₂ =  ―――――――――――――――  = ―――――――――――――――
+                    1 / R₁ + 1 / R₂     R₁ + R₂ 
+
+
+In terms of arithmetic order of operation, the || can be treated similar to multiplication or division.
+For example, in the equation Zin = R1 + R2 | | Rload, you calculate R2 and Rload in parallel first, and
+then you add R1.
+
+(see Example6.txt) 
+This statement is referred to as Kirchhoff’s current law. With this law, and Ohm’s law, you come up with
+the current divider equations, show at the bottom of Image1.PNG. These equations come in handy when you
+know the input current but not the input voltage

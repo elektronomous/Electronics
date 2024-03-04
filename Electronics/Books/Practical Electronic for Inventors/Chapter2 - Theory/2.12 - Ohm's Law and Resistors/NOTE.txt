@@ -1,0 +1,33 @@
+Resistors are devices used in circuits to limit current flow or to set voltage levels within
+circuits. Image1.PNG shows the schematic symbol for a resistor; two different forms are commonly
+used. Schematic symbols for variable resistors—resistors that have a manually adjustable 
+resistance, as well as a model of a real- life resistor, are also shown. (The real- life model
+becomes important later on when we deal with highfrequency ac applications. For now, ignore the model.)
+
+If a dc voltage is applied across a resistor, the amount of current that will flow through the 
+resistor can be found using Ohm’s law. To find the power dissipated as heat by the resistor, the
+generalized power (with Ohm’s law substitution) can be used.
+
+        V = I x R                   (2.15) Ohm's law
+        P = VI = V² / R = I²R       (2.16) Ohm's Power Law
+
+R is the resistance or the resistor expressed in ohms (Ω), P is the power loss in watts
+(W), V is the voltage in volts (V), and I is the current in amperes (A).
+
+UNIT PREFIXES
+a 100,000-Ω resistance can be simplified by writing 100 kΩ (or simply 100k, for short). Here 
+k = ×1000. A 2,000,000-Ω resistance can be shortened to 2 MΩ (or 2M, for short). Here M = ×1,000,000.
+
+Conversely, voltages, currents, and power levels are usually small fractions of a unit, in which case
+it is often easier to use unit prefixes such as 
+    m (milli or ×10⁻³), 
+    µ (micro or × 10−⁶), 
+    n (nano or ×10−⁹),
+
+or even 
+
+    p (pico or ×10−¹²). 
+
+For example, a current of 0.0000594 A (5.94 × 10−⁵ A) can be written in unit prefix form as 59.4 µA.
+A voltage of 0.0035 (3.5 × 10−³ V) can be written in unit prefix form as 3.5 mV. A power of 0.166 W can
+be written in unit prefix form as 166 mW.
