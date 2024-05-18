@@ -1,0 +1,9 @@
+The two battery networks in Image1.PNG show how to increase the supply voltage and/or increase the supply
+current capacity. To increase the supply voltage, batteries are placed end to end or in series; the 
+terminal voltages of each battery add together to give a final supply voltage equal to the sum from the
+batteries. To create a supply with added current capacity (increased operating time), batteries can be 
+placed in parallel—positive terminals are joined together, as are negative terminals, as shown in
+Image1.PNG.
+
+Note: When placing batteries in parallel, it’s important that the voltages and chemistry be the same—choose
+all similar batteries, all fresh. If the voltages are different, you can run into problems.

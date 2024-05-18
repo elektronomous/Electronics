@@ -1,0 +1,17 @@
+In theory, an ideal voltmeter should draw no current as it measures a voltage between two points in a
+circuit; it has infinite input resistance Rᵢₙ. Likewise, an ideal ammeter should introduce no voltage
+drop when it is placed in series within the circuit; it has zero input resistance. An ideal ohmmeter
+should provide no additional resistance when making a resistance measurement.
+
+Real meters, on the other hand, have limitations that prevent them from making truly accurate measurements.
+This stems from the fact that the circuit of a meter requires a sample current from the circuit under test
+in order to make a display measurement. Image1.PNG shows symbols for an ideal voltmeter, ammeter, and ohmmeter,
+along with the more accurate real- life equivalent circuits.
+
+The effects of meter internal resistance are shown in Image2.PNG. In each case, the internal resistance becomes
+part of the circuit. The percentages of error in measurements due to the internal resistances become more
+pronounced when the circuit resistances approach the meters’ internal resistance.
+
+Image3.PNG shows the actual makeup of a basic analog multimeter. Note that this device is overly simplistic; real
+meters are much more sophisticated, with provisions for range selection, ac measurements, and so on. At any rate,
+it shows you that the meters are nonideal due to the sample current required to drive the galvanometer’s needle.

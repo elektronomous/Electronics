@@ -1,0 +1,9 @@
+Example 3: In the parallel circuit in Image3.PNG, loads B, C, and D receive no power when
+S2 is closed (assume all other switches are already closed); however, load A receives
+power. You notice the fuse is blown. After replacing the fuse, you close S2 with S3 and
+S4 open, and the fuse doesn’t blow. Closing S3 power on loads B and C has no effect.
+Closing S4 causes B and C to turn off—load D receives no power, either. The fuse is
+blown again. What is the problem?
+
+(answer):
+The load D is short-circuited

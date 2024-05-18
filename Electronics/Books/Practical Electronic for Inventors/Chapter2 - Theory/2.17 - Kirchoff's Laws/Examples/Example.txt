@@ -1,0 +1,50 @@
+solves for the Image1.PNG with battery power sources = 5V.
+
+(answer):
+I've tried use the substitution that's always wrong answer result. In the video tutorial
+also resulted in wrong answer. So I want to try using the determinant
+
+I₂ = I₃ + I₅
+I₄ = I₁ + I₃
+
+Loop I: 
+    5V - I₁R₁ - I₄R₄ = 0
+
+Loop II:
+    -I₂R₂ - I₃R₃ + I₁R₁ = 0
+
+Loop III:
+    -I₅R₅ + I₄R₄ + I₃R₃ = 0
+
+I₂ - I₃ - I₅  = 0                   |  0      1     -1    0    -1   |
+I₄ - I₁ - I₃  = 0                   | -1      0     -1    1     0   |
+1000 I₁ + 1000 I₄ = 5               | 1000    0      0   1000   0   | = -13000000000
+-1000 I₂ - 1000 I₃ + 1000 I₁ = 0    | 1000 -1000  -1000   0     0   |
+-2000 I₅ + 1000 I₄ + 1000 I₃ = 0    | 0       0    1000  1000 -2000 |
+
+now find the I₂
+      |  0      0     -1    0    -1   |
+      | -1      0     -1    1     0   |
+∆I₂ = | 1000    5      0   1000   0   | = -25000000
+      | 1000    0   -1000   0     0   |
+      | 0       0    1000  1000 -2000 |
+
+     ∆I₂ 
+I₂ = ――― = 1.923 mA
+      ∆
+
+Now find the I₁
+      |  0      1     -1    0    -1   |
+      |  0      0     -1    1     0   |
+∆I₁ = |  5      0      0   1000   0   | = -30000000
+      |  0   -1000  -1000   0     0   |
+      |  0      0    1000  1000 -2000 |
+
+     ∆I₁ 
+I₁ = ――― = 2.308 mA
+     ∆ 
+
+∆I₃ = -5000000
+     ∆I₃     
+I₃ = ――― = 384.64 picoA 
+      ∆

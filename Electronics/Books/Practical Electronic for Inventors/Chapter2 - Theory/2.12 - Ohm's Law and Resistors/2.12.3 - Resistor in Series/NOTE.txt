@@ -1,0 +1,84 @@
+When a circuit has a number of resistors connected in series, the total resistance of the
+circuit is the sum of the individual resistances. Also, the amount of current flowing
+through each resistor in series is the same, while the voltage across each resistor varies
+with resistance. The formula for finding the total resistance of resistors in series is:
+
+        Rₜₒₜₐₗ = R₁ + R₂ + R₃ + R₄ + ...
+
+The dots indicate that as many resistors as necessary may be added. You can derive this 
+formula by noting that the sum of all the voltage drops across each series resistor will
+equal the applied voltage across the combination 
+
+    Vₜₒₜₐₗ = V₁ + V₂ + V₃ + … + Vₙ . 
+
+This is referred to as Kirchhoff’s voltage law. Applying Ohm’s law, and noting that the same
+current I flows through each resistor, we get: 
+
+    IRₜₒₜₐₗ = IR₁  + IR₂ + IR₃ + … + IRₙ
+
+Canceling the I’s you get: 
+    
+    Rₜₒₜₐₗ = R₁ + R₂ + R₃ + R₄ + …
+
+When these series resistors are placed in series with a battery, as shown in Image1.PNG, the
+total current flow I is simply equal to the applied voltage Vin, divided by the total 
+resistance: (Say that we've got 9V battery, refers to Example8.txt):
+
+          Vᵢₙ           9
+    I = ―――――――― = ――――――――――― = 0,003 A = 3 mA  
+          Rₜₒₜₐₗ        3000
+
+Since the circuit is a series circuit, the currents through each resistor are equal to
+the total current I:
+
+    I₁ = 3 mA, I₂ = 3 mA 
+
+To find the voltage drop across each resistor, apply Ohm’s law:
+
+    V₁ = I₁R₁ = 0.003 A x 1000 Ω = 3 V
+    V₂ = I₂R₂ = 0.003 A x 2000 Ω = 6 V 
+
+Now, we didn’t really have to calculate the current. We could have just plugged 
+    
+    I = Vᵢₙ / Rₜₒₜ 
+
+into I₁ and I₂ in the preceding equations and got: 
+
+                   Vᵢₙ
+    V₁ = IR₁ = ――――――――――― x R₁
+                 R₁ + R₂ 
+
+
+                    Vᵢₙ
+    V₂ = IR₂ = ―――――――――――― x R₂
+                  R₁ + R₂ 
+
+These equations are called voltage divider equations and are so useful in electronics that
+it is worth memorizing them. (See Image1.PNG.) Often V₂ is called the output voltage Vₒᵤₜ .
+
+The voltage drop across each resistor is directly proportional to the resistance. The voltage
+drop across the 2000-Ω resistor is twice as large as that of the 1000-Ω resistor. Adding both
+voltage drops together gives you the applied voltage of 9 V:
+
+    Vᵢₙ = V₁ + V₂ 
+
+    9 V = 3 V + 6 V 
+
+The total power loss and individual resistor power losses are: 
+
+    Pₜₒₜ = IVᵢₙ = (0.003 A) (9 V) = 0.027 W = 27 mW 
+    (Pₜₒₜ = I²Rₜₒₜ = (0.003 A)² (3000 Ω) = 0.027 W = 27 mW)
+    P₁ = I²R₁ = (0.003 A)² (1000 Ω) = 0.009 W = 9 mW 
+    P₂ = I²R₂ = (0.003 A)² (2000 Ω) = 0.018 W = 18 mW 
+
+The larger resistor dissipates twice as much power.
+
+For the 10 Percent Rule, you can go to the Example10.txt
+in actual practice, the computed value of the bleeder resistor does not always come out to an even value.
+Since the rule of thumb for bleeder current is only an estimated value, the bleeder resistor can be of a 
+value close to the computed value. (If the computed value of the resistance were 500Ω, a 5 percent 510Ω
+resistor could be used. See the standard resistor values table in the front matter of the book.)  Once 
+the actual value of the bleeder resistor is selected, the bleeder current must be recomputed. The voltage
+developed by the bleeder resistor must be equal to the voltage requirement of the load in parallel with
+the bleeder resistor. We’ll discuss voltage dividers, as well as more complex divider arrangements, in the
+section on resistors in Chap. 3.

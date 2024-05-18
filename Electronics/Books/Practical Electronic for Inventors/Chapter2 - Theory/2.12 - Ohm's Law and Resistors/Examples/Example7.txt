@@ -1,0 +1,52 @@
+Three resistors R₁ = 1 kΩ, R2 = 2 kΩ, R3 = 4 kΩ are in parallel. Find the equivalent
+resistance. Also, if a 24- V battery is attached to the parallel circuit to complete
+a circuit, find the total current, individual currents through each of the resistors,
+total power loss, and individual resistor power losses.
+
+(answer):
+
+    R₁ = 1 kΩ
+    R₂ = 2 kΩ
+    R₃ = 4 kΩ
+    V = 24 V
+
+
+    1       1       1      1
+  ―――――― = ――――― + ――――― + ―――――
+   Rₜₒₜₐₗ     R₁      R₂      R₃
+
+    1       1       1        1
+  ―――――― = ――――― + ―――――― + ――――――
+   Rₜₒₜₐₗ    1000    2000     4000
+
+    1        4         2        1
+  ―――――― = ――――――― + ――――――― + ―――――――
+   Rₜₒₜₐₗ     4000     4000     4000
+   
+    1        7     
+  ―――――― = ――――――― 
+   Rₜₒₜₐₗ     4000 
+
+    1            
+  ―――――― = 0,00175 Ω 
+   Rₜₒₜₐₗ    
+                1
+    Rₜₒₜₐₗ = ――――――――――――――
+            0,00175 Ω
+        
+        = 571 Ω
+ 
+
+ I₁ = V₁ / R₁ = 24 V / 1000 Ω = 0,024 A = 24 mA
+ I₂ = V₂ / R₂ = 24 V / 2000 Ω = 0,012 A = 12 mA
+ I₃ = V₃ / R₃ = 24 V / 4000 Ω = 0,006 A = 6 mA
+
+The total current, according to Kirchoff's current law:
+
+    Iₜₒₜₐₗ = I₁ + I₂ + I₃ = 24 + 12 + 6 = 42 mA
+
+The total power dissipated by the parallel resistor:
+
+    Pₜₒₜₐₗ = Iₜₒₜₐₗ x Vₜₒₜₐₗ = 0,042 A x 24 V = 1.0 W
+
+The power dissipated by individual resistor is show in Example7.PNG

@@ -1,0 +1,28 @@
+RED LED forward voltage = 1.6 - 2.6 Volts 
+        maximum current = 30 mA 
+
+Say Iam using 9 volt battery to power the LED.png:
+
+Using the 10 percent rule:
+
+Search for the current bleed first
+
+        I_bleed = I₂ = (0.1) (0,03) = 3 mA
+
+and the resistor bleed:
+
+        R_bleed = R₂ = V_LED / I₂ = 2.6 / 0,03 mA = 86 Ω
+
+We can use the 100 Ω for the R_bleed
+and now to maintain the 2.6 volts, the R₁ must be: 
+
+
+        I₁ = I₂ + I_LED = 3 + 30 = 33 mA = 0,033 A
+
+        R₁ = V₁ / I₁ = (Vbat - Vload) / I₁ = (9 - 3) / 0,033 = 181 Ω
+
+from this we can use 220 Ω for the R₁
+
+recomputed after you get all the bleeders and the remaining resistors 
+
+You can see the picture of the result in Result.PNG

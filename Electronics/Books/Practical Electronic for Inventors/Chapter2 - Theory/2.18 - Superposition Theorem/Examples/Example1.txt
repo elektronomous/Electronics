@@ -1,0 +1,59 @@
+find the current in the 8 Ω resistor using the superposition theorem? 
+(Image1.PNG) 
+
+let's consider that the 9A is open circuit.
+find the total resistance, Rₜ. 
+
+R₁ = 3 Ω
+R₂ = 6 Ω
+R₃ = 8 Ω
+R₄ = 10 Ω
+
+Rₜ = (R₄ + R₃) || R₂ + R₁
+  = (18) || 6 + 3 
+    
+    18 x 6
+  = ――――――― + 3
+    18 + 6
+  
+  = 4,5 + 3 = 7,5 Ω
+
+find the total current I'.
+
+I' = V / Rₜ = 45 / 7,5 = 6 A
+(look at the Image2.PNG)
+
+the current in the R₃ (in the 8 Ω) using current divider formula:
+(we use accent(') as the sign for the current in voltage source, double accent(") for the current source)
+               R₂                   6
+I₃' = I' x ―――――――――――――― = 6A x ――――――――――――― = 1,5 A <- (to the left)
+          R₂ + R₃ + R₄          6 + 8 + 10
+
+let's short it the voltage, so we 0V, we left with current 9A.
+now find the resistance after the R₄, which 8 Ω, 6 Ω, 3 Ω: 
+
+Rₜ₄ = R₁ || R₂ + R₃
+      6 x 3
+   = ―――――――― + 8
+      6 + 3
+   
+   = 2 + 8 = 10 Ω
+
+(look at the Image3.PNG)
+to find the current in the I₃":
+
+                  R₄
+I₃" = Isource x ―――――――
+                R₄ + Rₜ₄
+            10
+    = 9 x ―――――――
+          10 + 10
+    
+    = 4,5 A -> (to the right)
+
+so the find current in I₃,
+ I₃ = I₃' + I₃"
+    = -1.5 + 4.5
+    = 3 A                      
+
+why -1.5 ? as the Kirrchoff law's rules. 

@@ -1,0 +1,17 @@
+Example 1: In the series circuit in Image1.PNG, determine how much current flows
+through the normal circuit (a), then determine how much current flows when there is
+a partial short (b), and determine how much current would flow during a full short if
+the 1- A fuse weren’t in place. Assume an internal 3-Ω circuit resistance at the moment
+of a full- short condition.
+
+(a) Rₜₒₜ = 10 Ω + 1 KΩ + 100 Ω = 1110 Ω
+    V = 12v
+    I = V / R = 12 / 1110 Ω = 0.01081 A = 11 mA
+
+(b) Rₜₒₜ = 10 Ω + 100 Ω = 110 Ω
+    V = 12v
+    I = V / R = 12 / 110 = 0.109 A = 109 mA
+
+(c) Rₜₒₜ = Rᵢᵣ = 3 Ω
+    V = 12V
+    I = V / R = 12 / 3 = 4 A - FUSE BLOWS

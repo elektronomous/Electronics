@@ -1,0 +1,39 @@
+You have a 10- V supply, but a device that is to be connected to the supply
+is rated at 3 V and draws 9.1 mA. Create a voltage divider for the load device.
+
+(answer):
+
+In this case, the load draws current and can be considered a resistor in parallel with R2.
+Therefore, using the voltage divider relation without taking the load into consideration 
+will not work. We must apply what is called the 10 percent rule.
+
+*If you wonder what does the load draws current means, it's load that need a current for N amperes.
+ Take a look at the problem that the load need 9.1 mA (draws) and 3 volt. Why does the load need that
+ volt and the current, because to get the load works, it needs that current and the voltage.
+
+The 10 Percent Rule: This rule is a standard method for selecting R1 and R2 that takes into account
+the load and minimizes unnecessary power losses in the divider. The first thing you do is select R2 
+so that I₂ is 10 percent of the desired load current. This resistance and current are called the bleeder
+resistance and bleeder current. The bleeder current in our example is:
+
+        I_bleed = I₂ = (0.10)(9.1 mA) = 0.91 mA 
+
+Using Ohm's law, next we calculate the bleeder resistance:
+
+        R_bleed = R₂ = 3 V / 0.91 mA = 3297 Ω 
+
+Considering resistor tolerances and standard resistance values, we select a resistor in close vicinity—3300 Ω.
+
+Next, we need to select R1, so that the output is maintained at 3 V. To do this, simply calculate the total current
+through the resistor and use Ohm’s law:
+
+        I₁ = I₂ + I_load = 0.91 + 9.1 = 10.01 mA = 0.01 A
+    
+        R₁ = V₁ / I₁ = (Vₜₒₜ - V₂) / I₁ = 7 V / 0.01 A = 700 Ω
+
+In terms of power ratings:
+
+        P_R₁ = V₁² / R₁ = (7V)² / (700 Ω) = 0.07 W = 70 mW
+        P_R₂ = V₂² / R₂ = (3V)² / (3300 Ω) = 0.003 W = 3 mW
+
+Low- power ¼- W resistors will suffice.

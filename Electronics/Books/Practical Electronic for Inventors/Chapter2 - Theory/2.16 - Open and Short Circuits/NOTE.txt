@@ -1,0 +1,12 @@
+A short circuit in all or part of a circuit causes excessive current flow. This may blow a fuse or
+burn out a component, which may result in an open- circuit condition. An open circuit represents a
+break in the circuit, preventing current from flowing. Short circuits may be caused by a number of
+things—from wire crossing, insulation failure, or solder splatter inadvertently linking two separate
+conductors within a circuit board. Figure 2.59 shows cases of open- and short- circuit conditions. A
+fuse, symbolized ~, is used in the circuit and will blow when the current through it exceeds its 
+current rating, given in amps.
+
+To prevent short circuits from destroying circuits, various protection devices can be used, such as
+fuses, transient voltage suppressors, and circuit breakers. These devices sense when too much current
+is flowing, and they will blow or trip, thus creating an open- circuit condition to limit excessive
+current damage.

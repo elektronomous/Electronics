@@ -1,0 +1,52 @@
+The superposition theorem is an important concept in electronics that is useful whenever a linear 
+circuit contains more than one source. It can be stated as follows:
+    Superposition theorem: The current in a branch of a linear circuit is equal to the sum of the
+                           currents produced by each source, with the other sources set equal to zero
+Be aware that the superposition should not be applied to nonlinear circuits.
+
+It is important to make clear what it means to set sources equal to zero when interpreting the 
+superposition theorem. A source may be a voltage source or a current source. If the source is a voltage
+source, to set it to zero means that the points in the circuit where its terminals were connected must
+be kept at the same potential. The only way to do this is to replace the voltage source with a conductor,
+thus creating a short circuit. If the source is a current source, to set it to zero means to simply remove
+it and leave the terminals open, thus creating an open circuit. A short circuit causes the voltage to be
+zero; an open circuit causes the current to be zero.
+
+In Image1.PNG, we will analyze the circuit using the superposition theorem. The circuit contains two 
+resistors, a voltage source, and a current source.
+
+First we remove the current source (create an open circuit at its terminals), as shown in Image1.PNG(b). 
+The new current through R2 due to the voltage source alone is just VA divided by the equivalent resistance:
+
+                Vₐ
+        I₂₁ = ―――――――
+              R₁ + R₂
+
+This current is called the partial current in branch 2 due to source 1. Next, the voltage source is removed
+and set to zero by replacing it with a conductor (we short it); see Image1.PNG(c). The resulting circuit is
+a current divider, and the resulting partial current is given by: 
+
+                IbR₁
+        I₂₂ = ―――――――――
+               R₁ + R₂ 
+
+Applying the superposition, we add the partial current to get the total current:
+
+                            Vₐ - IbR₁
+        I₂ = I₂₁ + I₂₂ = ―――――――――――――――
+                            R₁ + R₂
+
+The current through R₁ could have been determined in a similar manner, with the following result:
+        
+                    Vₐ + IbR₂
+            I₁ = ―――――――――――――――
+                    R₁ + R₂
+
+The superposition theorem is an important tool whose theory makes possible complex impedance analysis in linear,
+sinusoidally driven circuits—a subject we will cover a bit later. The superposition is also an underlying 
+mechanism that makes possible two important circuit theorems: Thevenin’s theorem and Norton’s theorem. These two
+theorems, which use some fairly ingenious(pandai/ulung) tricks, are much more practical to use than the superposition. Though
+you will seldom use the superposition directly, it is important to know that it is the base upon which many other
+circuit analysis tools rest.
+
+for the explanation you can see the Examples

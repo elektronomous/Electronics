@@ -1,0 +1,24 @@
+Example 2: In the parallel circuit in Image2.PNG, determine the total current flow in the
+normal circuit (a), the open circuit (b), and the current flow in the short circuit (c).
+Assume the internal resistance of the battery is 0.2 Ω below 3 A, but goes to 2 Ω during
+a short- circuit condition.
+
+(answer):
+
+      1        1       1        1       3
+(a) ―――――― = ―――――― + ―――――― + ―――――― = ――――――  
+      Rₜₒₜ      R₁      R₂       R₃      10
+
+      Rₜₒₜ = 3.33 Ω
+
+      I = V / R = 12 / 3.33 = 3.6 A 
+
+
+      1        1       1         2
+(b) ―――――― = ―――――― + ――――――  =  ――――― 
+      Rₜₒₜ      R₁      R₂        10
+
+      Rₜₒₜ = 5 Ω
+      I = V / R = 12 / 5 = 2.4 A
+
+(c) Rₜₒₜ = 2 Ω, I = V / R = 12 / 2 = 6 A 

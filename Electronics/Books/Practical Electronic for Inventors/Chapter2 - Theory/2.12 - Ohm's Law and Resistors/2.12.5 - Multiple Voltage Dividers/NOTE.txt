@@ -1,0 +1,83 @@
+You wish to create a multiple voltage divider that powers three loads:
+load 1 (75 V, 30 mA), 
+load 2 (50 V, 10 mA), and 
+load 3 (25 V, 10 mA). 
+Use the 10 percent rule and Image1.PNG to construct the voltage divider.
+
+(answer):
+I_R₃ means current that flow through Resistor 3.
+
+
+An important point in determining the resistor when applying the 10 percent rule of thumb is that to
+calculate the bleeder current, you must take 10 percent of the total load current. The steps are as follows:
+
+Find the bleeder current, which is 10 percent(0.1) of the total current:
+
+    I_R₄ = I₄ = 0.1 x (10 mA + 10mA + 30mA) = 5 mA
+
+To find R₄ (bleeder resistor), use Ohm's law: 
+
+    R₄ = (V_load₃ - 0) / I₄ = 25 V / 0.005 = 5000 Ω
+
+Why does we use V_load₃ ? Because V_load₃ is the same with Voltage on R₄
+The current through R₃ is equal to the current through R₄ plus the current through load₃:
+
+    I_R₃ = I_R₄ + I_Rload = 5 mA + 10 mA = 15 mA 
+
+To find R₃, use Ohm's law, using the voltage difference between load₂ and load₃:
+
+    R₃ = V_R₃ / I₃ = (V_load₂ - V_load₃) / I₃ = (50 - 25) / 15 mA = 1666 Ω
+
+If you wonder why V_R₃ = V_load₂ - V_load₃ ? V_load₃ is the part of the V_load₂, we substract the V_load₂ so that
+load₃'s Volts isn't using the 50 V, but instead 25 V. Using the result of the substracted operation, we use that 
+volts to give the other load 15 mA (load₃ and R₄) by put 1666 Ω.
+
+The current through R₂ is:
+
+    I_R₂ = I_R₃ + I_load₂ = 15 mA + 10 mA = 25 mA
+
+to find R₂, use Ohm's law, using the voltage difference between load₁ and load₂:
+
+    R₂ = V_R₂ / I_R₂ = (75 - 50) / 25 mA = 1000 Ω 
+
+The current through R1:
+
+    I_R₁ = I_R₂ + I_Load₁ = 25 mA + 30 mA = 55 mA
+
+to find R₁, use Ohm's law, using the voltage difference between the whole voltage and the load₁:
+    
+    R₁ = V_R₁ / I₁ = (100 - 75) / 55 mA = 25 / 55 mA = 455 Ω
+
+
+For example, the voltage divider in Image2 is designed to provide the voltage and current to three loads from a given 
+source voltage:
+    Load 1: +50 V @ 50 mA
+    Load 2: +25 V @ 10 mA
+    Load 3: −25 V @ 100 mA
+
+The values of R4, R2, and R1 are computed exactly as was done in the preceding example. IR4 is the bleeder current and
+can be calculated as follows: 
+
+    I_R₄ = 10% × (Iload1 + Iload2 + Iload3) = 16 mA
+
+Calculating R4:
+    
+    R₄ = 25 V/0.016 A = 1562 Ω  
+
+To calculate current through R3, use Kirchhoff’s current law (at point A):
+    
+    I_R₃ + Iload2 + Iload1 + I_R₄ + Iload3 = 0
+    I_R₃ + 10 mA + 50mA - 16mA - 100 mA = 0
+    I_R₃ - 56mA 
+    I_R₃ = 56mA
+
+Calculating R₃ : R₃ = V_load₂ / I_R₃ = (25 V) / 0.056 A = 446 Ω.
+Calculating I_R₂ : I_R₂ = I_R₃ + I_load₂ = 56 mA + 10 mA = 66 mA
+Calculating R₂ : R₂ = (V_load₁ - V_load₂) / I_R₂ = 25 V / 0.066 A = 379 Ω
+Calculating I_R₁ : I_R₁ = I_R₂ + I_Load₁ = 66 mA + 50 mA = 116 mA 
+then R₁ = (Vleft) / I_R₁ = (25 V) / (0.116 A) = 216 Ω
+
+Though voltage dividers are simple to apply, they are not regulated in any way. If a load’s resistance changes, or if there is 
+variation in the supply voltage, all loads will experience a change in voltage. Therefore, voltage dividers should not be applied to
+circuits where the divider will be weighed down by changes in load. For applications that require steady voltage and that draw 
+considerable current, it is best to use an active device, such as a voltage regulator IC—more on this later.

@@ -1,0 +1,64 @@
+Often, you will run across a circuit that cannot be analyzed with simple resistor circuit reduction techniques
+alone. Even if you could find the equivalent resistance by using circuit reduction, it might not be possible for
+you to find the individual currents and voltage through and across the components within the network. 
+
+Kirchhoff’s laws provide the most general method for analyzing circuits. These laws work for either linear 
+(resistor, capacitors, and inductors) or nonlinear elements (diodes, transistors, etc.), no matter how complex the
+circuit gets. Kirchhoff’s two laws are stated as follows.
+
+Kirchhoff’s Voltage Law (or Loop Rule): The algebraic sum of the voltages around any loop of a circuit is zero:
+    ⎲
+    ⎳  ∆V = V₁ + V₂ + V.. + Vₙ = 0
+
+To show how Kirchhoff’s voltage law works, we consider the circuit in Image1.PNG. We start anywhere we like along the
+circuit path—say, at the negative terminal of the 5-V battery. Then we start making a loop trace, which in this case
+we choose to go clockwise, though it doesn’t really matter which direction you choose. Each time we encounter a circuit
+element, we add it to what we’ll call our ongoing loop equation. To determine the sign of the voltage difference, we
+apply the loop trace rules shown in the shaded section of the Image1.PNG. We continue adding elements until we make it 
+back to the start of the loop, at which point we terminate the loop equation with an “= 0.”
+
+Kirchhoff’s Current Law (or Junction Rule): The sum of the currents that enter a junction equals the sum of the 
+currents that leave the junction:
+
+    ⎲       ⎲
+    ⎳ Iᵢₙ =  ⎳ Iₒᵤₜ
+
+The following example shows both Kirchhoff’s current and voltage laws in action.
+
+Example: By applying Kirchhoff’s laws to the following circuit(Image2.PNG), find all the unknown currents, I₁, I₂, I₃, 
+I₄, I₅, I₆, assuming that R₁, R₂, R₃, R₄, R₅, R₆, and V₀ are known. After that, the voltage drops across the resistors 
+V₁, V₂, V₃, V₄, V₅, and V₆ can be found using Ohm’s law: Vₙ = IₙRₙ.
+
+Answer: To solve this problem, you apply Kirchhoff’s voltage law to enough closed loops and apply Kirchhoff’s current law
+to enough junctions that you end up with enough equations to counterbalance the unknowns. After that, it is simply a matter
+of doing some algebra. Image3.PNG illustrates how to apply the laws in order to set up the final equations.
+
+A third method that we think is useful—practically speaking—involves using a trick with determinants and Cramer’s rule. The 
+neat thing about this trick is that you do not have to know any math—that is, if you have a mathematical computer program or
+calculator that can do determinants. The only requirement is that you be able to plug numbers into a grid (determinant) and
+press “equals.” We do not want to spend too much time on this technique, so we will simply provide you with the equations and
+use the equations to find one of the solutions to the resistor circuit problem.
+
+For example, you can find ∆ for the system of equations from the resistor problem by plugging all the coefficients into the
+determinant and pressing the “evaluate” button on the calculator or computer.
+
+
+                                                 | 1  |  2  |  3 |  4 |  5  | 6  |
+                                                 ――――――――――――――――――――――――――――――――――――
+        I₁ = I₂ + I₃ => I₁ - I₂ - I₃ = 0 =>      | 1    -1    -1    0    0    0  |
+        I₂ = I₅ + I₄ => I₂ - I₅ - I₄ = 0 =>      | 0     1     0   -1   -1    0  |
+        I₆ = I₃ + I₄ => I₆ - I₃ - I₄ = 0 =>      | 0     0    -1   -1    0    1  |
+V₀ - I₁R₁ - I₂R₂ - I₅R₅ => I₁ + 2I₂ + 5I₅ = 10   | 1     2     0    0    5    0  | = -587
+   - I₃R₃ + I₄R₄ + I₂R₂ => -3I₃ + 4I₄ + 2I₂ = 0  | 0     2    -3    4    0    0  |
+   - I₆R₆ + I₅R₅ - I₄R₄ => -6I₆ + 5I₅ - 4I₄ = 0  | 0     0     0   -4    5   -6  | 
+
+Now, to find, say, the current through R₅ and the voltage across it, you find ∆I₅, then use I₅ = ∆I₅/∆ to find the current. 
+Then you use Ohm’s law to find the voltage.
+
+        | 1  |  2  |  3 |  4 |  5  | 6  |
+        | 1    -1    -1    0    0    0  |
+        | 0     1     0   -1    0    0  |
+        | 0     0    -1   -1    0    1  |                     ∆I₅     -660
+        | 1     2     0    0   10    0  | = -660        I₅ = ―――――― = ―――――――― = 1.124 A 
+        | 0     2    -3    4    0    0  |                      ∆       -587 
+        | 0     0     0   -4    0   -6  |               V₅ = I₅ x R₅ = (1.124) (5 Ω) = 5.62 V 

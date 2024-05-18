@@ -1,0 +1,63 @@
+An ideal voltage source is a two- terminal device that maintains a fixed voltage across its terminals.
+If a variable load is connected to an ideal voltage source, the source will maintain its terminal 
+voltage regardless of changes in the load resistance. This means that an ideal voltage source will 
+supply as much current as needed to the load in order to keep the terminal voltage fixed (in I = V/R, I
+changes with R, but V is fixed).
+
+Now a fishy thing with an ideal voltage source is that if the resistance goes to zero, the current must go
+to infinity. Well, in the real world, there is no device that can supply an infinite amount of current. If
+you placed a real wire between the terminals of an ideal voltage source, the calculated current would be so
+large it would melt the wire. To avoid this theoretical dilemma, we must define a real voltage source (a
+battery, plug- in dc power supply, etc.) that can supply only a maximum finite amount of current. A real
+voltage source resembles an ideal voltage source with a small series internal resistance or source 
+resistance rₛ , which is a result of the imperfect conducting nature of the source (resistance in battery
+electrolyte and lead, etc.). This internal resistance tends to reduce the terminal voltage, the magnitude of
+which depends on its value and the amount of current that is drawn from the source (or the size of the load
+resistance).
+
+In Image1.PNG, when a real voltage source is open- circuited (no load connected between its terminals), the
+terminal voltage (Vₜ) equals the ideal source voltage (Vₛ)— there is no voltage drop across the resistor, since
+current can’t pass through it due to an incomplete circuit condition.
+
+However, when a load R_load is attached across the source terminals, R_load and rₛ are connected in series. The
+voltage at the terminal can be determined by using the voltage divider relation:
+
+                  R_load
+        Vₜ = Vₛ ―――――――――――――
+                R_load + rₛ 
+
+From the equation, you can see that when R_load is very large compared to rₛ, (1000 times greater or more), the
+effect of rₛ is so small that it may be ignored. However, when R_load is small or closer to rₛ in size, you must
+take rₛ into account when doing your calculations and designing circuits. 
+
+(How do you know rₛ ? Imagine that you have circuit with battery 9V and a load of resistor of 1000 Ω. Before you
+connect the load, the voltage should be around 9V but when you connect the load with the battery, it should be drop
+around 0.40 - 0.50V. say that it's dropped by 0.50V, and the voltage source will be 9 - 0.50 = 8.5V. The voltage 
+terminal will be 9V. You get load 1KΩ, using the formula above you'll get rₛ =  55 Ω)
+
+Another symbol used in electronics pertains to dc current sources—see Image1.PNG. An ideal current source provides
+the same amount of source current IS at all times to a load, regardless of load resistance changes. This means that
+the terminal voltage will change as much as needed as the load resistance changes in order to keep the source 
+current constant.
+
+In the real world, current sources have a large internal shunt (parallel) resistance rₛ, as shown in Image1.PNG. This
+internal resistance, which is usually very large, tends to reduce the terminal current Iₜ, the magnitude of which
+depends on its value and the amount of current that is drawn from the source (or the size of load resistance).
+
+When the source terminals are open- circuited, IT must obviously be zero. However, when we connect a load resistance
+R_load across the source terminals, R_load and rₛ form a parallel resistor circuit. Using the current divider 
+expression, the terminal current becomes:
+
+                  rₛ 
+        Iₜ = Iₛ ――――――――――
+                rₛ + R_load
+
+From this equation, you can see that when Rload is small compared to rₛ, the dip in current becomes so small it 
+usually can be ignored. However, when Rload is large or closer to rₛ in size, you must take rₛ into account when doing
+your calculations.
+
+A practical current source is usually an active circuit made with transistors, as shown in Image2.PNG. Vin drives 
+current through R1 into the base of the second transistor, so current flows into the transistor’s collector, through 
+it, and out its emitter. This current must flow through R2. If the current gets too high, the first transistor turns
+on and robs the second transistor of base current, so its collector current can never exceed the value shown. This is
+an excellent way of either making a current source or limiting the available current to a defined maximum value.

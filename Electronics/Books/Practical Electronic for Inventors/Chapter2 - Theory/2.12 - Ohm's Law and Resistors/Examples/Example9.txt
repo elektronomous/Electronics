@@ -1,0 +1,33 @@
+The input of an IC requires a constant 5 V, but the supply voltage is 9 V. Use the
+voltage divider equations to create a voltage divider with an output of 5 V. Assume
+the IC has such a high input resistance (10 MΩ) that it practically draws no current
+from the divider.
+
+(answer):
+Since we assume the IC draws no current, we can apply the voltage divider directly:
+
+                 R₂
+    Vₒᵤₜ = Vᵢₙ ―――――――――――
+               R₁ + R₂ 
+
+
+We must choose voltage divider resistors, making sure our choice doesn’t draw too much current,
+causing unnecessary power loss. To keep things simple for now, let’s choose R₂ to be 10 kΩ. 
+Rearranging the voltage divider and solving for R₁:
+
+
+    Vₒᵤₜ (R₁ + R₂) = Vᵢₙ R₂
+    Vₒᵤₜ R₁ + Vₒᵤₜ R₂ = Vᵢₙ R₂
+    Vₒᵤₜ R₁ = Vᵢₙ R₂ - Vₒᵤₜ R₂
+
+              
+              (Vᵢₙ - Vₒᵤₜ)
+    R₁ = R₂  ――――――――――――――
+                Vₒᵤₜ
+
+
+                (9 - 5)
+    R₁ = 10K ――――――――――――
+                5
+    
+       = 40000 / 5 = 8000 Ω

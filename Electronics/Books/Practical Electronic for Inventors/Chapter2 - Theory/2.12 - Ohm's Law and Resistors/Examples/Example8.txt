@@ -1,0 +1,4 @@
+If a 1.0- kΩ resistor is placed in series with a 2.0- kΩ resistor,
+the total resistance becomes:
+
+    Rₜₒₜₐₗ = R₁ + R₂ = 1000 + 2000 = 3000 Ω
