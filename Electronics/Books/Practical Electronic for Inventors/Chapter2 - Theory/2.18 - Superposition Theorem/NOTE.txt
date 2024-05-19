@@ -1,8 +1,9 @@
 The superposition theorem is an important concept in electronics that is useful whenever a linear 
-circuit contains more than one source. It can be stated as follows:
+(resistor, capacitors, and inductors) circuit contains more than one source. It can be stated as follows:
     Superposition theorem: The current in a branch of a linear circuit is equal to the sum of the
                            currents produced by each source, with the other sources set equal to zero
-Be aware that the superposition should not be applied to nonlinear circuits.
+
+BE AWARE THAT THE SUPERPOSITION SHOULD NOT BE APPLIED TO NONLINEAR CIRCUITS.
 
 It is important to make clear what it means to set sources equal to zero when interpreting the 
 superposition theorem. A source may be a voltage source or a current source. If the source is a voltage
@@ -26,15 +27,18 @@ This current is called the partial current in branch 2 due to source 1. Next, th
 and set to zero by replacing it with a conductor (we short it); see Image1.PNG(c). The resulting circuit is
 a current divider, and the resulting partial current is given by: 
 
-                IbR₁
+                Ib R₁
         I₂₂ = ―――――――――
                R₁ + R₂ 
 
 Applying the superposition, we add the partial current to get the total current:
 
-                            Vₐ - IbR₁
+                            Vₐ - Ib R₁
         I₂ = I₂₁ + I₂₂ = ―――――――――――――――
                             R₁ + R₂
+
+if you wonder why the operation is resut in substraction? You can image two batteries at the same circuit with the
+plus and negative is in the same position. 
 
 The current through R₁ could have been determined in a similar manner, with the following result:
         

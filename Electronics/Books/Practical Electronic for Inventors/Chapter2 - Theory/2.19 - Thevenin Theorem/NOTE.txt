@@ -1,0 +1,53 @@
+Say that you are given a complex circuit such as that shown in Image1.PNG. Pretend that you are only interested in
+figuring out what the voltage will be across terminals A and F (or any other set of terminals, for that matter) and
+what amount of current  will flow through a load resistor attached between these terminals. If you were to apply 
+Kirchhoff’s laws to this problem, you would be in trouble—the amount of work required to set up the equations would
+be a nightmare, and then after that you would be left with a nasty system of equations to solve
+
+Luckily, a man by the name of Thevenin came up with a theorem, or trick, to simplify the problem and produce an 
+answer—one that does not involve “hairy” mathematics. Using what Thevenin discovered, if only two terminals are of
+interest, these two terminals can be extracted from the complex circuit, and the rest of the circuit can be 
+considered a black box. By applying Thevenin’s tricks (which you will see in a moment), you will discover that this
+black box, or any linear two- terminal dc network, can be represented by a voltage source in series with a resistor.
+(This statement is referred to as Thevenin’s theorem.) The voltage source is called the Thevenin voltage Vthev, and
+the resistance is called the Thevenin resistance Rthev; together, the two form what is called the Thevenin 
+equivalent circuit
+
+Note that circuit terminals (black box terminals) might actually not be present in a circuit. For example, instead,
+you may want to find the current and voltage across a resistor (Rload) that is already within a complex network. In
+this case, you must remove the resistor and create two terminals (making a black box) and then find the Thevenin
+equivalent circuit. After the Thevenin equivalent circuit is found, you simply replace the resistor (or place it 
+across the terminals of the Thevenin equivalent circuit), calculate the voltage across it, and calculate the current
+through it by applying Ohm’s law again: I = Vthev/(Rthev + Rload). 
+
+First, Vthev is simply the voltage across the terminals of the black box, which can be either measured or calculated.
+Rthev is the resistance across the terminals of the black box when all the dc sources (e.g., batteries) are replaced
+with shorts, and it, too, can be measured or calculated. If you don't get it with the second statements, go check your 
+tab notes inside the thevenin theorem in "Confused Statement 1". 
+
+As for the tricks, we can generalize and say that the superposition theorem is involved. However, Thevenin figured out,
+using the tricks presented in the following example, that the labor involved with applying the superposition theorem 
+(removing sources one at a time, calculating partial currents, and adding them, etc.) could be reduced by removing all
+sources at once, and finding the Thevenin resistance. An example is the best cure. See Image2.PNG. 
+
+            R₃                  2000 Ω               2000 Ω
+    V₃ = ―――――――――― . Vthev = ―――――――――――――― . 8V = ―――――――― = 5,7 V
+         R₃ + Rthev           2000 Ω + 800 Ω         2800 Ω
+
+If you wonder why the this calculation is like the above one, go look the Image2.PNG and analized the Thevenin Equivalent
+Circuit.
+
+            Vthev         8 V
+    I₃ = ――――――――――― = ――――――――――― = 0,003 A
+         R₃ + Rthev     2800 Ω
+
+Also there's procedure where you can help you to find Vthev and Rthev:
+(1) Remove the resistor and mark the terminals 
+(2) Find the open circuit voltage (Vthev) using KVL (Kirchhoff’s Voltage Law)
+(3) Deactivate all independent sources and find Rthev
+(4) Produce the Thevenin's equivalent circuit by reconnecting the load 
+
+as the book says "As for the tricks, we can generalize and say that the superposition theorem is
+involved." from this we get conclusion if you want to verify your answer, then use the superposition theorem
+first and then look at the current you're looking for. for example, if you want to know the current in a 
+specified resistor in Thevenin Theorem, go check the same current in your superposition theorem calculation also.

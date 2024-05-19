@@ -1,0 +1,5 @@
+Like Thevenin’s theorem, it takes a complex two- terminal network and replaces it with a simple 
+equivalent circuit. However, instead of a Thevenin voltage source in series with a Thevenin
+resistance, the Norton equivalent circuit consists of a current source in parallel with a
+resistance—which happens to be the same as the Thevenin resistance. In essence, Norton’s theorem 
+is to current sources as Thevenin’s theorem is to voltage sources. 

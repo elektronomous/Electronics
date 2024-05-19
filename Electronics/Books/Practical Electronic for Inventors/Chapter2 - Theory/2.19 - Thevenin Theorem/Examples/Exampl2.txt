@@ -1,0 +1,40 @@
+find the current in the 4 Ω using thevenin theorems (Image2.PNG).
+
+R₁ = 10 Ω
+R₂ = 4 Ω
+R₃ = 5 Ω
+R₄ = 5 Ω
+
+first you need to remove the 4 Ω to create the terminal and where you can determined 
+the Vthev. Because the two sources are different sources, then we use the KVL immediately:
+    
+    V - IR₁ - IR₃ - IR₄ = 0
+
+because the R₂ is disconnected, then the loop start from 20 V to R₄ 5 Ω. If you pull the arrow point
+of the I sources, then the current will be opposite direction with the I in the R₄ and thats why the 
+current in the R₄ is I + 2:
+
+    V - IR₁ - IR₃ - (I+2)R₄ = 0
+    V - IR₁ - IR₃ - IR₄ + 2R₄ = 0
+    V = IR₁ + IR₃ + IR₄ - 2R₄
+    20 = 10I + 5I + 5I - 2 (5)
+    20 + 10 = 20I
+    30 = 20I
+    I = 3/2 = 1.5 A 
+
+to find the Vthev, you're using the KVL again:
+
+    Vthev - IR₃ - IR₄ = 0
+    Vthev = IR₃ + IR₄ 
+          = 10I = 10(1.5) = 15 V 
+
+to find the Rthev, sort the voltage and open the current sources. You left with the R₃ and R₄ in series is parallel with R1:
+
+    Rthev = (R₃ + R₄) || R₁
+          = 10 || 10 = 5 Ω
+
+Now reconnect the R₂ again and find the I₂:
+
+           Vthev      15
+    I₂ = ――――――――― = ―――――― = 3 A 
+         Rthev + R₂    5

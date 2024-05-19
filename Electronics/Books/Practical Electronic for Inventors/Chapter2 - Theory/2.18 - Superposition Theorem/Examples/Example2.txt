@@ -1,0 +1,63 @@
+find the current in R₂ using the superposition theorem? 
+(Image4.png)
+
+R₁ = 10 Ω
+R₂ = 4 Ω
+R₃ = 5 Ω
+R₄ = 5 Ω
+
+find the R total so we get the total of the current that can divided by the 
+parallel circuit 
+
+    Rtot = R₁ + R₂ || (R₃ + R₄)
+         = 10 + 4 || 10
+
+                4 x 10
+         = 10 + ―――――――
+                4 + 10
+        
+         = 10 + 2,85 = 12,85 Ω
+
+    I'tot = V / Rtot = 20 / 12,85 = 1,556 A
+
+now divided the I' so we can know the I' on R₂:
+
+                   R₃ + R₄ 
+    I'₂tot = I'tot ―――――――――――
+                  R₃ + R₄ + R₂
+          
+                     10
+          = 1,556 ――――――――――
+                     14
+          
+          = 1,111 A (the current point is ↓)
+
+short the voltage, so then the V = 0, put back the current sources I" = 2 A 
+
+We need to find the current that pass through the R₃ first so we can divided 
+that current to R₂ and R₁. We need only the current that passed through the R₂
+
+    R₃tot = R₃ + R₂ || R₁
+          = 5 + 2,85 = 7,85 Ω
+
+                   R₄
+    I"₃tot = I" ――――――――――
+               R₄ + R₃tot
+          
+                    5
+          = 2 A ――――――――――
+                 5 + 7,85
+          
+          = 0,778 A
+    
+                    R₁
+    I"₂ = I₃tot ――――――――――
+                  R₁ + R₂
+        
+                    10
+        = 0,778 A ―――――――――
+                  10 + 4
+        
+        = 0,555 A (the current point is ↑)
+
+I₂ = I'₂ + I"₂ = -1,111 + 0,555 = -0,556 A (↓) 

@@ -1,0 +1,42 @@
+Find the Vthev, Rthev and the current flowing through the 3 Ω
+in the circuit (Image1.PNG)
+
+R₁ = 3 Ω
+R₂ = 6 Ω
+R₃ = 12 Ω
+
+first you need to remove the 3 Ω, then create two terminal from there. from this you created the Vthev.
+Because this circuit has two sources, we need to use KVL.
+
+Loop I:
+
+    Vthev - IR₂ + V" = 0
+    Vthev = IR₂ - 35
+          = 6I - 35
+
+You can use the current from the other Loop (Loop II) for calculate the equation I above:
+
+Loop II:
+
+    Rtot = R₂ + R₃ = 12 + 6 = 18 Ω
+
+         V     42
+    I = ――― = ――――― = 2,33 Ω
+         R      18
+
+back to the first equation: 
+
+    Vthev = 6I - 35 = 6(2,33) - 35 = 14 - 35 = -21 V
+
+Now to find the Rthev you need to short the voltage, and we left with the R₂ and R₃ in parallel:
+
+    Rthev = R₂ || R₃
+        = (R₂ x R₃) / (R₂ + R₃)
+        = 72 / 18
+        = 4 Ω 
+
+Now reconnect the R₁ into the terminal and we can calculate the current that passed through it: 
+
+          Vthev         -21 
+    I = ――――――――――― = ――――――――――― = -7 A (the current direction is ⬸)
+        Rthev + R₁      4 + 3
