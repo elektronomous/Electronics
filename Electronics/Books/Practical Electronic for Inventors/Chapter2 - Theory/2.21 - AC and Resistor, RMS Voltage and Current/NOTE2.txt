@@ -1,0 +1,67 @@
+Example1: How much current would flow through a 100-Ω resistor connected across the hot and neutral 
+          sockets of a 120- VAC outlet? How much power would be dissipated? What would the results
+          be using 1000-Ω, 10,000-Ω, and 100,000-Ω resistors?
+
+               Vrms   120
+        Irms = ―――― = ――― = 1.2 A 
+                 R    100
+
+        Pₐᵥₑ = Irms × Vrms = 120 V × 1.2 A = 144 W
+
+First, don’t try this with any ordinary resistor; you’d need a power resistor or special heating element 
+with a power rating of greater than 144 W! (Also, simply don’t attempt attaching a resistor with the outlets
+powered.) A 1000-Ω resistor plugged into the same outlet would dissipate 14.4 W; a 10,000-Ω resistor would
+dissipate 1.44 W; a 100,000-Ω resistor would dissipate 0.14 W.
+
+Example2: What is the peak voltage on a capacitor if the RMS voltage of a sinusoidal waveform signal across 
+          it is 10.00 VAC?
+
+          Vp = Vrms × 1.414 = 14.14 V
+
+Example3: A sinusoidal voltage displayed on an oscilloscope has a peak amplitude of 3.15 V. What is the RMS
+          value of the waveform?
+
+          Vrms = Vp × 0.707 = 2.23 V
+
+Example4: A 200- W resistive element in a heater is connected to a 120- VAC outlet. How much current is 
+          flowing through the resistive element? What’s the resistance of the element, assuming it’s an ideal 
+          resistor?
+
+          Pₐᵥₑ = 200 W
+          Vrms = 120 VAC
+                 
+                 V²rms            (120)²           14400
+          Pₐᵥₑ = ―――――     200 =  ――――――    200 = ―――――――    R = 72 Ω
+                   R                R                R
+
+Example5: A sinusoidal voltage supplied by a function generator is specified as 20 V peak to peak at 1000 Hz.
+          What is the minimum resistance value of a 1⁄8-W resistor you can place across the generator’s output
+          before exceeding the resistor’s power rating?
+
+          Vpp = 20V,    Vp = ½ × Vpp = ½ × 20 V = 10 V    Vrms = 0.707 × Vp = 7.07 VAC 
+
+          Pₐᵥₑ = ⅛ W
+
+                 V²rms            (7.07)²           49.9
+          Pₐᵥₑ = ―――――       ⅛ =  ――――――      ⅛ = ―――――――    R = 400 Ω
+                   R                R                R
+          
+Example6: The output of an oscillator circuit is specified as 680 mVAC. If you feed this into an op amp with an
+          input resistance of 10 MΩ, how much current enters the IC?
+
+          Vrms = 680 mVAC = 680 / 1000 = 0.68 VAC
+          R = 10 MΩ
+
+          Irms = Vrms / R = 0.68 / 10_000_000 = 68 nA 
+
+MEASURING RMS VOLTAGES AND CURRENTS
+you can still get a fairly accurate idea of the RMS value of a sine waveform, knowing one of the other measurements
+such as the half- wave average, peak, or peak- to- peak value. This can be done by calculation, or using the table 
+in Image7.PNG. As you can see, it’s also possible to work out the RMS value of a few other symmetrical and regular
+waveforms, such as square and triangular waves, knowing their peak, average, or peak- to- peak values.
+
+An important thing to note when using the table is that you need to knowthe exact basis on which your meter’s 
+measurement is made. For example, if your meter measures the peak value, and then calculates and displays the 
+equivalent sine wave RMS figure, this means you’ll need to use the table differently when compared to the situation
+where the meter really measures the half-wave average and calculates the sine wave RMS figure from that. So take
+care, especially if you’re not sure exactly how your meter works.

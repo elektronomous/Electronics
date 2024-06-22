@@ -1,0 +1,6 @@
+If we choose a simple flat surface with area A as our test area and there is an angle θ
+between the normal to the surface and a magnetic field vector (magnitude) then the magnetic
+flux is, 
+
+    Φ = B . A . cos θ
+

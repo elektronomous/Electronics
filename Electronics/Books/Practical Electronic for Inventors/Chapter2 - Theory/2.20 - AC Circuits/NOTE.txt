@@ -1,0 +1,139 @@
+AC circuit is a complete conductive path through which electrons flow from source to load and back to source.
+If the source is dc, electrons will flow in only one direction, resulting in a direct current (dc). Another
+type of source that is frequently used in electronics is an alternating source that causes current to 
+periodically change direction, resulting in an alternating current (ac). In an ac circuit, not only does the
+current change directions periodically, the voltage also periodically reverses. Image1.PNG shows a dc 
+circuit and an ac circuit.
+
+The positive and negative swings(naik turun) in voltage/current relative to a zero volt/amp reference line 
+simply imply that the electromotive force of the source has switched directions, causing the polarity of the
+voltage source to flip, and forcing current to change directions. 
+
+GENERATING AC
+The most common way to generate sinusoidal waveforms is by electromagnetic induction, by means of an ac 
+generator (or alternator). For example, the simple ac generator in Image2.PNG consists of a loop of wire that
+is mechanically rotated about an axis while positioned between the north and south poles of a magnet. As the
+loop rotates in the magnetic field, the magnetic flux through it changes, and charges are forced through the
+wire, giving rise to an effective voltage or induced voltage. According to Image2.PNG, the magnetic flux
+through the loop is a function of the angle of the loop relative to the direction of the magnetic field.
+
+Real ac generators are, of course, more complex than this, but they operate under the same laws of induction,
+nevertheless. Other ways of generating ac include using a transducer (e.g., a microphone) or even using a dc-
+powered oscillator circuit that uses special inductive and capacitive effects to cause current to resonate
+back and forth between an inductor and a capacitor.
+
+WHY IS AC IMPORTANT?
+1. the ease of converting circular mechanical motion into induced current via an ac generator. 
+2. the ability to increase voltage or decrease voltage (at the expense of current) by using a transformer.
+
+In dc, a transformer is useless, and increasing or decreasing a voltage is a bit tricky, usually involving
+some resistive power losses. Transformers are very efficient, on the other hand, and little power is lost in
+the voltage conversion. 
+
+WATER ANALOGY OF AC (Image3.PNG)
+The analogy uses an oscillating piston pump that moves up and down by means of a cam mechanism, driven by a
+hand crank.
+
+In the water analogy, water particles, on average, appear to simply swish back and forth as the crank is 
+turned. In an ac electrical circuit, a similar effect occurs, though things are a bit more complex. One way
+to envision what’s going on is that within a conductor, the drift velocity of the sea of electrons is being
+swished back and forth in a sinusoidal manner. The actual drift velocity and distance over which the average
+drift occurs are really quite small (fractions of millimeter- per- second range, depending on conductor and
+applied voltage). In theory, this means that there is no net change in position of an “average” electron over
+one complete cycle. (This is not to be confused with an individual electron’s thermal velocity, which is
+mostly random, and at high velocity.) 
+
+PULSATING DC
+If current and voltage never change direction within a circuit, then from one perspective, we have a dc
+current, even if the level of the dc constantly changes. For example, in Image4.PNG, the current is always
+positive with respect to 0, though it varies periodically in amplitude. Whatever the shape of the variations,
+the current can be referred to as “pulsating dc.” If the current periodically reaches 0, it is referred to as
+“intermittent(berselang/berputus - putus) dc.” 
+
+From another perspective, we may look at intermittent and pulsating dc as a combination of an ac and a dc 
+current. Special circuits can separate the two currents into ac and dc components for separate analysis or
+use. There are also circuits that combine ac and dc currents and voltages.
+
+
+COMBINING SINUSOIDAL SOURCES
+Besides combining ac and dc voltages and currents, we can also combine separate ac voltages and currents. 
+Such combinations will result in complex waveforms. Image5.PNG shows two ac waveforms fairly close in 
+frequency, and their resultant combination. 
+
+Image5.PNG: (Left) Two ac waveforms of similar magnitude and close in frequency form a composite wave. Note
+the points where the positive peaks of the two waves combine to create high composite peaks: this is the
+phenomenon of beats. The beat note frequency is f2 − f1 = 500 Hz. (Right) Two ac waveforms of widely different
+frequencies and amplitudes form a composite wave in which one wave appears to ride upon the other.
+
+AC WAVEFORMS
+Alternating current can take on many other useful wave shapes besides sinusoidal.Image6.PNG shows a few common
+waveforms used in electronics. The squarewave is vital to digital electronics, where states are either true 
+(on) or false (off). Triangular and ramp waveforms—sometimes called sawtooth waves—are especially useful in
+timing circuits. 
+
+In the laboratory, a function generator is a handy device that can be used to generate a wide variety of 
+waveforms with varying amplitudes and frequencies.
+
+DESCRIBING THE AC WAVEFORMS
+A complete description of an ac voltage or current involves reference to three properties: amplitude (or
+magnitude), frequency, and phase.
+    
+    1. AMPLITUDE
+    Image7.PNG demonstrates the relationship of the voltage (or current) to relative positions of a circular 
+    rotation through one complete revolution of 360°. The magnitude of the voltage (or current) varies with the
+    sine of the angle made by the circular movement with respect to the zero point. The sine of 90° is 1, which
+    is the point of maximum current (or voltage); the sine of 270° is −1, which is the point of maximum reverse
+    current (or voltage); the sine of 45° is 0.707, and the value of current (or voltage) at the 45° point of
+    rotation is 0.707 times the maximum current (or voltage).
+
+    2. FREQUENCY / PERIOD
+    A sinusoidal waveform generated by a continuously rotating generator will generate alternating current (or
+    voltage) that will pass through many cycles over time. frequency expresses the rate at which current (or
+    voltage) cycles occur. The unit of frequency is cycles per second, or hertz—abbreviated Hz (after Heinrich 
+    Hertz). Go look for Image8.PNG if you confused the differences between period and frequency.
+
+    The length of any cycle in units of time is the period of the cycle, as measured from two equivalent points
+    on succeeding cycles. Mathematically, the period is simply the inverse of the frequency:
+
+            1                   1
+        ⨏ = ―       and     T = ―
+            T                   ⨏
+
+    Example: What is the period of 60 Hz ? 
+
+              1
+        T = ――――  = 0.0617 seconds (One succed cycle is 0.0617 seconds)
+             60
+    
+    Example: What is the frequency of an ac voltage that has period of 2 ns? 
+                1
+        ⨏ = ―――――――――― = 5.0 x 10⁸ Hz = 500 Mhz (There's 500 Milion cycle occur in one second)
+            2 x 10⁻⁹ s
+    
+    3. PHASE
+    When graphing a sine wave of voltage or current, the horizontal axis represents time. Events to the right on
+    the graph take place later, while events to the left occur earlier. A conventional starting point for counting
+    in degrees is 0°—the zero point as the voltage or current begins a positive half cycle. See Image9.PNG 2.85a.
+
+    By measuring the ac cycle this way, it is possible to do calculations and record measurements in a way that is
+    independent of frequency. The positive peak voltage or current occurs at 90° during a cycle. In other words, 
+    90° represents the phase of the ac peak relative to the 0° starting point.
+
+    Image9.PNG 2.85b Since waveform B crosses the zero point in the positive direction after A has already done so,
+    there is a phase difference between the two waveforms. In this case, B lags A by 45°; alternatively, we can say
+    that A leads B by 45°.
+
+    In Image9.PNg 2.85c we have a special case where B lags A by 90°. B’s cycle begins exactly one- quarter cycle
+    after A’s. As one waveform passes through zero, the other just reaches its maximum value.
+
+    Another special case occurs in Fig. 2.85d, where waveforms A and B are 180° out of phase. Here it doesn’t matter
+    which waveform is considered the leading or lagging waveform. Waveform B is always positive when waveform A is
+    negative, and vice versa. If you combine these two equal voltage or current waveforms together within the same
+    circuit, they completely cancel each other out.
+
+    After you read the last paragraph now you understand the text (If A and B occur in the same circuit Image9.PNG 
+    2.85b, they add together, producing a composite sinusoidal waveform at an intermediate phase angle relative to 
+    the individual waveforms. Interestingly, adding any number of sine waves of the same frequency will always 
+    produce a sine wave of the same frequency—though the magnitude and phase may be unique.)
+
+    

@@ -1,0 +1,36 @@
+Find the current in the 4 Ω resistor using Northon Theorem (Image3.PNG)
+
+R₁ = 8 Ω
+R₂ = 6 Ω
+R₃ = 2 Ω
+Rload = 4 Ω
+
+= first you need short the 4 Ω resistor, you get the analysis by looking at
+  the Image3_analysis.PNG. 
+    
+    Inorthon = I₁ + I₂ .........(1)
+
+to find the I₁:
+
+    I₁ = V₁ / R₁ = 42 / 8 = 5,25 A
+
+to find the I₂, we're using the current divider formula:
+
+            R₃
+    I₂ = ――――――― . I = 0,75 A
+         R₃ + R₂
+
+I₂ is a current that's go through the 6 Ω (R₂)
+now we get the Inorthon = 6A 
+
+to find the Rnorthon, it's like the find the Rthevenin by short all the voltage sources, 
+and open the current sources. We end up with 
+
+    Rnorthon = R₁ || (R₂ + R₃)
+             = 8 || (8) = 4 Ω
+
+now re-place the 4 Ω:
+
+                Rnorthon
+    Iload = ―――――――――――――――     . Inorthon = 3A  
+             Rnorthon + Rload 

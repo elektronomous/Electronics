@@ -1,0 +1,30 @@
+Like Thevenin’s theorem, it takes a complex two- terminal network and replaces it with a simple 
+equivalent circuit. However, instead of a Thevenin voltage source in series with a Thevenin
+resistance, the Norton equivalent circuit consists of a current source in parallel with a
+resistance—which happens to be the same as the Thevenin resistance. In essence, Norton’s theorem 
+is to current sources as Thevenin’s theorem is to voltage sources. Its underlying mechanism, 
+like that of Thevenin’s, is the superposition theorem. You can verify your calculation using 
+superposition theorem when you do your Norton calculation. 
+
+A Norton equivalent circuit can be transformed into a Thevenin equivalent circuit and vice versa.
+The equivalent resistor stays the same in both cases; it is placed in series with the voltage
+source in the case of a Thevenin equivalent circuit and in parallel with the current source in
+the case of the Norton equivalent circuit. 
+
+The voltage for a Thevenin equivalent source is equal to the nonload voltage appearing across the
+resistor in the Norton equivalent circuit. The current for a Norton equivalent source is equal to
+the short- circuit current provided by the Thevenin source.
+
+(If you don't understand by the words in the last paragraph, let met clear it for you. First look 
+at the Image1.PNG in the left part of the section of Northon Equivalent Circuit. Multiply the Rthev
+and the Inorthon, you'll get a Thevenin voltage with no load. This voltage is the Thevenin voltage
+in the Thevenin circuit. Now for the equivalent current, look at the Image1.PNG at the section 2.19
+Thevenin Theorem, then look at the second part of the image. Divide the Rthev with Vthev and you find
+that the short-circuit of the Northon has the exact same result)
+
+If you want to do Northon Calculation Theorem, here the tips:
+(1) Remove the resistor and mark out the terminals
+(2) Find the short-circuit current (Inorthon) using KVL
+(3) Deactivate all independent sources and find Rnorthon
+(4) Produce the Northon's Equivalent Circuit by reconnecting the resistor
+(5) Find the current that through the resistor.

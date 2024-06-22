@@ -1,0 +1,109 @@
+flux is how much of something is flowing through a surface in a given amount of time. The something is magnetic
+flux.
+
+Magnetic flux is a measurement of the total magnetic field which passes through a given area. It is a useful tool
+for helping describe the effects of the magnetic force on something occupying a given area. The measurement of 
+magnetic flux is tied to the particular area chosen. We can choose to make the area any size we want and orient it
+in any way relative to the magnetic field.
+
+WHAT IS A MAGNETIC FIELD
+A magnetic field is a picture that we use as a tool to describe how the magnetic force is distributed in the space
+around and within something magnetic. We understand that magnets have two poles and that depending on the 
+orientation of two magnets there can be attraction (opposite poles) or repulsion (similar poles). We recognize that
+there is some region extending around a magnet where this happens. The magnetic field describes this region.
+
+There are two different ways that a magnetic field is typically illustrated:
+1. The magnetic field is described mathematically as a vector field. This vector field can be plotted directly as a
+   set of many vectors drawn on a grid. Each vector points in the direction that a compass would point and has
+   length dependent on the strength of the magnetic force. Arranging many small compasses in a grid pattern and 
+   placing the grid in a magnetic field illustrates this technique. The only difference here is that a compass
+   doesn't indicate the strength of a field. (Image1.svg)
+
+2. An alternative way to represent the information contained within a vector field is with the use of field lines.
+   Here we dispense with the grid pattern and connect the vectors with smooth lines. We can draw as many lines as 
+   we want. (Image2.svg)
+
+HOW DO WE MEASURE MAGNETIC FIELD
+Because a magnetic field is a vector quantity, there are two aspects we need to measure to describe it; the strength
+and direction. The direction is easy to measure. We can use a magnetic compass which lines up with the field. 
+Magnetic compasses have been used for navigation (using the Earth's magnetic field) since the 11ᵗʰ century.
+
+Interestingly, measuring the strength is considerably more difficult. Practical magnetometers only came available in
+the 19ᵗʰ century. Most of these magnetometers work by exploiting the force an electron feels as it moves through a
+magnetic field.
+
+In the SI system, the magnetic field is measured in tesla (symbol T, named after Nikola Tesla). The Tesla is defined
+in terms of how much force is applied to a moving charge due to the field. A small refrigerator magnet produces a 
+field of around 0.001 T and the Earth's field is about 5 . 10⁻⁵ T. An alternative measurement is also often used, 
+the Gauss (symbol G). There is a simple conversion factor, 1 T = 10⁴ G. Gauss is often used because 1 Tesla is a
+very large field.
+
+In equations the magnitude of the magnetic field is given the symbol B. You may also see a quantity called the 
+magnetic field strength which is given the symbol H. Both B and H have the same units, but takes into account the 
+effect of magnetic fields being concentrated by magnetic materials. For simple problems taking place in air you 
+won't need to worry about this distinction.
+
+WHAT IS THE ORIGIN OF THE MAGNETIC FIELD
+Magnetic fields occur whenever charge is in motion. As more charge is put in more motion, the strength of a magnetic
+field increases.
+
+There are two basic ways which we can arrange for charge to be in motion and generate a useful magnetic field:
+
+1. We make a current flow through a wire, for example by connecting it to a battery. As we increase the current 
+   (amount of charge in motion) the field increases proportionally. As we move further away from the wire, the field
+   we see drops off proportionally with the distance. This is described by Ampere's law. Simplified to tell us the
+   magnetic field at a distance from a long straight wire carrying current the equation is
+
+          μ₀I
+      B = ―――
+          2πr
+
+   Here μ₀ is a special constant known as the permeability of free space(Opens in a new window). 
+      
+      μ₀ = 4π . 10⁻⁷ . m/A.
+
+   Some materials have the ability to concentrate magnetic fields, this is described by those materials having 
+   higher permeability.
+
+   Since the magnetic field is a vector, we also need to know the direction. For conventional current flowing through
+   a straight wire this can be found by the right-hand-grip-rule. To use this rule imagine gripping your right hand
+   around the wire with your thumb pointing in the direction of the current. The fingers show the direction of the
+   magnetic field which wraps around the wire.
+
+CANCELING THE FIELD OF THE EARTH
+Image4.PNG shows a setup in which a compass is placed near a vertical wire. When no current is flowing in the wire 
+the compass points north as shown due to the Earth's field (assume the field of the Earth is 5 . 10⁻⁵ T).
+
+What current (magnitude and direction) would be required to cancel out the field of the Earth and 'confuse' the compass? 
+First we need to arrange Ampere's law for a straight wire to be in terms of current:
+
+          μ₀I
+      B = ―――
+          2πr
+
+            2πr
+      I = B ―――
+            μ₀
+
+As shown on the diagram, the distance r from the compass to the wire is 0.05 m. Substituting in the numbers:
+
+                        (2π) . (0.05 m)
+      I = (5 . 10⁻⁵ T) ―――――――――――――――――
+                        4π . 10⁻⁷ T . m/A 
+      
+      I = 12.5 A
+
+This is quite a large current. A typical laboratory power supply might only supply up to 3A. We also need to find the
+direction of the field. Using the right-hand-grip-rule we need to point our thumb down in order to have our fingers
+point in the opposite direction to where the compass is pointing. So the current needs to be flowing into the page in
+Image4.PNG. (Answer: into the page means the direction is pointing inside the plane of your notebook. /  It's the
+direction that goes from your eye to the page)
+
+Suppose our power supply is limited to a total of 1.25 A. Can you suggest an alternative configuration of the experiment
+which produces the same effect on the compass?
+
+Two options are available to us:
+   1. We could simply reduce the distance between the wire and the center of the compass. If we are limited to (one 
+      tenth what we had before) then the distance would have to be reduced by the same fraction, i.e. to 1.25 A. 
+      Naturally, this assumes that the body of the compass has radius of or less.
+   2. We could increase the magnetic field by adding more wires, each carrying the same current. Because the current in a long piece of wire is the same everywhere, we can in principle achieve this with a single long piece of wire arranged to allow the current to make 10 'passes'. However, this only works if the current is in the same direction on each 'pass' otherwise the fields will be in opposite directions and cancel each other out. The best way to achieve this is by making a vertical coil with 10 turns and radius large enough that the magnetic field from the opposite side of the coil is small enough to be negligible from the point of view of the compass.

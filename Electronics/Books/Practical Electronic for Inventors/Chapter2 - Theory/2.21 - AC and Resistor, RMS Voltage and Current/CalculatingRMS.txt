@@ -1,0 +1,70 @@
+* We know that DC voltages/current never change its direction, at every instance 
+  it's almost remain constant and hence when calculating power, voltage, and current
+  is very easy in DC. (Image2.PNG)
+
+  for example: say that you have a battery (10 volts) and a lamp that needs 2 amperes
+               current for work. then the power it's use at any instance of time is:
+
+                    P = I V = 20 W
+
+* Now we have AC that its voltage and current is change direction over time. See the
+  Image3.PNG, from beginning we have 0 V, in the next few seconds we get 5V, to 10 V
+  back again to 5V and 0V and the reach the negative side of the voltage and current. 
+  Now if you use the peak value of 10V or -10V or 5V or -5V for calculating the power
+  you'll get wrong answer because the next few seconds the voltage and current is keep 
+  changing over time. We need a term for which will give us the effective value of AC
+  quantities which we can consider for power calculation and which will remain true for
+  the most of the time. The step for calculating this effective value is (Peak value in
+  this example is 20V):
+
+  1. Divide the waveform in equal section (Image4.PNG) and mark the value as 
+     shown (Image5.PNG):
+        V₁ = 6.2 V
+        V₂ = 11.8 V
+        V₃ = 16.2 V
+        V₄ = 19 V
+        V₅ = 20 V
+        V₆ = 19 V
+        V₇ = 16.2 V
+        V₈ = 11.8 V
+        V₉ = 6.2 V
+        V₁₀ = 0 V
+    
+     * Now if you wonder why we only use the half cycle, you can also use one cycle 
+  
+  2. Take the square of each voltages:
+
+        V₁ = 6.2 V      => 38.44
+        V₂ = 11.8 V     => 139.24
+        V₃ = 16.2 V     => 262.44
+        V₄ = 19 V       => 361
+        V₅ = 20 V       => 400
+        V₆ = 19 V       => 361
+        V₇ = 16.2 V     => 262.44
+        V₈ = 11.8 V     => 139.24
+        V₉ = 6.2 V      => 38.44
+        V₁₀ = 0 V       => 0
+  
+  3. Take the average/mean of the marked values:
+
+        38.44 + 139.24 + 262.44 + 361 + 400 + 361 + 262.44 + 139.24 + 38.44 + 0
+        ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+                                        10
+        
+        = 200
+  
+  4. Simply take the square root for the final value: 
+
+        √200 = 14.14 V RMS
+
+
+* This 14.14 V RMS AC is equivalent to the 14.14 VDC. For example if you have 10 V RMS
+  AC and a bulb that needs 2A for work, then the power is: 
+
+        P = IV = 20 W
+
+* For calculating size of cable you can considering the RMS current measurement
+* For calculating size of the insulator in high voltage AC applicationi, the peak value shall
+  be considered rather than RMS value. 
+* RMS value, peak value, average value will change with different waveforms (sine wave, square wave,
+  and triangular wave)

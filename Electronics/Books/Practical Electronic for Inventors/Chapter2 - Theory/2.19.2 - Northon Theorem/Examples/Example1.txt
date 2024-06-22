@@ -1,0 +1,40 @@
+find the current in the 3 Ω resistor of the circuit below. 
+(Image1.PNG)
+
+If you short the 3 Ω resistor, it will be the path that's the lowest resistance 
+in the circuit. That's why the direction of the current will go through this path.
+(Image2.PNG)
+
+from Image2.PNG we get our calculation:
+
+    I_N = I + I₁ - I₂........(1)
+
+now find the I:
+
+    I = V / R = 6 / 2 = 3A 
+
+now find the I₁:
+
+    I₁ = V₁ / R₁ = 4 / 1 = 4A 
+
+now find the I₂:
+
+    I₂ = V₂ / R₂ = 5 / 1 = 5A
+
+now we can substite those three values to our first equation:
+
+    I_N = 3 + 4 - 5 = 2 A
+
+to get the Rnorthon, we need to open the circuit (I_N in the Image2.PNG) and short the
+voltage, we end up with all of the resistors are parallel:
+
+    Rnorthon = R₂ || R₁ || R
+             = (1 || 1) || 2
+             = 0.5 || 2
+             =  0,4 A
+
+now re-place the 3 Ω resistor, the current go through the load resistor is: 
+
+            Rnorthon                0,4 Ω
+    I =  ――――――――――――――   . I_N = ――――――――― . 2 A = 0,235 A  
+         Rnorthon + Rload           3,4 Ω 

@@ -1,0 +1,34 @@
+find the current in the 8 Ω resistor using Northon Theorem (Image4.PNG)
+
+R₁ = 5 Ω
+R₂ = 20 Ω
+R₃ = 4 Ω
+
+because both theorem is involving the superposition theorem, you can remove
+one of the sources and find the I in each of the sources:
+
+as usual first we short the 8 Ω. Now open the 3 A circuit and find the current
+that goes through all the circuit: 
+
+    R' = R₁ + (R₂ || R₃)
+       = 5 + (20 || 4)
+       = 8,33 Ω
+    
+    I' = V / R = 25 / 8,33 = 3,001 A
+
+    In' = (20 / 20 + 4) * I' = 2,5 A
+
+now short the voltage, and recalculate the current: 
+
+    R"left = (5 || 20) = 4 Ω
+    Rtot = (4 || 4) = 2 Ω
+    
+    I" = 4 / (4 + 4) * Isources = 1.5 A
+
+now you get the Inorthon = 4A (look at the direction of the current, that's why we add them together)
+find the Rnorthon by open the 8 Ω, open the 3A and short the voltage: 
+
+    Rnorthon = (5 || 20) + 4
+             = 8 Ω
+    
+    Iload = (8 / 8 + 8) * Inorthon =  = 2 A 
