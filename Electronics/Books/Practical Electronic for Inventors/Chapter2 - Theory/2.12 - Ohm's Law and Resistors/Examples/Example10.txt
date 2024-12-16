@@ -47,15 +47,15 @@ parallel, we store the result into R₂ because both are united to be R₂:
         
      1      1       1
     ―――― =  ――――  + ――――
-     R₂     Load     R₂ 
+     R₂     RLoad     R₂ 
 
      R₂ = 300 Ω
 
 - Now you calculate the Iₜₒₜₐₗ with combination of R₁ and R₂ 
      
-             V
-     Iₜₒₜₐₗ = ―――――――― = 10 mA 
-            R₁ + R₂ 
+             V          10
+     Iₜₒₜₐₗ = ―――――――― = ――――――――――― = 10 mA 
+            R₁ + R₂   700 + 300
 
 - Now you can get the value of each voltage in each Resistor
      
