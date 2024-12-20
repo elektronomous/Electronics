@@ -1,0 +1,32 @@
+Voltage = 10 Volts 
+
+(1) look at Image3.PNG first we need to find the R₃₄:
+
+          R₃ × R₄   95 × 30
+    R₃₄ = ――――――― = ――――――― = 22,8 Ω
+          R₃ + R₄   95 + 30
+
+(2) look at the Image4.PNG now, we need to find the R₂₃₄:
+
+    R₂₃₄ = R₂ + R₃₄ = 70 + 22,8 = 92,8 Ω
+
+(3) look at the Image5.PNG now, we need to find R₂₃₄₅:
+
+            R₃ × R₂₄₅    92,8 × 100
+    R₂₃₄₅ = ―――――――――― = ―――――――――― = 48,13 Ω
+            R₃ + R₂₄₅    92,8 + 100
+
+(4) look at the Image6.PNG, now we reach the Rₜₒₜₐₗ :
+
+    Rₜₒₜₐₗ = R₁ + R₂₃₄₅ = 50 + 48,13 = 98,13 Ω
+
+(5) at the Image7.PNG we get the Rₜₒₜₐₗ, now find the Iₜₒₜₐₗ :
+
+             V        10
+    Iₜₒₜₐₗ = ―――――― = ――――――― = 0,102 A = 102 mA  
+            Rₜₒₜₐₗ     98,13
+
+(6) Now you can find the voltage in R₁ and R₂₃₄₅ :
+
+    
+    V₁ =
