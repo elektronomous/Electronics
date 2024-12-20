@@ -31,3 +31,7 @@ Rearranging the voltage divider and solving for R₁:
                 5
     
        = 40000 / 5 = 8000 Ω
+
+Now you're going to put the IC parallel with R₂, not with R₁.. why ?
+if you calculate the Iₜₒₜₐₗ, you'll end up with V₁ is 4 Volt and 5 Volt
+in V₂

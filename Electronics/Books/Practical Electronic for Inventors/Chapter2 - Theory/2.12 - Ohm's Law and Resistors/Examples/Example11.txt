@@ -1,0 +1,54 @@
+You have a 10- V supply, but two LEDs supply are rated at:
+ (1) LED₁ 3,5 V and draws 20 mA
+ (2) LED₂ 2 V and draws 20mA
+Create a voltage divider for the load device.
+
+       .__LED₁.__LED₂.
+       |      |      |
+.__R₁__|__R₂__|__R₃__|
+|                    |
+|                    |
+|______ battery _____|
+
+= When you arrange the LEDs like the one above, you need to make sure that those two LEDs have the same
+  current rate operation. Why ? Because in series, the total current is same all around the components. 
+  That's why if you have two LEDs and operated at the different level of current, the load that's rated
+  lower will have resistor that's not efficient in power consumption. The rule of 10 percent is a standard 
+  method for selecting resistor that takes into account the load and minimizes unnecessary power losses
+  in the divider
+
+- first you need to take the 10percent of the current of the LED₂, this called current bleeder:
+  
+    I_bleeder_LED₂ = 20 mA × 10% = 2 mA
+
+- with the current you get, you can now account for the R₃ here to be attach with the LED₂, this called
+  resistor bleeder:
+    
+    R₃ = R_bleeder = V_LED₂ / I_bleeder_LED₂ = 2 V / 2 mA = 1000 Ω
+
+- Now when you combine the two current (bleeder and the LED₂), you get the total of the current:
+
+    Iₜₒₜₐₗ = I_bleeder_LED₂ + I_LED₂ = 20 mA + 2 mA = 22 mA
+
+- Because LED₁ operated in the same current level, we also can get the bleeder current for the LED₁ with
+  the same amount as LED₂:
+    
+    I_bleeder_LED₁ = 20 mA x 10% = 2 mA
+
+- R₂ now can be account as the current bleeder is there:
+
+    R₂ = R_bleeder = V_LED₁ / I_bleeder_LED₁ = 3,5 V / 2 mA = 1750 Ω
+
+- remember in series each load can have variable voltage, but the same current all accross the loads
+- We have 10 V suply, we have used 
+
+    V_used = V_LED₁ + V_LED₂ = 3,5 V + 2 V = 5,5 V
+
+- the left voltage we have is:
+    
+    V_left = Vₜₒₜₐₗ - V_used = 10 V - 5,5 V = 4,5 V
+
+- Because current in the first load (R₁) is the same as the Iₜₒₜₐₗ, and we have left voltage we can now
+  account for the R₁:
+    
+    R₁ = V_left / Iₜₒₜₐₗ = 4,5 V / 22 mA = 204,5 Ω

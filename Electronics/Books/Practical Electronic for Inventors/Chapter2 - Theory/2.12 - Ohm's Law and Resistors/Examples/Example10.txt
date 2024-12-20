@@ -37,3 +37,39 @@ In terms of power ratings:
         P_R₂ = V₂² / R₂ = (3V)² / (3300 Ω) = 0.003 W = 3 mW
 
 Low- power ¼- W resistors will suffice.
+
+to understand all of this, you need to make sure that the calculation is met, we first account for Load and R₂ in
+parallel, we store the result into R₂ because both are united to be R₂:
+
+             V_load     3 V
+    R_load = ――――――― = ――――――― = 330 Ω
+             I_load    9.1mA
+        
+     1      1       1
+    ―――― =  ――――  + ――――
+     R₂     RLoad     R₂ 
+
+     R₂ = 300 Ω
+
+- Now you calculate the Iₜₒₜₐₗ with combination of R₁ and R₂ 
+     
+             V          10
+     Iₜₒₜₐₗ = ―――――――― = ――――――――――― = 10 mA 
+            R₁ + R₂   700 + 300
+
+- Now you can get the value of each voltage in each Resistor
+     
+     V₁ = Iₜₒₜₐₗ x R₁ = 7 Volt
+     V₂ = Iₜₒₜₐₗ x R₂ = 3 Volt ------ EXACTLY 
+
+- Now to get brighter insight, we need to make sure that the 9.1 mA is delivered to the load.
+  You know that R₂ and Load are parallel, so the current is divided to those two. Now we know 
+  that I₂ + I_load = Iₜₒₜₐₗ, then
+      
+             V₂ 
+      I₂ = ―――――― = 0.91 mA
+             R₂ 
+      
+     I_load + I₂ = Iₜₒₜₐₗ 
+     I_load = Iₜₒₜₐₗ - I₂ 
+            = 9,09 mA ---------------- EXACTLY
