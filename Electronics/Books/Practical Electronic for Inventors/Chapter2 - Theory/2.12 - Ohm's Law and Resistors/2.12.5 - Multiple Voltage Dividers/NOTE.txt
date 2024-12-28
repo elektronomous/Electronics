@@ -28,11 +28,12 @@ To find R₃, use Ohm's law, using the voltage difference between load₂ and lo
 
     R₃ = V_R₃ / I₃ = (V_load₂ - V_load₃) / I₃ = (50 - 25) / 15 mA = 1666 Ω
 
-If you wonder why V_R₃ = V_load₂ - V_load₃ ? V_load₃ is the part of the V_load₂, we substract the V_load₂ so that
-load₃'s Volts isn't using the 50 V, but instead 25 V. Using the result of the substracted operation, we use that 
-volts to give the other load 15 mA (load₃ and R₄) by put 1666 Ω.
+If you wonder why V_R₃ = V_load₂ - V_load₃ ? V_R₃₄ is the total of V_R₃ added by V_load₃ (V_R₃₄ = V_R₃ + V_load₃). You know that
+V_R₃₄ is the same as V_load₂ and the total current that is enter to the V_R₃₄ is 15 mA. You don't know the V_R₃, that's why you need
+the linear algebra to solve it. 
 
-If it doesn't make clear, go to the PROVED.txt to make brighter insight of you.
+    V_R₃ = V_R₃₄ - V_load₃
+    V_R₃ = V_load₂ - V_load₃ .....
 
 The current through R₂ is:
 

@@ -1,7 +1,11 @@
 I have a blue LED and a green LED. The blue one needs 5V and 30 mA and the green needs
-2.5V and 25 mA.
+2.5V and 25 mA. Considered that you supplied by the 10V source battery
 
 (answer):
+
+the first resistor (top-most resistor) = R₁
+the middle resistor = R₂
+the bottom resistor = R₃ 
 
 V_blue = 5 Volts 
 I_blue = 30 mA
@@ -9,48 +13,46 @@ I_blue = 30 mA
 V_green = 2.5 Volts
 I_green = 25 mA 
 
-first calculate all the total current
+If you arrange both LED in series, their current must be the same. You can arrange both LED like the one
+circuit in 2.12.5 - Multiple Voltage Divider. The previous of this calculation is incorrect so I choose
+to updated. 
 
-    Iₜₒₜₐₗ = I_blue + I_green = 30 + 25 = 55 mA
+first you need to account the bleeder current which is 10% of the total current
 
-and from this, you get the I_bleeder from the 10 percent of this total
+    I_bleeder = I_R₃ = (I_blue + I_green) × 10% = (30 mA + 25 mA) × 10% = 5,5 mA
 
-    I_bleeder = Iₜₒₜₐₗ * 10% = 5,5 mA
+now you account for the R₃
 
-and to get the R₃ (which is parallel with green LED, the voltage must be same), use Ohm's law:
+           V_R₃         2.5 V 
+    R₃ = ―――――――――― = ―――――――――― = 454,5 Ω 
+         I_bleeder      5,5 mA 
 
-    R_bleeder = R₃ = V_green / I_bleeder = 2.5 V / 5,5 mA = 450 Ω
+Now the total current (I_R₃ + I_green) needed so we can count for the R₂ 
 
-to give the green LED 25 mA and the 5,5 mA, we need to calculate the R₂ :
+    I_R₃gᵣₑₑₙ = I_bleeder + I_green = 25 mA + 5,5 mA = 30,5 mA 
 
-    I_R₂ = I_R₃ + I_green = 25 + 5,5 = 30,5 mA 
+Now if you want to calculate the R₂, you need the V_R₂. Because there's no V_R₂ you can get the V_R₂ by
 
-because blue LED parallel with the load R₃ and green LED, we don't give them the whole blue LED's
-voltages, so we decrease it by placing the resistor R₂ series with R₃:
+    V_blue = V_green + V_R₂
+    V_R₂ = V_blue - V_green = 5 V - 2,5 V = 2,5 V
 
-    R₂ = V_blue / I_R₂ = (5 - 2,5) Volts / 30,5 mA = 81 Ω
+now you can calculate for the R₂
 
-using R₂ 81 Ω and 2,5 volts we can give the R₃ and green LED a 2,5 volts and 30,5 mA (whichs divided again
-by the size of both component). To give blue LED a 5 volts and 30 mA, the R₁ need to find out: 
+           V_R₂       2,5 V
+    R₂ = ――――――――― = ―――――――――― = 82 Ω
+         I_R₃gᵣₑₑₙ    30,5 mA 
 
-    I_R₁ = I_R₂ + I_green = 30,5 mA + 30 mA = 60,5 mA 
+Now the total current (I_R₂ + I_blue) needed so we can count for the R₁
 
-I have 9 volt battery, we need to give the R₂ and the green LED 5 volts, so we get left:
+    I_R₂bₗᵤₑ = I_R₂ + I_blue = 30,5 mA + 30 mA = 60,5 mA
 
-    V_R₁ = Vbat - V_green = (9 - 5) = 4 volts
+Also you don't know the V_R₁, like finding the V_R₂ the V_R₁ exactly the same
+    
+    V_battery = V_R₁ + V_green
+    V_R₁ = V_battery - V_green = 10 V - 5 V = 5 V
 
-from this we can get the size of R₁ :
+Now you can find the R₁
 
-    R₁ = V_R₁ / I_R₁ = 4 volts / 60,5 mA = 66 Ω
-
-recalculate this when you found the real resistor's value: 
-
-R₃ = 470 Ω
-R₂ = 100 Ω
-R₁ = 75 Ω
-
-Rₜₒₜ = 645 Ω
-Iₜₒₜ = Vbat / 645 = 0,013 A = 13 mA 
-
-
-
+          V_R₁      5 V
+    R₁ = ――――――― = ―――――――― = 83 Ω
+         I_R₂bₗᵤₑ   60,5 mA 
