@@ -11,8 +11,8 @@ large it would melt the wire. To avoid this theoretical dilemma, we must define 
 battery, plug- in dc power supply, etc.) that can supply only a maximum finite amount of current. A real
 voltage source resembles an ideal voltage source with a small series internal resistance or source 
 resistance rₛ , which is a result of the imperfect conducting nature of the source (resistance in battery
-electrolyte and lead, etc.). This internal resistance tends to reduce the terminal voltage, the magnitude of
-which depends on its value and the amount of current that is drawn from the source (or the size of the load
+electrolyte and lead, etc.). This internal resistance tends to reduce the terminal voltage, the magnitude of (reduced voltage)
+which depends on its value(internal resistance value) and the amount of current that is drawn from the source (or the size of the load
 resistance).
 
 In Image1.PNG, when a real voltage source is open- circuited (no load connected between its terminals), the
