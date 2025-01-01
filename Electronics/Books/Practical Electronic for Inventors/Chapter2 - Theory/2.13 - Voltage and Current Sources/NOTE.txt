@@ -36,7 +36,7 @@ around 0.40 - 0.50V. say that it's dropped by 0.50V, and the voltage source will
 terminal will be 9V. You get load 1KΩ, using the formula above you'll get rₛ =  55 Ω)
 
 Another symbol used in electronics pertains to dc current sources—see Image1.PNG. An ideal current source provides
-the same amount of source current IS at all times to a load, regardless of load resistance changes. This means that
+the same amount of source current Iₛ at all times to a load, regardless of load resistance changes. This means that
 the terminal voltage will change as much as needed as the load resistance changes in order to keep the source 
 current constant.
 
@@ -44,7 +44,7 @@ In the real world, current sources have a large internal shunt (parallel) resist
 internal resistance, which is usually very large, tends to reduce the terminal current Iₜ, the magnitude of which
 depends on its value and the amount of current that is drawn from the source (or the size of load resistance).
 
-When the source terminals are open- circuited, IT must obviously be zero. However, when we connect a load resistance
+When the source terminals are open- circuited, Iₜ must obviously be zero. However, when we connect a load resistance
 R_load across the source terminals, R_load and rₛ form a parallel resistor circuit. Using the current divider 
 expression, the terminal current becomes:
 
@@ -61,3 +61,6 @@ current through R1 into the base of the second transistor, so current flows into
 it, and out its emitter. This current must flow through R2. If the current gets too high, the first transistor turns
 on and robs the second transistor of base current, so its collector current can never exceed the value shown. This is
 an excellent way of either making a current source or limiting the available current to a defined maximum value.
+
+from this practical current source we know that if there's a path in which the current can easily take without any
+effort, it will go through it and make the other path slightly have a less current. 
