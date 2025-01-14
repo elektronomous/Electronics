@@ -1,0 +1,77 @@
+This simple second example is shows you how determinant so important in solving the kirchoff's law.
+The example is using 30v source battery
+
+- We start from loop I: 
+
+    Vₜₒₜ - I₁R₁ = 0
+    30 - 250I₁ =............. (1)
+
+- and then loop II
+
+    -I₁R₁ + I₂R₂  = 0
+    -250 I₁ + 150 I₂ = 0 ........... (2)
+
+- using basic algebra like this, either you can find the I₁ or I₂:
+
+    30     - 250I₁ = 0
+    150 I₂ - 250I₁ = 0
+    ―――――――――――――――――――――― -
+    30 - 150 I₂ = 0
+    30 = 150 I₂
+
+          30
+    I₂ = ――――― = 0.2 A = 200 mA  
+          150
+
+- and know you can find the I₁ :
+
+    150 I₂ - 250 I₁
+    150 (0.2) - 250 I₁
+    30 - 250 I₁ .........................(1)
+    I₁ = 0.12 A = 120 mA 
+
+- so the total current is:
+
+    Iₜₒₜ = I₁ + I₂ = 200 mA + 120 mA = 320 mA 
+
+- Now you can find the same total amount of current using the powerfull determinant.
+
+     250I₁          = 30        | 250       0  |
+    -250I₁ + 150 I₂ = 0         | -250      150|
+
+- for determintant 2x2:
+
+    | a     b |
+    | c     d |
+
+    determinant = ad - bc = (250 . 150) - (-250 . 0) = 37500
+
+- to find the I₂, you need to insert the sources battery and remove the resistor coefficients
+
+    | 250       0 |
+    | -250     30 |
+
+    determinant = (250 . 30) - (-250 . 0) = 7500
+
+- and then you divide the second determinant with first determinant
+
+         determinant₂    7500
+    I₂ = ―――――――――――――― = ――――――― = 0.2 A = 200 mA 
+         determinant₁     37500
+
+- now to find the I₁, you can use the same determinant trick
+
+    | 30    0   |
+    |  0    150 |
+
+    determinant = ad - bc = (30 . 150) - (0 . 0) = 4500
+
+- and then you divide this determinant with the first determinant 
+
+         determinant₃   4500
+    I₁ = ――――――――――――― = ―――――  = 0.12 = 120 mA 
+         determinant₁   37500
+
+- and now you get the total current
+
+    Iₜₒₜ = I₁ + I₂ = 200 mA + 120 mA = 320 mA 
