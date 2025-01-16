@@ -37,8 +37,7 @@ Applying the superposition, we add the partial current to get the total current:
         I₂ = I₂₁ + I₂₂ = ―――――――――――――――
                             R₁ + R₂
 
-if you wonder why the operation is resut in substraction? You can image two batteries at the same circuit with the
-plus and negative is in the same position. 
+if you wonder why the operation is resut in substraction? Look at the Kirchoff current law
 
 The current through R₁ could have been determined in a similar manner, with the following result:
         
