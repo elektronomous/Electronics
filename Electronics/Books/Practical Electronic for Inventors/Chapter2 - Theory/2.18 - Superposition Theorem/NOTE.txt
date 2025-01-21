@@ -45,6 +45,8 @@ The current through R₁ could have been determined in a similar manner, with th
             I₁ = ―――――――――――――――
                     R₁ + R₂
 
+If you wonder why this formula is addition, you can look at the Image1.PNG at the 2.17 Kirchoff's Law
+
 The superposition theorem is an important tool whose theory makes possible complex impedance analysis in linear,
 sinusoidally driven circuits—a subject we will cover a bit later. The superposition is also an underlying 
 mechanism that makes possible two important circuit theorems: Thevenin’s theorem and Norton’s theorem. These two
