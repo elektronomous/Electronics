@@ -1,0 +1,12 @@
+The amount of flux present in a round magnetic bar was measured at 0.013 webers.
+If the material has a diameter of 12cm, calculate the flux density.
+
+    ϕ = 0.013 Wb
+    D = 12 cm
+    Area = πr² = (3.142) * (0.06²) = 0.0113 m²
+
+        ϕ   0.013
+    B = ― = ――――――― = 1.15T 
+        A   0.0113
+
+

@@ -1,0 +1,80 @@
+THE MAGNITUDE OF MAGNETISM
+We now know that the lines of force or more commonly the magnetic flux around a magnetic material is given the Greek symbol, Phi, ( Φ ) with
+the unit of flux being the Weber, ( Wb ) after Wilhelm Eduard Weber. But the number of lines of force within a given unit area is called the
+“Flux Density” and since flux ( Φ ) is measured in ( Wb ) and area ( A ) in metres squared, (m²), flux density is therefore measured in 
+Webers/Metre² or ( Wb/m² ) and is given the symbol B.
+
+However, when referring to flux density in magnetism, flux density is given the unit of the Tesla after Nikola Tesla so therefore one Wb/m2 is
+equal to one Tesla, 1Wb/m2 = 1T. Flux density is proportional to the lines of force and inversely proportional to area so we can define Flux
+Density as:
+
+                                     Magnetic Flux, (Weber)            ϕ 
+    Magnetic Flux Density, (Tesla) = ――――――――――――――――――――――――       B = ――――
+                                           Area, (m²)                  A
+
+It is important to remember that all calculations for flux density are done in the same units, e.g., flux in webers, area in m² and flux 
+density in Teslas. (Example1.txt)
+
+Therefore, it is necessary to establish a relationship between current flowing through the conductor and the resultant magnetic field produced 
+around it by this flow of current allowing us to define the relationship that exists between Electricity and Magnetism in the form of 
+Electromagnetism.
+
+(READ THE ELECTROMAGNETISM)
+When dealing with magnetism in electrical circuits it must be remembered that one Tesla is the density of a magnetic field such that a 
+conductor carrying 1 ampere at right angles to the magnetic field experiences a force of one newton-metre length on it and this will be
+demonstrated in the next tutorial about Electromagnetism. 
+
+ELECTROMAGNETISM
+The force of electromagnetism is the basic force for all the other forces governing the interaction between atoms and molecules producing
+the property we know as electrical charge.
+
+While permanent magnets produce a good and sometimes very strong static magnetic field, in some applications the strength of this magnetic
+field is still too weak or we need to be able to control the amount of magnetic flux that is present. So in order to produce a much 
+stronger and more controllable magnetic field we need to use electricity.
+
+By using coils of wire wrapped or wound around a soft magnetic material such as an iron core we can produce very strong electromagnets 
+for use in many different types of electrical applications. This use of coils of wire produces a relationship between electricity and
+magnetism that gives us another form of magnetism called Electromagnetism.
+
+Electromagnetism is produced when an electrical current flows through a simple conductor such as a length of wire or cable, and as current
+passes along the whole of the conductor then a magnetic field is created along the whole of the conductor. The small magnetic field created
+around the conductor has a definite direction with both the “North” and “South” poles produced being determined by the direction of the
+electrical current flowing through the conductor.
+
+The direction of rotation of this magnetic field is governed by the direction of the current flowing through the conductor with the 
+corresponding magnetic field produced being stronger near to the center of the current carrying conductor. This is because the path length
+of the loops being "greater the further away"(semakin jauh) from the conductor resulting in weaker flux lines as shown in Image5.PNG
+
+MAGNETIC FIELD AROUND A CONDUCTOR
+A simple way to determine the direction of the magnetic field around the conductor is to consider screwing an ordinary wood screw into a 
+sheet of paper. As the wood screw enters the paper the rotational action is CLOCKWISE, so the only part of the screw that would be visible
+above the paper is the actual screw head.
+
+If the wood screw is of the pozidriv or philips type head design, the cross on the head would be visible. It is this cross head which is
+used to indicate the direction of current flowing “into” the paper and away from the observer.
+
+Likewise, the action of removing the screw is the reverse, anti or counter-clockwise. As the current enters from the top it therefore leaves
+the underside of the paper. The only part of the wood screw which is visible from below is the tip or point of the screw. It is this point
+which is used to indicate current flowing “out of” the paper and towards the observer.
+
+Then the physical action of screwing the wood screw in and out of the paper indicates the direction of conventional current flow in the 
+conductor and therefore, the direction of rotation of the electromagnetic field around it as shown below. This concept is known generally as
+the Right Hand Screw Action.
+
+THE RIGHT HAND SCREW ACTION (Image7.PNG)
+Another more familiar concept which determines both the direction of current flow and the resulting direction of the magnetic flux around the
+conductor is called the “Left Hand Rule”. The direction can be deduced by holding the current carrying conductor in your left hand with the 
+thumb extended pointing in the direction of the electron flow from negative to positive. (Image6.PNG)
+
+The position of the fingers laid across and around the conductor will now be pointing in the direction of the generated magnetic lines of force
+as shown. If the direction of the electron flowing through the conductor is reversed, the left hand will need to be placed onto the other side
+of the conductor with the thumb pointing in the new direction of the electron current flow.
+
+This “Left Hand Rule” can also be used to determine the magnetic direction of the poles in an electromagnetic coil. This time, the fingers point
+in the direction of the electron flow from negative to positive while the extended thumb indicating the direction of the north pole. There is a
+variation on this rule called the “right hand rule” which is based on so-called conventional current flow, (positive to negative).
+
+Consider when a single straight piece of wire is bent into the form of a single loop as shown Image8.PNG. Although the electric current is flowing
+in the same direction through the whole length of the wire conductor, it will be flowing in opposite directions through the paper. This is because
+the current leaves the paper on one side and enters the paper on the other therefore a clockwise field and an anticlockwise field are produced next
+to each other across the sheet of paper.

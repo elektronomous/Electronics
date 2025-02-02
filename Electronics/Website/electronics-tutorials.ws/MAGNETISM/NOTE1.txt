@@ -1,0 +1,86 @@
+= Electromagnetism is the force produced when an electrical current flows through a simple conductor such as a piece of wire or cable.
+= magnets can be made from ferromagnetic materials which attract (and repel) other materials, mainly metals. Magnetism is the force 
+  exerted(digunakan) by magnets as they attract or repel each other.
+= A small magnetic field is created around the conductor with the direction of this magnetic field with regards(relating/concerning) 
+  to its “North” and “South” poles being determined by the direction of the current flowing through the conductor.
+
+= Magnets can be found in a natural state in the form of a magnetic ore(biji), with the two main types being Magnetite also called 
+  “iron oxide”, (FE₃O₄) and Lodestone, also called “leading stone”. If these two natural magnets are suspended(digantung) from a piece
+  of string, they will take up a position in-line with the Earth’s magnetic field always pointing north. (Ex: COMPASS'S NEEDLE)
+= There are basically two forms of magnetism, “Permanent Magnets” and “Temporary Magnets”, with the type being used dependant upon its application.
+= Magnetic material in the non-magnetic state has its molecular structure in the form of loose magnetic chains or individual tiny magnets loosely
+  arranged in a random pattern. The overall effect of this type of arrangement results in zero or very weak magnetism as this haphazard(sembarangan/berantakan)
+  arrangement of each molecular magnet tends to neutralise its neighbour. (Image1.PNG)
+= When the material is Magnetised this random arrangement of the molecules changes and the tiny unaligned and random molecular magnets become 
+  “lined-up” in such a way that they produce a series magnetic arrangement. This idea of the molecular alignment of ferromagnetic materials is
+  known as Weber’s Theory and is illustrated below. (Image1.PNG)
+
+MAGNETIC MOLECULE ALIGNMENT OF A PIECE OF IRON AND A MAGNET
+Weber’s theory is based on the fact that all atoms have magnetic properties due to the spinning action of the atoms electrons. Groups of atoms join 
+together so that their magnetic fields are all rotating in the same direction. Magnetic materials are composed of groups of tiny magnets at a molecular
+level around the atoms, and a magnetised material will have most of its tiny magnets lined up in one direction only to produce a north pole in one 
+direction and a south pole in the other direction.
+
+Likewise, a material that has its tiny molecular magnets pointing in all directions will have its molecular magnets neutralised by its neighbouring magnet,
+thereby neutralising any magnetic effect. These areas of molecular magnets are called “domains”.
+
+Any magnetic material will produce a magnetic field itself which depends on the degree of alignment of magnetic domains in the material set up by orbital 
+and spinning electrons. This degree of alignment can be specified by a quantity known as magnetisation, M.
+
+In an unmagnetised material(loose magnetic domain), M = 0, but some of the domains remain aligned over small regions in the material once the magnetic field
+is removed(when you have a magnet bar, and you give the other magnetic material such as iron for example the magnet bar, some domains inside the iron will
+will remain aligned). The effect of applying a magnetising force to the material is to align some of the domains to produce a non-zero magnetisation value.
+
+Once the magnetising force has been removed, the magnetism within the material will either remain or decay away quiet quickly depending on the magnetic 
+material being used. This ability of a material to retain its magnetism is called Retentivity.
+
+Materials which are required to retain their magnetism will have a fairly high retentivity and as such are used to make permanent magnets, while those 
+materials required to lose their magnetism quickly such as soft iron cores for relays and solenoids will have a very low retentivity.
+
+MAGNETIC FLUX
+All magnets, no matter what their shape, have two regions called magnetic poles with the magnetism both in and around a magnetic circuit producing a 
+definite chain(hubungan/talian) of organised and balanced pattern of invisible lines of flux around it. These lines of flux are collectively referred to as
+the “magnetic field” of the magnet. The shape of this magnetic field is more intense in some parts than others with the area of the magnet that has the 
+greatest magnetism being called “poles”. At each end of a magnet is a pole.
+
+These lines of flux (called a vector field) can not be seen by the naked eye, but they can be seen visually by using iron fillings sprinkled (Image3.PNG)
+onto a sheet of paper or by using a small compass to trace them out. Magnetic poles are always present in pairs, there is always a region of the magnet 
+called the North-pole and there is always an opposite region called the South-pole.
+
+Magnetic fields are always shown visually as lines of force that give a definite pole at each end of the material where the flux lines are more dense and
+concentrated. The lines which go to make up a magnetic field showing the direction and intensity are called Lines of Force or more commonly “Magnetic Flux”
+and are given the Greek symbol, Phi ( Φ ) as shown below.
+
+LINES OF FORCE FROM A BAR MAGNETS MAGNETIC FIELD (Image2.PNG)
+
+As shown in Image2.PNG, the magnetic field is strongest near to the poles of the magnet where the lines of flux are more closely spaced. The general 
+direction for the magnetic flux flow is from the North ( N ) to the South ( S ) pole. In addition, these magnetic lines form closed loops that leave at
+the north pole of the magnet and enter at the south pole. Magnetic poles are always in pairs.
+
+However, magnetic flux does not actually flow from the north to the south pole or flow anywhere for that matter as magnetic flux is a static region around
+a magnet in which the magnetic force exists. In other words magnetic flux does not flow or move it is just there and is not influenced by gravity. Some
+important facts emerge when plotting lines of force:
+
+    Lines of force NEVER cross.
+    Lines of force are CONTINUOUS.
+    Lines of force always form individual CLOSED LOOPS around the magnet.
+    Lines of force have a definite DIRECTION from North to South.
+    Lines of force that are close together indicate a STRONG magnetic field.
+    Lines of force that are farther apart indicate a WEAK magnetic field.
+
+Magnetic forces attract and repel like electric forces and when two lines of force are brought close together the interaction between the two magnetic 
+fields causes one of two things to occur:
+
+    1. When adjacent poles are the same, (north-north or south-south) they REPEL each other. (Image4-repel.PNG)
+    2. When adjacent poles are not the same, (north-south or south-north) they ATTRACT each other. (Image4-attraction.PNG)
+
+MAGNETIC FIELD OF LIKE AND UNLIKE POLES (Image4.PNG)
+When plotting magnetic field lines with a compass it will be seen that the lines of force are produced in such a way "as to"(about, regarding, or 
+according to) give a definite pole at each end of the magnet where the lines of force leave the North pole and re-enter at the South pole. Magnetism can
+be destroyed by heating or  hammering the magnetic material, but cannot be destroyed or isolated by simply breaking the magnet into two pieces.
+
+So if you take a normal bar magnet and break it into two pieces, you do not have two halves of a magnet but instead each broken piece will somehow
+have its own North pole and a South pole. If you take one of those pieces and break it into two again, each of the smaller pieces will have a North
+pole and a South pole and so on. No matter how small the pieces of the magnet become, each piece will still have a North pole and a South pole, crazy!
+
+Then in order for us to make use of magnetism in electrical or electronic calculations, it is necessary to define what are the various aspects of magnetism.
