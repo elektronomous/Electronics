@@ -1,0 +1,49 @@
+Permeability is a material's ability to allow fluids or gases to pass through it. It can also refer to a material's ability to become 
+                  magnetized when exposed to an external magnetic field. 
+
+How do you measure strong of the magnetic field pass through a core ?
+    4.π.10⁻⁷ H/m means something like the vacuum core allow the magnetic field strong of 4π10⁻⁷ H is pass through per meter along the vacuum
+    while soft iron core has 80×10⁻³ means the magnetic field strong of 80×10⁻³ is allow to be passed to the soft iron core per meter along the soft iron 
+
+In electromagnetism, permeability is the measure of magnetization produced in a material in response to an applied magnetic field. 
+
+The permeability constant (µ₀), also known as the magnetic constant or the permeability of free space, is a measure of the amount
+of resistance encountered when forming a magnetic field in a classical vacuum
+
+PERMEABILITY OF ELECTROMAGNETS
+If cores of different materials with the same physical dimensions are used in the electromagnet, the strength of the magnet will vary in relation
+to the core material being used. This variation in the magnetic strength is due to the number of flux lines passing through the central core. if
+the magnetic material has a high permeability then the flux lines can easily be created and pass through the central core and permeability (μ) 
+and it is a measure of the ease by which the core can be magnetised.
+
+The numerical constant given for the permeability of a vacuum is given as: μ₀ = 4.π.10-7 H/m with the relative permeability of free space (a vacuum)
+generally given a value of one. It is this value that is used as a reference in all calculations dealing with permeability and all materials have 
+their own specific values of permeability.
+
+The problem with using just the permeability of different iron, steel or alloy cores is that the calculations involved can become very large so it
+is more convenient to define the materials by their relative permeability.
+
+RELATIVE PERMEABILITY 
+Relative Permeability, symbol μᵣ is the product of μ (absolute permeability) and μₒ the permeability of free space and is given as.
+         
+         μ
+    μᵣ = ――
+         μ₀ 
+
+Materials that have a permeability slightly less than that of free space (a vacuum) and have a weak, negative susceptibility to magnetic fields are
+said to be Diamagnetic in nature such as: water, copper, silver and gold. Those materials with a permeability slightly greater than that of free 
+space and themselves are only slightly attracted by a magnetic field are said to be Paramagnetic in nature such as: gases, magnesium, and tantalum.
+
+When ferromagnetic materials are used in the core the use of relative permeability to define the field strength gives a better idea of the strength
+of the magnetic field for the different types of materials used. For example, a vacuum and air have a relative permeability of one and for an iron
+core it is around 500, so we can say that the field strength of an iron core is 500 times stronger than an equivalent hollow air coil and this
+relationship is much easier to understand than 0.628×10-3 H/m, ( 500.4.π.10-7).
+
+While, air may have a permeability of just one, some ferrite and permalloy(a nickel-iron alloy that is used in electrical and electronic equipment)
+materials can have a permeability of 10,000 or more. However, there are limits to the amount of magnetic field strength that can be obtained from a
+single coil as the core becomes heavily saturated as the magnetic flux increases and this is looked at in the next tutorial about B-H curves and
+Hysteresis.
+
+MAGNETIC HYSTERESIS 
+Ferromagnetic materials when subjected to a temporary magnetic field can exhibit a lag or delay in the demagnetisation process due to the material
+from which they are made. This lag or delay of a magnetic material is known commonly as magnetic hysteresis.

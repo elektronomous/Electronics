@@ -1,0 +1,7 @@
+The absolute permeability of a soft iron core is given as 80 milli-henries/m (80.10⁻³ ). Calculate the equivalent relative permeability value.
+         
+         μ    80×10⁻³ 
+    μᵣ = ―― = ――――――――― = 63654 or 64×10³ 
+         μ₀   4×π×10⁻⁷ 
+
+    

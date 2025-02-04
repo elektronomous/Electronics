@@ -15,3 +15,67 @@ and by the amount of current flowing through it.
 The magnetic field generated around a straight length of current-carrying wire is very weak even with a high current passing through it. However, if
 several loops of the wire are wound together along the same axis producing a coil of wire, the resultant magnetic field will become even more 
 concentrated and stronger than that of just a single loop. This produces an electromagnetic coil more commonly called a Solenoid.
+
+ELECTROMAGNET 
+The electromagnet is a type of temporary magnet in which its magnetic field is produced by electric current and to concentrate the magnetic field, the 
+wire of an electromagnet is wound into a coil.
+
+The magnetic field that this produces is stretched out in a form of a bar magnet giving a distinctive north and south pole with the flux being 
+proportional to the amount of current flowing in the coil. If additional layers of wire are wound upon the same coil with the same current flowing,
+the magnetic field strength will be increased. (Image10.PNG)
+
+It can be seen from this therefore that the amount of flux available in any given magnetic circuit is directly proportional to the current flowing 
+through it and the number of turns of wire within the coil. This relationship is called Magneto Motive Force or m.m.f. and is defined as:
+
+    Magneto Motive Force, (m.m.f) = I×N ampere turns
+
+Magneto Motive Force is expressed as a current, I flowing through a coil of N turns. The magnetic field strength of an electromagnet is therefore 
+determined by the ampere turns of the coil with the more turns of wire in the coil the greater will be the strength of the magnetic field.
+
+THE MAGNETIC STRENGTH OF THE ELECTROMAGNET 
+The intensity of magnetic field around the conductor is proportional to the distance from the conductor with the strongest point being next to the
+conductor and progressively getting weaker further away from the conductor. In the case of a single straight conductor, the current flowing and the
+distance from it are factors which govern the intensity of the field.
+
+The formula therefore for calculating the “Magnetic Field Strength”, H sometimes called “Magnetising Force” of a long straight current carrying 
+conductor is derived from the current flowing through it and the distance from it (Image11-RIGHT-HAND-RULE.PNG)
+
+    For a Coil of Wire:
+            
+            I × N
+        H = ――――――
+              L
+    
+    For a Straight Conductor:
+
+              I
+        H = ―――――
+             2πr
+
+Where:
+
+    H = the strength of the magnetic field in ampere-turns/metre, At/m
+    N = the number of turns of the coil
+    I = the current flowing through the coil in amps, A
+    L = the length of the coil in metres, m
+
+Then to summarise, the strength or intensity of a coils magnetic field depends on the following factors.
+    The number of turns of wire within the coil.
+    The amount of current flowing in the coil.
+    The type of core material.
+
+The magnetic field strength of the electromagnet also depends upon the type of core material being used as the main purpose of the core is to
+concentrate the magnetic flux in a well defined and predictable path. So far only air cored (hollow) coils have been considered but the introduction
+of other materials into the core (the centre of the coil) has a very large controlling effect on the strength of the magnetic field.
+
+If the material is non-magnetic for example wood, for calculation purposes it can be regarded as free space as they have very low values of 
+permeability. If however, the core material is made from a Ferromagnetic material such as iron, nickel, cobalt or any mixture of their alloys, a
+considerable difference in the flux density around the coil will be observed.
+
+Ferromagnetic materials are those which can be magnetised and are usually made from soft iron, steel or various nickel alloys. The introduction of 
+this type of material into a magnetic circuit has the effect of concentrating the magnetic flux making it more concentrated and dense and amplifies
+the magnetic field created by the current in the coil.
+
+We can prove this by wrapping a coil of wire around a large soft-iron nail and connecting it to a battery as shown. This simple classroom experiment
+allows us to pick-up a large quantity of clips or pins and we can make the electromagnet stronger by adding more turns to the coil. This degree of
+intensity of the magnetic field either by a hollow air core or by introducing ferromagnetic materials into the core is called Magnetic Permeability.
