@@ -1,0 +1,75 @@
+(⦿) Lines 1–23: This is a multiline comment. Comments are important for documenting your code.
+     Whatever you write between these symbols will not be compiled or even seen by your 
+     Arduino. Multiline comments start with /* and end with */. Multiline comments are
+     generally used when you have to say a lot (like the description of this program).
+
+(⦿) Line 25: This is a single-line comment. When you put // on any line, the compiler
+     ignores all text after that symbol on the same line. This is great for annotating
+     specific lines of code or for “commenting out” a particular line of code that you
+     believe might be causing problems.
+
+(⦿) Line 26: void setup() is one of two functions that must be included in every
+     Arduino program. A function is a piece of code that does a specific task. Code
+     within the curly braces of the setup() function is executed once at the start of
+     the program. This is useful for one-time settings, such as setting the direction
+     of pins, initializing communication interfaces, and so on. In this program, it
+     will configure the pin that connects to the LED as an output, because you will
+     be telling the pin to do something, instead of querying the pin to determine
+     its state.
+
+(⦿) Line 28: The Arduino’s digital pins can all function as inputs or outputs. To
+     configure their direction, use the command pinMode(). All pins default to inputs
+     unless you explicitly tell the Arduino to treat them as outputs. Defining a pin
+     as an output during the setup() will mean that the pin stays configured as an
+     output for the duration of the program execution (unless you explicitly change
+     it again in the main loop). Set a pin as an output to assign a value to it (5V or 0V
+     in the case of a digital pin on a 5V board like the Uno). Set a pin as an input if
+     you want to “read” the value being applied to it. You’ll explore these concepts
+     more in the next chapter.
+
+     The pinMode() command takes two arguments. An argument gives commands(pinMode)
+     information on how they should operate. Arguments are placed inside the parentheses 
+     following a command. The first argument to pinMode() determines which
+     pin is having its direction set. For instance, you could simply specify 13 as the
+     first argument, because the onboard LED is connected to pin 13 on the Uno.
+     However, the Arduino language has a number of built-in defined words. These
+     words enable one Arduino program to be abstracted to a variety of different
+     hardware based on what board you’ve told the IDE you are using. The Arduino
+     compiler converts these special words to specific instructions depending on your
+     hardware. For instance, LED_BUILTIN is a special word that the compiler converts to the pin number of the built-in LED on your board. On the Uno, this
+     gets converted to “13.” On the MKR1000, this gets converted to “6” because the
+     LED is connected to those pin numbers on those boards. By using this special
+     word instead of just writing the pin number, you ensure that your program is
+     portable, meaning it can be executed on various types of Arduino hardware. In
+     the next chapter, you’ll learn about variables, which are special words that you
+     define yourself to assign a meaningful name to numbers, text, and other data.
+          The second argument to pinMode() sets the direction of the pin: INPUT or
+     OUTPUT. These are additional special predefined words that the compiler uses to
+     configure the MCU onboard your Arduino. Because you want to light an LED,
+     you have set the LED pin to an output (when configured as an output, a pin can
+     “source” or “sink” current by toggling internal switches called transistors).
+
+(⦿) Line 32: The second required function in all Arduino programs is void loop().
+     The contents of the loop function repeat forever as long as the Arduino is on.
+     If you want your Arduino to do something once at boot only, you still need to
+     include the loop function, but you can leave it empty.
+
+(⦿)  Line 33: digitalWrite() is a command that is used to set the state of an output
+      pin. It can set the pin to either 5V or 0V. When an LED is connected to a pin
+      (through a current-limiting resistor), setting it to 5V will enable you to light up
+      the LED. (You will learn more about this in the next chapter.) The first argument
+      to digitalWrite() is the pin you want to control. The second argument is the
+      value you want to set it to, either HIGH (5V) or LOW (0V). The pin remains in this
+      state until it is changed later in the code.
+
+(⦿)  Line 34: The delay() function accepts one argument: a delay time in milliseconds. 
+      When calling delay(), the Arduino stops doing anything for the amount
+      of time specified. In this case, you are delaying the program for 1000 ms, or 1
+      second. This results in the LED staying on for 1 second before you execute the
+      next command.
+
+(⦿)  Line 35: Here, digitalWrite() is used to turn the LED off, by setting the pin
+      state to LOW
+
+(⦿)  Line 36: Again, you delay for 1 second to keep the LED in the off state before
+      the loop repeats and switches to the on state again.

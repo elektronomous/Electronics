@@ -1,0 +1,57 @@
+◼◼ Microcontroller: At the heart of every Arduino is a microcontroller. This is the brain of your Arduino.
+◼◼ Programming: Programming interfaces enable you to load software onto your Arduino.
+◼◼ I/O: Input/Output (I/O) circuitry is what enables your Arduino interface with sensors, actuators, etc.
+◼◼ Power: There are a variety of ways to supply power to an Arduino. Most Arduino boards can automatically switch between power from multiple sources (such as
+           USB and a battery)
+
+The Microcontroller
+= At the heart of every Arduino is a microcontroller unit (MCU). 
+= All the original Arduino boards, including the Arduino Uno, used an 8-bit Atmel® ATmega microcontroller based on the AVR® architecture.
+= The chips are functionally identical if they have the same part number
+= microcontroller peripherals, including analog-to-digital converters (ADCs), general-purpose input/output (GPIO or just I/O) pins, 
+  communication buses (including I2C, SPI, UART, and others), and serial/USB interfaces. 
+= In the case of the Uno, a 16 MHz ceramic resonator or oscillating crystal is wired to the ATmega’s clock pins, which serves as the reference by which all
+  program commands execute. You can use the Reset button to restart the execution of your program. Most Arduino boards come with a debug LED already 
+  connected to pin 13, which enables you to run your first program (blinking an LED) without connecting any additional circuitry.
+
+Programming Interfaces
+= Ordinarily, microcontroller programs are written in C or assembly, and programmed via the In-Circuit Serial Programming™ (ICSP™) interface using a dedicated
+  programmer (see Image2.PNG)
+= Perhaps the most important characteristic(ciri khas) of an Arduino is that you can program it directly using only an ordinary USB cable. This functionality
+  is made possible by the Arduino bootloader. The bootloader is loaded onto the microcontroller at the factory (using the ICSP header), which allows a serial
+  USART (Universal Synchronous/Asynchronous Receiver/Transmitter) to load your program on the Arduino without using a separate programmer. 
+
+Input/Output: GPIO, ADCs, and Communication Busses
+= Input/Output (GPIO) and ADC pins all of these pins can be individually addressed via the programs you’ll write. These pins can serve as digital inputs
+  and outputs. The ADC pins can also act as analog inputs that can measure voltages between 0V and 5V (usually from sensors). 
+= Many of these pins are also multiplexed to serve special functions, These special functions include various communication interfaces, serial interfaces,
+  pulse-width modulated outputs, and external interrupts.
+
+The Arduino Bootloader and Firmware Setup
+= In general, AVR microcontrollers are programmed with an ICSP, which talks to the microcontroller via a Serial Peripheral Interface (SPI). Programming via 
+  this method is straightforward, but necessitates the user having a hardware programmer such as an STK500 or an AVRISP mkII (see Image2.PNG).
+= When you send an “upload” command from the Arduino IDE, it instructs the USB-to-serial chip (an ATmega 16U2 or 8U2 in the case of the Arduino Uno) to reset
+  the main MCU, thus forcing it into bootloader mode. 
+= Bootloaders are great because they enable simple programming via USB with no external hardware. However, they do have two downsides:
+  ◼◼ They take up valuable program space. If you have written a complicated sketch, the approximately 2 KB of space taken up by the bootloader might be
+      really valuable.
+  ◼◼ Using a bootloader means that your program will always be delayed by a few seconds at bootup as the bootloader checks for a programming request.
+
+Arduino Boards
+= The Arduino Leonardo and Arduino Micro (see Image3.PNG and Image4.PNG) both use the ATmega32U4 as the main microcontroller, which has a USB interface built
+  in. Therefore, they don’t need a secondary MCU to perform the serial-to-USB conversion.
+= The Due (see Image5.PNG) uses a 32-bit Arm Cortex-M3 SAM3X. The Due offers higher-precision ADCs, selectable-resolution pulse-width modulation (PWM), 
+  digital-to-analog converters (DACs), a USB host connector, and an 84 MHz clock speed.
+
+Running the IDE and Connecting to the Arduino
+= Now that you have the IDE downloaded and ready to run, you can connect the Arduino to your computer via USB, as shown in Image5.PNG.
+= To ensure that everything is working as expected, you’ll load the Blink example program, which will blink the onboard LED. 
+  (1) Navigate to File ➢ Examples ➢ Basic,   and click the Blink program.
+  (2) Before you send the program to your Arduino board, you need to tell the IDE what kind of Arduino you have connected and what port it is connected to.
+      Go to Tools ➢ Board and ensure that the right board is selected. 
+  (3) The last step before programming is to tell the IDE what port your board is connected to. Navigate to Tools ➢ Serial Port and select the appropriate
+      port. On Windows machines, this will be COM*, where * is some number representing the serial port number.
+  (4) You’re finally ready to load your first program. Click the Upload button (Image6.PNG symbol with -> right arrow) in the top-left corner of the IDE.
+      The status bar at the bottom of the IDE shows a progress bar as it compiles and uploads your program. The TX/RX LEDs on your Arduino will flash as it
+      is programming. These LEDs show that data is being transferred to the board from your computer. When the upload completes, the onboard LED on your Arduino
+      should be blinking once per second. Congratulations! You’ve just uploaded your first Arduino program.
