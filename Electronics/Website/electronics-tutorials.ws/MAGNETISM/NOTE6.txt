@@ -1,0 +1,12 @@
+NOTE: 
+    if you look at the Image14.PNG, to overcome the residual magnetic density in the soft ferromagnetic material,
+    need a slightly less than the hard ferromagnetic. This means it take only small portion of current,I to remove
+    the residual magnetic rather than it needs a bigger flow of current to overcome the residual magnetic  
+
+MAGNETIC HYSTERESIS LOOPS FOR SOFT AND HARD MATERIALS (Image14.PNG)
+Magnetic Hysteresis results in the dissipation of wasted energy in the form of heat with the energy wasted being in proportion to the area of the magnetic
+hysteresis loop. Hysteresis losses will always be a problem in AC transformers where the current is constantly changing direction and thus the magnetic 
+poles in the core will cause losses because they constantly reverse direction.
+
+As said previously, the shape of the hysteresis loop depends upon the nature of the iron or steel used and in the case of iron which is subjected(rentan)
+to massive reversals of magnetism, for example transformer cores, it is important that the B-H hysteresis loop is as small as possible.

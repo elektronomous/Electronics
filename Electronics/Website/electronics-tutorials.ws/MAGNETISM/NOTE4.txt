@@ -45,5 +45,27 @@ single coil as the core becomes heavily saturated as the magnetic flux increases
 Hysteresis.
 
 MAGNETIC HYSTERESIS 
-Ferromagnetic materials when subjected to a temporary magnetic field can exhibit a lag or delay in the demagnetisation process due to the material
-from which they are made. This lag or delay of a magnetic material is known commonly as magnetic hysteresis.
+Ferromagnetic materials when subjected(diberikan/didekatkan) to a temporary magnetic field can exhibit a lag or delay in the demagnetisation process
+due to the material from which they are made. This lag or delay of a magnetic material is known commonly as magnetic hysteresis.
+
+Previously, the relative permeability, symbol μᵣ was defined as the ratio of the absolute permeability μ and the permeability of free space μₒ(a vacuum)
+and this was given as a constant. However, the relationship between the flux density, B and the magnetic field strength, H can be defined by the fact 
+that the relative permeability, μᵣ is not a constant but a function of the magnetic field intensity(strength) thereby giving magnetic flux density as:
+    
+     B = μ H
+
+as the magnetic field strength increase, the flux density will increase too (proporsional)
+
+Then the magnetic flux density in the material will be increased by a larger factor as a result of its relative permeability for the material compared
+to the magnetic flux density in vacuum, μₒH and for an air-cored coil this relationship is given as:
+
+    B
+    ― = μₒ
+    H
+
+So for ferromagnetic materials the ratio of flux density to field strength ( B/H ) is not constant but varies with flux density. However, for air cored
+coils or any non-magnetic medium core such as woods or plastics, this ratio can be considered as a constant and this constant is known as μₒ, the 
+permeability of free space, ( μₒ = 4.π.10⁻⁷ H/m ).
+
+By plotting values of flux density, ( B ) against the field strength, ( H ) we can produce a set of curves called Magnetisation Curves, Magnetic 
+Hysteresis Curves or more commonly B-H Curves for each type of core material used as shown(Image12.PNG)
