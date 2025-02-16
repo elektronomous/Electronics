@@ -1,0 +1,34 @@
+Working with “Bouncy” Buttons
+= It makes more sense to be able to click the button once to turn it on and to click the button again to turn it off. This way, you do not have to hold the 
+  button down to keep the light on. Unfortunately, this is not quite as easy as you might first guess. You cannot just look for the value of the switch to
+  change from low to high; you need to worry about a phenomenon called switch bouncing.
+= Buttons are mechanical devices that operate as a spring-damper system. In other words, when you push a button down, the signal you read does not just go
+  from low to high; it bounces up and down between those two states for a few milliseconds before it settles(Image7.PNG). 
+  = You would expect the button state to be immediately read as a high logic level, as the graph on the left shows. However, the button actually bounces up
+    and down before settling, as the graph on the right shows.
+= If you know that the switch is going to do this, it is relatively straightforward to deal with it in software. Switch-debouncing software can look for a 
+  button state change, wait for the bouncing to finish, and then read the switch state again. This program logic can be expressed as follows:
+    1. Store a previous button state and a current button state (initialized to LOW).
+    2. Read the current button state.
+    3. If the current button state differs from the previous button state, wait 5 ms because the button must have changed state.
+    4. After 5 ms, reread the button state and use that as the current button state.
+    5. If the previous button state was low, and the current button state is high, toggle the LED state.
+    6. Set the previous button state to the current button state.
+    7. Return to step 2.
+= This is a perfect opportunity to explore using functions for the first time. Functions are blocks of code that can accept input arguments, execute code
+  based on those arguments, and optionally return a result. For example, digitalWrite() is a function that accepts a pin and a state, and writes that state
+  to the given pin.
+
+Building a Controllable RGB LED Nightlight (nightlight-rgb_nightlight.ino)
+NOTE: (in conventional current: anode(+) and cathode(-), in electrone curren: anode(-) and cathode(+). This books apply conventional current)
+= In this scenario, you use a common anode LED. That means that the LED has four leads. One of them is an anode(negative electrode) pin that is shared among all
+  three diodes, while the other three pins connect to the cathodes(positive electrode) of each diode color. Wire that LED up to three PWM pins through current-
+  limiting resistors on the Arduino, as shown in the wiring diagram in Image8.PNG. As with the single red LED, values of 220Ω will work well for current limiting.
+= Because this LED is a common anode, that means the cathode of each diode is being controlled by the Arduino, instead of the anode as in the example with the red
+  LED.
+= When an Arduino’s pin is set as an output, it is really doing one of two things:
+  ◼◼ When you set it HIGH, it “sources” current. Current is allowed to flow from the Arduino’s 5V supply, out of the pin, and then through the attached load
+      to ground.
+  ◼◼ When you set it LOW, it “sinks” current. Current is permitted to flow into the pin, to the internal ground.
+
+NOTE: this only works for RGB LED with common anode, the code i've just write is for common cathode (You can see the different between both RGB LED in Image9.PNG)

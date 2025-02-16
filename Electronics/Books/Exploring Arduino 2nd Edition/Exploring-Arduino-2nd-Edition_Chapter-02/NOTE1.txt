@@ -1,0 +1,78 @@
+Working With Breadboard
+= A breadboard is a simple prototyping tool that allows you to easily wire up simple circuits without having to solder together parts to a custom-printed 
+  circuit board.
+= (Image1.PNG) Consider the blue and red lines that run the length of the board. The pins adjacent to these color-coded lines are designed to be used as 
+  power and ground buses. 
+  = All the red pins are electrically connected, and are generally used for providing power. In the case of most Arduinos and the projects in this book,
+    this will generally be at 5V. 
+  = All the blue pins are electrically connected and are used for the ground bus.
+  = All the vertically aligned pins are also connected in rows, with a division in the middle to make it easy to mount integrated circuits (ICs) on the 
+    breadboard. 
+  = ICs in the Dual-Inline Package (DIP) form-factor fit neatly across across the center device.
+
+Wiring LEDs
+= LEDs are polarized(punya arah); in other words, it matters in what direction you hook them up. 
+  = The positive lead is called the anode, and the negative lead is called the cathode.
+= If you look at the clear top of the LED, there will usually be a flat side on the lip(tepian) of the casing. That side is the cathode. 
+  = Another way to determine which side is the anode and which is the cathode is by examining the leads. The shorter lead is the cathode
+= LED stands for light-emitting diode. Like all diodes, LEDs allow current to flow in only one direction—from their anode to their cathode. Because current flows from positive to
+  negative, the anode of the LED should be connected to the current source (a 5V digital signal in this case), and the cathode should be connected to ground.
+= LEDs are specified to draw(mendapat) a certain maximum amount of current. The exact amount depends on the LED. Because you’ll be driving the LED directly from an Arduino’s 
+  output pins in this example, it’s important to limit the maximum current through the LED. Failure to do so could draw more current from the Arduino’s pins than they are specified
+  to supply, or it could result in the LED burning out. 
+  = Current limiting is easily accomplished by installing a resistor in series with the LED. The resistor can be inserted in series on either side of the LED. Resistors are not
+    polarized, and so you do not have to worry about their orientation.
+  = (Image2.PNG) You’ll wire the LED into pin 9 in series with a resistor. LEDs must always be wired in series with a resistor to serve as a current limiter. The larger the resistor
+    value, the more it restricts the flow of current and the dimmer the LED glows. In this scenario, you use a 220Ω resistor.
+  
+SIDE NOTE: OHM'S LAW AND THE POWER EQUATION
+= Ohm’s law dictates the relationship between voltage (measured in volts), current (measured in amps), and resistance (measured in ohms or Ω) in a circuit. A circuit is a closed 
+  loop with a source of electrical energy (like a 9V battery) and a load (something to use up the energy, like an LED). 
+  ◼◼ Voltage represents the potential electrical difference between two points.
+  ◼◼ Current flows from a point of higher potential energy to a point of lower potential energy. You can think of current as a flow of water, and voltage as elevation. Water (or 
+      current) always flows from a higher elevation (higher voltage) to a lower elevation (ground, or a lower voltage). Current, like water in a river, will always follow the path
+      of least resistance in a circuit.
+  ◼◼ Resistance, in this analogy, is representative of how easy it is for current to flow. When the water (the current) is flowing through a narrow pipe, less can pass through in
+      the same amount of time as through a larger pipe. The narrow pipe is equivalent to a high resistance value because the water will have a harder time flowing through. The wider
+      pipe is equivalent to a low resistance value(like a wire) because current can flow freely through it.
+= Ohm’s law is defined as follows:
+  
+             V = IR
+
+  where V is voltage difference in volts, I is current in amps, and R is the resistance in ohms.
+= In a circuit, all voltage gets used up, and each component offers up some resistance that lowers the voltage.
+  = LEDs have a predefined voltage drop across them and are designed to operate at a particular current value. The larger the current through the LED, the brighter the LED glows, up
+    to a limit. For the most common “low-power” LEDs, the maximum current designed to go through an LED is 20 milliamps (a milliamp is 1/1000 of an amp and is typically abbreviated as
+    mA). The voltage drop across an LED is defined in its datasheet. A common value for a red LED is around 2V.
+  = (Image3.PNG) You can use Ohm’s law to decide on a resistor value for this circuit. Assume that this is a standard LED with 20mA forward current and a 2V drop across it. Because the
+    source voltage is 5V and it ends at ground, a total of 5V must drop across this circuit. Because the LED has a 2V drop, the other 3V must drop across the resistor. Knowing that you
+    want approximately 20mA to flow through these components (these components are in series with each other, so the amount of current that flows through the resistor must be the same
+    amount as flows through the LED—there is nowhere else for that current to go), you can find the resistor value by solving for R: 
+
+            R = V / I => V = 3V and I = 20mA 
+            R = 150 Ω
+  = As you increase the resistance value, less current is allowed to flow through. 220Ω is a bit more than 150Ω, but still allows the LED to glow sufficiently bright, and is a very
+    commonly available resistor value.
+= Another useful equation to keep in mind is the power equation. The power equation tells you how much power, in watts, is dissipated across a given resistive component. Because increased
+  power is associated with increased heat dissipation, components generally have a maximum power rating. You want to ensure that you do not exceed the maximum power rating for resistors 
+  because otherwise they might overheat and fail. A common power rating for through-hole resistors is 1/8 watt (125mW) (abbreviated as W, milliwatts as mW). The power equation is as follows:
+
+            P = I × V
+  = where P is power in watts, and I and V are still defined as the current and voltage, respectively
+= For the resistor defined earlier with a voltage drop of 3V and a current of 20mA, P = 3V × 0.02A = 60mW, well under the resistor’s rating of 1/8W, or 125mW. So, you do not have to worry 
+  about the resistor overheating; it is well within its operating limits.
+
+Programming Digitial Outputs
+= By default, all Arduino pins are set to inputs. 
+  = If you want to make a pin an output, you need to first tell the Arduino how the pin should be configured. In the Arduino programming language, the program requires two parts: the setup()
+    and the loop(). As you learned in Chapter 1, the setup() function runs one time at the start of the program, and the loop() function runs over and over again. 
+= (CODE: led.ino) Notice that at the top of this program, there is a line that defines a variable, LED, as equal to 9. Because you set LED equal to 9 at the top of the program, LED is now
+  interpreted as a variable equivalent to 9 when it is referenced in other parts of the program. Think of it like a placeholder. Anywhere else you see LED in the program, the Arduino is
+  replacing that with 9. So, when pinMode() and digitalWrite() are called, their first argument is pin 9.
+= Variables can have different types. In this case, the variable is type int. int is short for “integer,” meaning that the LED variable is sized in memory to hold an integer (as opposed to
+  a text string, or a decimal number, for example).
+= In this program, also notice that I used the const operator before defining the pin integer variable. Ordinarily, you’ll use variables to hold values that may change during program 
+  execution. By putting const before your variable declaration, you are telling the compiler that the variable is “read only” and will not change during program execution. When you are
+  defining values that will not change, using the const qualifier is recommended because it will prevent you from accidentally altering the value of that variable later in your code.
+= You must specify the type for any variable that you declare. In the preceding case, it is an integer (pins will always be integers), so you should set it as such. Experiment with
+the delay values and create different blink rates.

@@ -10,3 +10,8 @@ poles in the core will cause losses because they constantly reverse direction.
 
 As said previously, the shape of the hysteresis loop depends upon the nature of the iron or steel used and in the case of iron which is subjected(rentan)
 to massive reversals of magnetism, for example transformer cores, it is important that the B-H hysteresis loop is as small as possible.
+
+ELECTROMAGNETIC INDUCTION
+Electromagnetic induction uses the relationship between electricity and magnetism whereby an electric current flowing through a single wire will produce a
+magnetic field around it. If the wire is wound into a coil, the magnetic field is greatly intensified producing a static magnetic field around itself forming
+the shape of a bar magnet giving a distinct North and South pole. (Image15.PNG)

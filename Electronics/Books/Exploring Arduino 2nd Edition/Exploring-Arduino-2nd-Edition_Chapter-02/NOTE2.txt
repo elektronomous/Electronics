@@ -1,0 +1,94 @@
+Using For Loops 
+= (rate-blink.ino) It’s frequently necessary to use loops with changing variable values to adjust the parameters of a program. 
+= The for loop declaration always contains three semicolon-separated entries:
+  ◼◼ The first entry sets the index variable for the loop. In this case, the index variable is i and is set to start at a value of 100.
+  ◼◼ The second entry specifies when the loop should stop. The contents of the loop will execute over and over again while that condition is true.
+      The <= operator indicates “less than or equal to.” So, for this loop, the contents will continue to execute as long as the present value of 
+      the variable i is still less than or equal to 1000.
+  ◼◼ The final entry specifies what should happen to the index variable at the end of each loop execution. In this case, i will be set to its 
+      current value plus 100.
+= To better understand these concepts, consider what happens in two passes through the for loop:
+  1. The present value of i equals 100.
+  2. The value of 100 is less than or equal to 1000, so the loop contents execute.
+  3. The LED is set high, and stays high for 100ms, the present value of i.
+  4. The LED is set low, and stays low for 100ms, the present value of i.
+  5. At the end of the loop, i is incremented by 100, so it is now 200.
+  6. The value of 200 is less than or equal to 1000, so the loop repeats again.
+  7. The LED is set high, and stays high for 200ms, the present value of i.
+  8. The LED is set low, and stays low for 200ms, the present value of i.
+  9. At the end of the loop, i is incremented by 100, so it is now 300.
+  10. This process repeats until i surpasses 1000 and the outer loop function repeats,
+  setting the i value back to 100 and starting the process again.
+
+Pulse-Width Modulation with analogWrite()
+= what if you want to output a voltage other than 0V or 5V? Well, you can’t—unless you are using a digital-to-analog converter (DAC) integrated circuit, or 
+  an Arduino with a built-in DAC (like the Due).
+= However, you can get pretty close to generating analog output values by using a trick called pulse-width modulation (PWM). 
+  = Select pins on each Arduino can use the analogWrite() command to generate PWM signals that can emulate a pure analog signal when used with certain 
+    peripherals. 
+    = These pins are marked with a ~ on the board. 
+    = On the Arduino Uno, pins 3, 5, 6, 9, 10, and 11 are PWM pins. If you’re using an Uno, you can continue to use the circuit from Figure 2-2 to test out
+      the analogWrite() command with your LED. 
+    = Presumably(barangkali/agaknya/kiranya/kirakira), if you can decrease the voltage being dropped across the resistor, the LED should glow more dimly 
+      because less current will flow.
+      = That is what you will try to accomplish using PWM via the analogWrite() command.
+= The analogWrite() command accepts two arguments: the pin to control and the 8-bit value to write to it.
+= The PWM output is an 8-bit value. In other words, you can write values from 0 to 2⁸–1, or 0 to 255. In the case of your LED circuit, setting the output to 
+  255 will result in full brightness, and 0 will result in the LED turning off, with the brightness varying between these two values. 
+= (sketch-fade.ino) Be sure to note a few differences in these for loops. In the first loop, i++ is just shorthand code to represent i=i+1. Similarly, i-- 
+  is functionally equivalent to i=i–1. The first for loop fades the LED up, and the second for loop fades it down.
+------------------WONDER------------------
+  = Why don't we use the digitalWrite, it just does the same right ? No, digitalWrite() is only give you 5V while analog will give you from 0 - 5V.
+  
+= PWM control can be used in a lot of circumstances to emulate pure analog control, but it cannot always be used when you actually need an analog signal. 
+  For instance, PWM is great for driving direct current (DC) motors at variable speeds (you’ll experiment with this in Chapter 4, “Using Transistors and Driving
+  DC Motors”), but it does not work well for driving speakers unless you supplement it with some external circuitry. Take a moment to examine how PWM actually
+  works. Consider the graphs shown in Image4.PNG.
+= PWM works by modulating the duty cycle of a square wave (a signal that switches on and off). Duty cycle refers to the percentage of time that a square wave is
+  high versus low. You are probably most familiar with square waves that have a duty cycle of 50 percent—they are high half of the time, and low half of the 
+  time (this would be accomplished by running analogWrite(9, 127)).
+= The analogWrite() command sets the duty cycle of a square wave depending on the value you pass to it:
+  ◼◼ Writing a value of 0 with analogWrite() indicates a square wave with a duty cycle of 0 percent (always low).
+  ◼◼ Writing a 255 value indicates a square wave with a duty cycle of 100 percent (always high).
+  ◼◼ Writing a 127 value indicates a square wave with a duty cycle of 50 percent (high half of the time, low half of the time).
+= The graphs in Figure 2-4 show that for a signal with a duty cycle of 25 percent, it is high 25 percent of the time, and low 75 percent of the time. The 
+  frequency of this square wave, in the case of the Arduino Uno, is about 490 Hz. In other words, the signal varies between high (5V) and low (0V) about 490
+  times every second.
+
+    SIDE NOTE: FREQUENCY VS PERIOD
+    = “Period” is often also used to describe an alternating signal, in place of frequency. The “period” of this signal is the time to complete each cycle. The
+      period can easily be computed by dividing 1 second by the frequency. 1/490 Hz = .002 seconds = 2 milliseconds per cycle
+
+= If you are not actually changing the voltage being delivered to an LED, why do you see it get dimmer as you lower the duty cycle? It is really a result of 
+  your eyes playing a trick on you! If the LED is switching on and off every 1 ms (which is the case with a duty cycle of 50 percent), it appears to be operating
+  at approximately half brightness because it is blinking faster than your eyes can perceive. Therefore, your brain actually averages out the signal and tricks
+  you into believing that the LED is operating at half brightness.
+
+Reading Digital Inputs
+= Before you write the code to read from the pushbutton, it is important to understand the significance(makna) of the pull-down resistor used with this circuit.
+  Nearly all digital inputs use a pull-up or pull-down resistor to set the “default state” of the input pin. Imagine the circuit in Image5.PNG without the 10kΩ 
+  resistor. In this scenario, the pin will obviously read a high value when the button is pressed, because the button directly connects 5V to the input pin when
+  depressed.
+= But, what happens when the button is not being pressed? In that scenario, the input pin you are reading is essentially connected to nothing—the input pin is 
+  said to be “floating.” And, because the pin is not physically connected to 0V or 5V, reading it could cause unexpected results as electrical noise on nearby
+  pins causes its value to fluctuate "between high and low"(you get the middle signal makes your LED dimmer/in my practical if the input pin is floating, it 
+  give you a high value but the LED is dimmer, not so bright, but when you pressed the button the LED will get brighter). To remedy this, the pull-down resistor
+  is installed as shown in the schematic (Image5.PNG).
+= Now, consider what happens when the button is not pressed with the pull-down resistor in the circuit: The input pin is connected through a 10kΩ resistor to 
+  ground(set the "default state" which is low state). While the resistor restricts the flow of current, there is still enough current flow to ensure that the
+  input pin reads a low logic value. It is fairly common to use 10kΩ as a pull-down resistor value. Larger values are said to be weak pull-downs because it is
+  easier to overcome them, and smaller resistor values are said to be strong pull-downs because it is easier for more current to flow through them to ground.
+  When the button is pressed, the input pin is directly connected to 5V through the button.
+= Now, the current has two options: 
+  ◼◼ It can flow through a nearly zero-resistance path to the 5V rail
+  ◼◼ It can flow through a high-resistance path to the ground rail
+  = Recall from the sidebar, “Ohm’s Law and the Power Equation,” that the current will always follow the path of least resistance in a circuit. In this scenario,
+    the vast majority of the current flows through the button, and a high logic level is generated on the input pin, because that is the path of least resistance.
+=(button-led_button) Further, this code defines the button pin as an input in the setup function. This is not explicitly necessary, though, because pins are
+ inputs by default; it is shown for completeness
+ = digitalRead() reads the value of an input. In this case, it is reading the value of the BUTTON pin. If the button is being pressed, digitalRead() returns a
+   value of HIGH, or 1. If the button is not being pressed, it returns LOW, or 0. When you place digitalRead() in the if() statement, you’re checking the state
+   of the pin and evaluating if it matches the condition you’ve declared. In this if() statement, you’re checking to see if the value returned by digitalRead()
+   is LOW. The == is a comparison operator that tests whether the first item (digitalRead()) is equal to the second item (LOW). If this is true (that is, the
+   button is not being pressed), then the code inside the brackets executes, and the LED is set to LOW. If this is not true (the button is being pressed), then 
+   the else statement is executed, and the LED is turned HIGH.

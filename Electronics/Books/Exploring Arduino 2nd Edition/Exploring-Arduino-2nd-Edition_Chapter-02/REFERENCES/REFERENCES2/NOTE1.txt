@@ -1,0 +1,11 @@
+An input pin can read a high value when floating because it's susceptible to electrical interference. This can cause the pin to randomly
+fluctuate between high and low. 
+
+Explanation
+When an input pin is floating, it's not connected to a source, such as Vcc or GND. This makes it vulnerable to electrical noise, such as
+thermal noise and electromagnetic interference (EMI). The leads of the chip act like tiny antennas when they are floating. 
+This problem can be fixed by using pull up and pull down resistors. 
+
+Related information
+You can use the digitalWrite() function in Arduino IDE to write a digital pin to a HIGH or LOW value. If the pin has been configured as an
+OUTPUT with pinMode(), its voltage will be set to the corresponding value. 
